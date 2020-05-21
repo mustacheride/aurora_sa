@@ -111,7 +111,7 @@
 			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_INVOCATIONS" level="2" />
 			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_PACT_OF_THE_BLADE" level="3" />
 			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_ABILITY_SCORE_IMPROVEMENT" level="4" />
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_MASTER" level="20" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_ELDRITCH_MASTER" level="20" />
 		</rules>
 		<multiclass id="ID_SA_MR_MULTICLASS_ELDRICTH_GLAIVE">
 			<prerequisite>Wisdom 13 and Charisma 13</prerequisite>
@@ -233,14 +233,12 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>When you use your Pact Weapon you instead deal 3d6 necrotic damage.  You heal for half the damage your Touch does.  At 7th level, when your Hex Level increases to 4, the damage increases by 1d6.</description>
+			<description>When you use your Pact Weapon you instead deal {{pact of the vampiric touch:count}}d6 necrotic damage.  You heal for half the damage your Touch does.</description>
 		</sheet>
 		<rules>
-			<stat name="pact of the vampiric touch:dice" value="6" bonus="vampiric touch" />
-			<stat name="pact of the vampiric touch:dice" value="6" bonus="vampiric touch" />
-			<stat name="pact of the vampiric touch:dice" value="6" bonus="vampiric touch" />
-			<stat name="pact of the vampiric touch:dice" value="6" bonus="vampiric touch" level="7" />
-			<stat name="pact of the vampiric touch:dice" value="6" bonus="vampiric touch" level="9" />
+			<stat name="pact of the vampiric touch:count" value="3" bonus="vampiric touch" />
+			<stat name="pact of the vampiric touch:dice" value="1" bonus="vampiric touch" level="7" />
+			<stat name="pact of the vampiric touch:dice" value="1" bonus="vampiric touch" level="9" />
 			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_UNARMORED_DEFENSE" level="3"/>
 			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_CREATURE_OF_THE_DARK" level="7"/>
 			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_FLIGHT_OF_THE_BAT" level="15"/>
@@ -314,14 +312,12 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>When you use your Pact Weapon you instead deal 3d6 fire damage. The flaming blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet. At 7th level, when your Hex Level increases to 4, the damage increases by 1d6.</description>
+			<description>When you use your Pact Weapon you instead deal {{pact of the flame blade:count}}d6 fire damage. The flaming blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet.</description>
 		</sheet>
 		<rules>
-			<stat name="pact of the vampiric touch:dice" value="6" bonus="vampiric touch" />
-			<stat name="pact of the vampiric touch:dice" value="6" bonus="vampiric touch" />
-			<stat name="pact of the vampiric touch:dice" value="6" bonus="vampiric touch" />
-			<stat name="pact of the vampiric touch:dice" value="6" bonus="vampiric touch" level="7" />
-			<stat name="pact of the vampiric touch:dice" value="6" bonus="vampiric touch" level="9" />
+			<stat name="pact of the flame blade:count" value="3" bonus="flame blade" />
+			<stat name="pact of the flame blade:count" value="1" bonus="flame blade" level="7" />
+			<stat name="pact of the flame blade:count" value="1" bonus="flame blade" level="9" />
 			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_FIERY_BLOOD" level="3"/>
 			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_AURA_OF_FLAME" level="7"/>
 			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_BACKDRAFT" level="15"/>
@@ -382,7 +378,93 @@
 			</ul></description>
 		</sheet>
 	</element>
-	<element name="Ability Score Improvement" type="Class Feature" source="The Eldritch Glaive" id="ID_DMSG_MMBH_CLASS_FEAID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_ABILITY_SCORE_IMPROVEMENTTURE_BLOOD_HUNTER_ABILITY_SCORE_IMPROVEMENT">
+	<element name="Pact of the Shadow Blade" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE">
+		<supports>Pact of the Blade</supports>
+		<description>
+			<h5 class="caption">PACT OF THE SHADOW BLADE</h5>
+			<p>At 3rd level, when you take this Weapon of the Glaive, you gain a new option for your Pact Weapon.  Now when you use your Pact Weapon feature you weave together threads of shadow to create a weapon of solidified gloom in your hand.  While using your Pact Weapon this way it deals 2d8 psychic damage on a hit and has the finesse, light and thrown properties (range 20/60).  In addition, when you use the weapon to attack a target in dim light or darkness, you make the attack roll with advantage.  If you drop the weapon or throw it, it dissipates at the end of the turn.  Thereafter, while the spell persists, you can use a bonus action to cause the weapon to reappear in your hand.  If you have the Thirsting Blade invocation and throw the weapon you can have it reappear in your hand in time to make your second attack as part of your attack action without needing to use a bonus action to call it back to your hand.</p>
+			<p class="indent">At 5th level, when your Hex Level increases to 3, the damage increases by 1d8.  It increases by another 1d8 for every two Hex Levels beyond 3rd.</p>
+			<h5 class="caption">SIGHT OF THE SHADOWS</h5>
+			<p>At 3rd level you gain the Armor of Shadows and Devil’s Sight invocations.  If you already had one or more of them you can retrain your previous invocation selections into another invocation.</p>
+			<p class="indent">Additionally when you take damage from a creature within 60ft of you you can, as a Reaction, cause flames to lash out from you that creature.  The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one.  At higher levels this damage increases by 1d10 for each Hex Level beyond 2nd.</p>
+			<h5 class="caption">SHADOW OF MOIL</h5>
+			<p>Starting at 7th level you can, as a bonus action, cause flame-like shadows to wreathe your body until you fall unconscious or use another bonus action to end the effect, causing you to become heavily obscured to others. The shadows turn dim light within 10 feet of you into darkness, and bright light in the same area to dim light.</p>
+			<p class="indent">While under this effect, you have resistance to radiant damage. In addition, whenever a creature within 10 feet of you hits you with an attack, the shadows lash out at that creature, dealing it 2d8 necrotic damage.</p>
+			<p class="indent">You now have Expertise in Stealth, if you were already proficient in Stealth you can retrain to another skill.</p>
+			<h5 class="caption">SILENT AS A SHADOW</h5>
+			<p>Starting at 15th level, you gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action you can teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness. You then have advantage on the first melee attack you make before the end of the turn.</p>
+			<p class="indent">In addition a veil of shadows and silence radiates from you, masking you and your companions from detection.  Each creature of your choice, including yourself, has a +10 bonus to Dexterity (Stealth) checks and can’t be tracked except by magical means.  A creature that receives this bonus leaves behind no tracks or other traces of its passage.</p>
+			<h5 class="caption">UTTERDARK</h5>
+			<p>At 20th level, you gain the ability to infuse your entire body with the shadows you weave.  This can be a visible change, but it does not need to be.</p>
+			<ul class="unstyled">
+				<li><strong>Damage Resistance:</strong>  You have resistance to Acid, Cold, Fire, Lightning, Thunder; Bludgeoning, Piercing, and Slashing from Nonmagical Attacks.  You have immunity to Necrotic and Poison damage.  You are immune to the  Exhaustion, Frightened, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained conditions.</li>
+				<li>You have a Passive Stealth score of 15+your Stealth skill.  You can choose to suppress this, but otherwise are always considered to have rolled a 15 on a d20 for a Stealth check.  If you wish you can roll for Stealth, but any roll of 14 or below instead counts as a 15, thus not allowing you to get a result below your passive stealth.</li>
+				<li><strong>Amorphous:</strong> You can move through a space as narrow as 1 inch wide without squeezing.</li>
+				<li>You can choose to radiate an aura of magical darkness up to 120 feet from you, creatures of your choice can see through this magical darkness as if they benefited from Devil’s Sight.</li>
+				<li>Your Darkvision now has no range limitation, this allows you to see through Darkness and Magical Darkness as well as you can see through day.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you use your Pact Weapon you instead deal {{pact of the vampiric touch:dice}}d8 psychic damage. When you use the weapon to attack a target in dim light or darkness, you make the attack roll with advantage.</description>
+		</sheet>
+		<rules>
+			<stat name="pact of the vampiric touch:dice" value="2" bonus="vampiric touch" />
+			<stat name="pact of the vampiric touch:dice" value="1" bonus="vampiric touch" level="5" />
+			<stat name="pact of the vampiric touch:dice" value="1" bonus="vampiric touch" level="9" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_SIGHT_OF_THE_SHADOWS" level="3"/>
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_SHADOW_OF_MOIL" level="7"/>
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_SILENT_AS_A_SHADOW" level="15"/>
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_UTTERDARK" level="20"/>
+		</rules>
+	</element>
+	<element name="Sight of the Shadows" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_SIGHT_OF_THE_SHADOWS">
+		<description>
+		</description>
+		<sheet action="Reaction">
+			<description>You gain the Armor of Shadows and Devil’s Sight invocations.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_SA_MR_SPELL_ARMOR_OF_SHADOWS"/>
+			<grant type="Spell" id="ID_SA_MR_SPELL_DEVILS_SIGHT"/>
+		</rules>
+	</element>
+	<element name="Shadow of Moil" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_SHADOW_OF_MOIL">
+		<description>
+		</description>
+		<sheet>
+			<description>You have Expertise in Stealth.</description>
+		</sheet>
+		<sheet action="Bonus">
+			<description>You are heavily obscured to others and are resitant to radiant dmage. When a creature whithin 10 ft hits you with an attack, the shadows lash out dealing 2d8 necrotic damage.</description>
+		</sheet>
+		<rules>
+			<stat name="stealth:proficiency" value="proficiency" bonus="double" />
+		</rules>
+	</element>
+	<element name="Silent as a Shadow" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_SILENT_AS_A_SHADOW">
+		<description>
+		</description>
+		<sheet>
+			<description>Each creature of your choice, including yourself, has a +10 bonus to Dexterity (Stealth) checks and can’t be tracked except by magical means.  A creature that receives this bonus leaves behind no tracks or other traces of its passage.</description>
+		</sheet>
+		<sheet action="Bonus">
+			<description>You gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action you can teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness. You then have advantage on the first melee attack you make before the end of the turn.</description>
+		</sheet>
+	</element>
+	<element name="Utterdark" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_UTTERDARK">
+		<description>
+		</description>
+		<sheet>
+			<description><ul class="unstyled">
+				<li><strong>Damage Resistance:</strong>  You have resistance to Acid, Cold, Fire, Lightning, Thunder; Bludgeoning, Piercing, and Slashing from Nonmagical Attacks.  You have immunity to Necrotic and Poison damage.  You are immune to the  Exhaustion, Frightened, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained conditions.</li>
+				<li>You have a Passive Stealth score of 15+your Stealth skill.  You can choose to suppress this, but otherwise are always considered to have rolled a 15 on a d20 for a Stealth check.  If you wish you can roll for Stealth, but any roll of 14 or below instead counts as a 15, thus not allowing you to get a result below your passive stealth.</li>
+				<li><strong>Amorphous:</strong> You can move through a space as narrow as 1 inch wide without squeezing.</li>
+				<li>You can choose to radiate an aura of magical darkness up to 120 feet from you, creatures of your choice can see through this magical darkness as if they benefited from Devil’s Sight.</li>
+				<li>Your Darkvision now has no range limitation, this allows you to see through Darkness and Magical Darkness as well as you can see through day.</li>
+			</ul></description>
+		</sheet>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_ABILITY_SCORE_IMPROVEMENT">
 		<compendium display="false" />
 		<description>
 			<p>When you reach 4th, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
