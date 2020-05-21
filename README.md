@@ -6,4 +6,7 @@ Go to the _Additional Content_ tab in Aurora, enter the URL of the index file, a
 <br>
 More information about extending the content can be found [here](http://aurorabuilder.com/content/ "Additional Content").
 
-- https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin.index
+Master Index
+- https://raw.githubusercontent.com/mustacheride/aurora_sa/master/sa_homebrew.index 
+Ryuujin's Content
+- https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/ryuujin.index
