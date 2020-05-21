@@ -4,7 +4,7 @@
 		<name>The Eldritch Glaive</name>
 		<description> Hexblade but more focused on their weapon and without all that pesky spellcasting. They choose a weapon like spell to focus on. Such as Vampiric Touch or Flame Blade.</description>
 		<update version="0.0.1">
-			<file name="class-eldrictch_glaive.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/classes/class-eldrictch_glaive.xml" />
+			<file name="class-eldrictch_glaive.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/classes/class-eldritch_glaive.xml" />
 		</update>
 	</info>
 	
@@ -16,7 +16,7 @@
 			<set name="abbreviation">RYUEG</set>
 			<set name="url">https://docs.google.com/document/d/1vnUBbvBMwKVx3LTdHi58Ob67-Y4USiGoP_ANLUEBrUs/edit#heading=h.io5mi0jf9sib</set>
 			<set name="image">https://i.pinimg.com/originals/b3/9b/32/b39b329e9866bae1f9a0d130e6ab0c42.jpg</set>
-			<set name="author" abbreviation="RYU" url="https://forums.somethingawful.com/member.php?action=getinfo&userid=125148">Ryuujin</set>
+			<set name="author" abbreviation="RYU" url="https://forums.somethingawful.com/member.php?action=getinfo%26userid=125148">Ryuujin</set>
 			<set name="homebrew">true</set>
 			<!-- <set name="updated">20200211</set> -->
 		</setters>
