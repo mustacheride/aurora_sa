@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Something Awful Homebrew</name>
+		<description>Custom Content from the Something Awful Tradgames Forums</description>
+		<author url="https://forums.somethingawful.com/forumdisplay.php?forumid=234">Something Awful Traditional Games</author>
+		<update version="0.0.1">
+			<file name="sa_homebrew.index" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/sa_homebrew.index" />
+		</update>
+	</info>
+	<files>
+		<file name="ryuujin.index" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/ryuujin.index" />
+	</files>
+</index>
