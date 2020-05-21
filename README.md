@@ -8,5 +8,6 @@ More information about extending the content can be found [here](http://aurorabu
 
 Master Index
 - https://raw.githubusercontent.com/mustacheride/aurora_sa/master/sa_homebrew.index 
+
 Ryuujin's Content
 - https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/ryuujin.index
