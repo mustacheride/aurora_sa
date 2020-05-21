@@ -3,7 +3,7 @@
 	<info>
 		<name>Something Awful Homebrew</name>
 		<description>Custom Content from the Something Awful Tradgames Forums</description>
-		<author url="https://forums.somethingawful.com/forumdisplay.php?forumid=234">Something Awful Traditional Games</author>
+		<author url="https://forums.somethingawful.com/forumdisplay.php%3Fforumid%3D234">Something Awful Traditional Games</author>
 		<update version="0.0.1">
 			<file name="sa_homebrew.index" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/sa_homebrew.index" />
 		</update>
