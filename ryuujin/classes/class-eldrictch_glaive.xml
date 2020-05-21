@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>The Eldritch Glaive</name>
+		<description> Hexblade but more focused on their weapon and without all that pesky spellcasting. They choose a weapon like spell to focus on. Such as Vampiric Touch or Flame Blade.</description>
+		<update version="0.0.1">
+			<file name="class-eldrictch_glaive.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/classes/class-eldrictch_glaive.xml" />
+		</update>
+	</info>
+	
+	<element name="The Eldritch Glaive" type="Source" source="Core" id="ID_SA_MR_SOURCE_ELDRITCH_GLAIVE">
+		<description>
+			<p>Lorem Ipsum</p>
+		</description>
+		<setters>
+			<set name="abbreviation">RYUEG</set>
+			<set name="url">https://docs.google.com/document/d/1vnUBbvBMwKVx3LTdHi58Ob67-Y4USiGoP_ANLUEBrUs/edit#heading=h.io5mi0jf9sib</set>
+			<set name="image">https://i.pinimg.com/originals/b3/9b/32/b39b329e9866bae1f9a0d130e6ab0c42.jpg</set>
+			<set name="author" abbreviation="RYU" url="https://forums.somethingawful.com/member.php?action=getinfo&userid=125148">Ryuujin</set>
+			<set name="homebrew">true</set>
+			<!-- <set name="updated">20200211</set> -->
+		</setters>
+	</element>
+
+	<element name="Eldritch Glaive" type="Class" source="The Eldritch Glaive" id="ID_SA_MR_ELDRITCH_GLAIVE">
+		<description>
+			<p>Lorem ipsum dolor sit amet</p>
+			<h4>CREATING AN ELDRITCH GLAIVE</h4>
+			<p>Sed ut perspiciatis unde omnis</p>
+			<h2>CLASS FEATURES</h2>
+			<p>As an Eldritch Glaive, you gain the following class features.</p>
+			<h5 class="caption">HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d10 per Eldritch Glaive level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 10 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + your Constitution modifier per Eldritch Glaive level after 1st</li>
+			</ul>
+			<h5 class="caption">PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> Light armor, medium armor, shields</li>
+				<li><strong>Weapons:</strong> Simple weapons, martial weapons</li>
+				<li><strong>Tools:</strong> None</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Wisdom, Charisma</li>
+				<li><strong>Skills:</strong> Choose two skills from Arcana, Deception, History, Intimidation, Investigation, Nature, and Religion.</li>
+			</ul>
+			<h5 class="caption">EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>(a) a light crossbow and 20 bolts or (b) any martial weapon</li>
+				<li>(a) a component pouch or (b) an arcane focus</li>
+				<li>(a) a scholar’s pack or (b) a dungeoneer’s pack</li>
+				<li>(a) Leather armor or (b) scale mail</li>
+				<li>any simple weapon, and two daggers</li>
+			</ul>
+			<h5 class="caption">THE ELDRITCH GLAIVE</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-5">Hex Slots</td><td class="col-15">Hex Level</td><td class="col-15">Invocations Known</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="left">Aspect of the Glaive, Hex Slots, Eldritch Glaive’s Focus, Hex Warrior</td><td>1</td><td>1st</td><td>—</td></tr>
+				<tr><td> 2nd</td><td class="left">Eldritch Invocations</td><td>2</td><td>1st</td><td>2</td></tr>
+				<tr><td> 3rd</td><td class="left">Pact of the Blade</td><td>2</td><td>2nd</td><td>2</td></tr>
+				<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>2</td><td>2nd</td><td>2</td></tr>
+				<tr><td> 5th</td><td class="left">—</td><td>2</td><td>3rd</td><td>3</td></tr>
+				<tr><td> 6th</td><td class="left">—</td><td>2</td><td>3rd</td><td>3</td></tr>
+				<tr><td> 7th</td><td class="left">—</td><td>2</td><td>4th</td><td>4</td></tr>
+				<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>2</td><td>4th</td><td>4</td></tr>
+				<tr><td> 9th</td><td class="left">—</td><td>2</td><td>5th</td><td>4</td></tr>
+				<tr><td>10th</td><td class="left">—</td><td>2</td><td>5th</td><td>5</td></tr>
+				<tr><td>11th</td><td class="left">—</td><td>2</td><td>5th</td><td>5</td></tr>
+				<tr><td>12th</td><td class="left">Ability Score Improvement</td><td>3</td><td>5th</td><td>6</td></tr>
+				<tr><td>13th</td><td class="left">—</td><td>3</td><td>5th</td><td>6</td></tr>
+				<tr><td>14th</td><td class="left">—</td><td>3</td><td>5th</td><td>6</td></tr>
+				<tr><td>15th</td><td class="left">—</td><td>3</td><td>5th</td><td>7</td></tr>
+				<tr><td>16th</td><td class="left">Ability Score Improvement</td><td>3</td><td>5th</td><td>7</td></tr>
+				<tr><td>17th</td><td class="left">—</td><td>4</td><td>5th</td><td>7</td></tr>
+				<tr><td>18th</td><td class="left">—</td><td>4</td><td>5th</td><td>8</td></tr>
+				<tr><td>19th</td><td class="left">Ability Score Improvement</td><td>4</td><td>5th</td><td>8</td></tr>
+				<tr><td>20th</td><td class="left">Eldritch Master</td><td>4</td><td>5th</td><td>8</td></tr>
+			</table>
+			<div element="ID_SA_MR_CLASS_FEATURE_ASPECT_OF_THE_GLAIVE" />
+			<div element="ID_SA_MR_CLASS_FEATURE_HEX_SLOTS" />
+			<div element="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_FOCUS" />
+			<div element="ID_SA_MR_CLASS_FEATURE_HEX_WARRIOR" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_ELDRITCH_INVOCATIONS" />
+			<div element="ID_SA_MR_CLASS_FEATURE_PACT_OF_THE_BLADE" />
+			<div element="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_ABILITY_SCORE_IMPROVEMENT" />
+			<div element="ID_SA_MR_CLASS_FEATURE_ELDRITCH_MASTER" />
+
+
+		</description>
+		<setters>
+			<set name="short">Aa class based around the concept of the Hexblade but more focused on their weapon and without all that pesky spellcasting. They choose a weapon like spell to focus on. Such as Vampiric Touch or Flame Blade.</set>
+			<set name="hd">d10</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_SA_MR_MULTICLASS_ELDRICTH_GLAIVE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_SA_MR_MULTICLASS_ELDRICTH_GLAIVE" />
+			<select type="Proficiency" name="Skill Proficiency, Eldritch Glaive" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILLINTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_RELIGION" number="2" requirements="!ID_SA_MR_MULTICLASS_ELDRICTH_GLAIVE" />			
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_ASPECT_OF_THE_GLAIVE" level="1" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_HEX_SLOTS" level="1" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_FOCUS" level="1" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_INVOCATIONS" level="2" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_PACT_OF_THE_BLADE" level="3" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_ABILITY_SCORE_IMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_MASTER" level="20" />
+		</rules>
+		<multiclass id="ID_SA_MR_MULTICLASS_ELDRICTH_GLAIVE">
+			<prerequisite>Wisdom 13 and Charisma 13</prerequisite>
+			<requirements>[wis:13],[cha:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, medium armor, shields, simple weapons, martial weapons, one skill from the class’s skill list</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<select type="Proficiency" name="Skill Proficiency, Eldritch Glaive" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILLINTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_RELIGION" />	
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Aspect of the Glaive" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ASPECT_OF_THE_GLAIVE">
+		<description>
+			<p>At 1st level, … some kind of archetype ability, WIP. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level.</p>
+		</description>
+		<sheet>
+			<description>WIP</description>
+		</sheet>
+	</element>
+	<element name="Hex Slots" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_HEX_SLOTS">
+		<description>
+			<p>Your variant of the hexblade warlock bond with their weapon is particularly strong, granting you abilities beyond other hexblades, at the expense of the warlocks spellcasting ability.  As you level you gain Hex slots that recharge on a short rest and automatically scale with your level as listed in the Hex level chart.  These slots can power some of your abilities and invocations.  They cannot be used to cast spells like other warlocks, nor can they be used to fuel Paladin Smites or Sorcerer Sorcerery Points.</p>
+			<h5>SPELLCASTING ABILITY</h5>
+			<p>Charisma is your spellcasting ability for your warlock spells, so you use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one.</p>
+			<p class="indent">
+				<b>Spell save DC</b> = 8 + your proficiency bonus + your Charisma modifier</p>
+			<p class="indent">
+				<b>Spell attack modifier</b> = your proficiency bonus + your Charisma modifier</p>
+			<h5>SPELLCASTING FOCUS</h5>
+			<p>You can use an arcane focus as a spellcasting focus for your warlock spells.</p>
+		</description>
+		<sheet usage="{{hex slots:usage}}/Short Rest">
+			<description>These slots can power some of your abilities and invocations.  They cannot be used to cast spells like other warlocks, nor can they be used to fuel Paladin Smites or Sorcerer Sorcerery Points.</description>
+		</sheet>
+		<rules>
+			<stat name="eldritch glaive:hex slot:slots:count" value="1" level="1"/>
+			<stat name="eldritch glaive:hex slot:slots:count" value="1" level="2"/>
+			<stat name="eldritch glaive:hex slot:slots:count" value="1" level="11"/>
+			<stat name="eldritch glaive:hex slot:slots:count" value="1" level="17"/>
+		</rules>
+	</element>
+	<element name="Eldritch Glaive Focus" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_FOCUS">
+		<description>
+			<p>Starting at 1st level, you gain the ability to Focus upon a target. As a bonus action, choose one creature you can see within 30 feet of you. The target is becomes your Focus target until the target dies, you die, or you are incapacitated.  It also ends on the target if you use another bonus action to Focus upon another target.  Until the Focus ends, you gain the following benefits:</p>
+			<p class="indent">You gain a bonus to damage rolls against the Focused target. The bonus equals your proficiency bonus.</p>
+			<p class="indent">Any attack roll you make against the Focused target is a critical hit on a roll of 19 or 20 on the d20.</p>
+			<p class="indent">You deal an extra 1d6, nontyped magical, damage to the target whenever you hit it with an attack.</p>
+			<p class="indent">Choose one ability when you use this feature, the target has disadvantage on ability checks made with the chosen ability.</p>
+			<p class="indent">If the Focused target dies, you regain hit points equal to your eldritch glavie level + your Charisma modifier (minimum of 1 hit point).</p>
+			<p class="indent">You gain a bonus to damage rolls against the Focused target. The bonus equals your proficiency bonus.</p>
+			<p class="indent">You gain a bonus to damage rolls against the Focused target. The bonus equals your proficiency bonus.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Hex Warrior" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_HEX_WARRIOR">
+		<description>
+			<p>At 1st level you gain the ability to bond with your weapon.  Whenever you finish a long rest, you can touch one weapon that you are proficient with and that lacks the two-handed property. When you attack with that weapon, you can use your Charisma modifier {{charisma:modifier}}, instead of Strength or Dexterity, for the attack and damage rolls. This benefit lasts until you finish a long rest. When you later gain the Pact of the Blade feature, this benefit extends to every pact weapon you conjure with that feature, no matter the weapon’s type.</p>
+		</description>
+		<sheet>
+			<description>Make a bond with one weapon you are proficient with. Attacks with that weapon do {{hex warrior:damage}} damage.</description>
+		</sheet>
+		<rules>
+			<stat name="hex warrior:attack" value="charisma:modifier" bonus="hex warrior" />
+			<stat name="hex warrior:damage" value="charisma:modifier" bonus="hex warrior" />
+		</rules>
+	</element>	
+	<element name="Eldritch Glaive Invocations" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_INVOCATIONS">
+		<description>
+			<p>In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability.</p>
+			<p class="indent">At 2nd level, you gain two eldritch invocations of your choice. Your invocation options are detailed at the end of the class description. When you gain certain warlock levels, you gain additional invocations of your choice, as shown in the Invocations Known column of the Warlock table.</p>
+			<p class="indent">Additionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level.</p>
+		</description>
+		<rules>
+			<select type="Class Feature" name="Eldritch Glaive Invocation (Level 2)" supports="Eldritch Glaive Invocation" level="2" number="2" />
+			<select type="Class Feature" name="Eldritch Glaive Invocation (Level 5)" supports="Eldritch Glaive Invocation" level="5" />
+			<select type="Class Feature" name="Eldritch Glaive Invocation (Level 7)" supports="Eldritch Glaive Invocation" level="7" />
+			<select type="Class Feature" name="Eldritch Glaive Invocation (Level 9)" supports="Eldritch Glaive Invocation" level="9" />
+			<select type="Class Feature" name="Eldritch Glaive Invocation (Level 12)" supports="Eldritch Glaive Invocation" level="12" />
+			<select type="Class Feature" name="Eldritch Glaive Invocation (Level 15)" supports="Eldritch Glaive Invocation" level="15" />
+			<select type="Class Feature" name="Eldritch Glaive Invocation (Level 18)" supports="Eldritch Glaive Invocation" level="18" />
+		</rules>
+	</element>
+	<element name="Pact of the Blade" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_PACT_OF_THE_BLADE">
+		<description>
+			<p>At 3rd level you can use your action to create a pact weapon in your empty hand. You weave together threads of ether to create a weapon in your hand. It deals 2d4 magical bludgeoning, slashing or piercing damage, depending on weapon type, on a hit.</p>
+			<p class="indent">You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can’t affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks.  You can still change the shape of your Pact Weapon, and it still does the same damage based off of level, but it gains any properties of the magic weapon such as +1 or Flaming.</p>
+			<p class="indent">If you drop the weapon or throw it, it dissipates at the end of the turn. Thereafter, while the ability persists, you can use a bonus action to cause the weapon to reappear in your hand.  It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.</p>
+			<p class="indent">You can choose the form that this melee weapon takes each time you create it (see the Weapons section for weapon options). You are proficient with it while you wield it. This weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+			<h5 class="caption">AT HIGHER LEVELS</h5>			
+			<p>The Pact Weapon’s damage increases as you gain levels, based off the Hex Level.  When your Hex Level is 3rd or 4th level the damage increases to 3d4.  At 5th or 6th Hex levels the damage increases to 4d4. And when your Hex level is 7th or higher the damage increases to 5d4.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Weapons of the Glaive" supports="Pact of the Blade" level="3"/>
+		</rules>
+	</element>
+	<element name="Pact of the Vampiric Touch" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH">
+		<supports>Pact of the Blade</supports>
+		<description>
+			<h5 class="caption">PACT OF THE VAMPIRIC TOUCH</h5>
+			<p>At 3rd level, when you take this Weapon of the Glaive, you gain a new option for your Pact Weapon.  Now when you use your Pact Weapon feature you can call forth necrotic shadows to shroud your hands, possibly taking the form of deadly life-siphoning claws.  When you use your Pact Weapon this way you instead deal 3d6 necrotic damage.  You heal for half the damage your Touch does.  At 7th level, when your Hex Level increases to 4, the damage increases by 1d6.  It increases by another 1d6 for each Hex Level beyond 4th.</p>
+			<h5 class="caption">UNARMORED DEFENSE</h5>
+			<p>Beginning at 3rd level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Strength modifier + your Charisma modifier.  This AC value increases by +1 at 6th, 12th and 18th levels.</p>
+			<h5 class="caption">CREATURE OF THE DARK</h5>
+			<p>Starting at 7th level you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check, or using your hands.  This works as Spider Climb.</p>
+			<p class="indent">You also gain Darkvision of 120 feet, this darkvision works even in magical darkness.</p>
+			<h5 class="caption">FLIGHT OF THE BAT</h5>
+			<p>Starting at 15th level, you gain the ability to sprout a pair of bat wings from your back, gaining a flying speed equal to your current speed. You can create these wings as a bonus action on your turn. They last until you dismiss them as a bonus action on your turn.</p>
+			<p class="indent">You can’t manifest your wings while wearing armor unless the armor is made to accommodate them, and clothing not made to accommodate your wings might be destroyed when you manifest them.</p>
+			<h5 class="caption">ALMIGHTY VAMPIRE</h5>
+			<p>At 20th level, you gain the ability to infuse your entire body with the power of your Vampiric Touch.  This can be a visible change, but it does not need to be.</p>
+			<ul class="unstyled">
+				<li><strong>Damage Resistance:</strong> You have resistance to Necrotic; Bludgeoning, Piercing, and Slashing from Nonmagical Attacks.</li>
+				<li><strong>Regeneration:</strong> You regain 20 hit points at the start of your turn if you have at least 1 hit point and aren’t in sunlight or running water. If you take radiant damage or damage from holy water, this trait doesn't function at the start of your next turn.</li>
+				<li>Your Vampiric Touch attacks now add your Strength modifier, in addition to your Charisma modifier, to their damage rolls.</li>
+				<li>Your Darkvision now allows you to see through Darkness and Magical Darkness as well as you can see through daylight.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you use your Pact Weapon you instead deal 3d6 necrotic damage.  You heal for half the damage your Touch does.  At 7th level, when your Hex Level increases to 4, the damage increases by 1d6.</description>
+		</sheet>
+		<rules>
+			<stat name="pact of the vampiric touch:dice" value="6" bonus="vampiric touch" />
+			<stat name="pact of the vampiric touch:dice" value="6" bonus="vampiric touch" />
+			<stat name="pact of the vampiric touch:dice" value="6" bonus="vampiric touch" />
+			<stat name="pact of the vampiric touch:dice" value="6" bonus="vampiric touch" level="7" />
+			<stat name="pact of the vampiric touch:dice" value="6" bonus="vampiric touch" level="9" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_UNARMORED_DEFENSE" level="3"/>
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_CREATURE_OF_THE_DARK" level="7"/>
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_FLIGHT_OF_THE_BAT" level="15"/>
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_ALMIGHTY_VAMPIRE" level="20"/>
+		</rules>
+	</element>
+	<element name="Unarmored Defense" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_UNARMORED_DEFENSE">
+		<description>
+		</description>
+		<sheet>
+			<description>While you are wearing no armor and not wielding a shield, your AC equals 10 + your Strength modifier + your Charisma modifier.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:unarmored defense eldritch glaive:base" value="10" />
+			<stat name="ac:unarmored defense eldritch glaive:charisma" value="dexterity:modifier" />
+			<stat name="ac:unarmored defense eldritch glaive:strength" value="wisdom:modifier" />
+			<stat name="ac:unarmored defense eldritch glaive" value="ac:unarmored defense eldritch glaive:base" />
+			<stat name="ac:unarmored defense eldritch glaive" value="ac:unarmored defense eldritch glaive:charisma" />
+			<stat name="ac:unarmored defense eldritch glaive" value="ac:unarmored defense eldritch glaive:strength" />
+			<stat name="ac:calculation" value="ac:unarmored defense eldritch glaive" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Defense (Eldritch Glaive)" />
+		</rules>
+	</element>
+	<element name="Creature of the Dark" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_CREATURE_OF_THE_DARK">
+		<description>
+		</description>
+		<sheet>
+			<description>You can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check, or using your hands. This works as Spider Climb. You also gain Darkvision of 120 feet, this darkvision works even in magical darkness.</description>
+		</sheet>
+	</element>
+	<element name="Flight of the Bat" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_FLIGHT_OF_THE_BAT">
+		<description>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You sprout a pair of bat wings from your back gaining a flying speed of {{speed}} ft. The wings last unti you dismiss them as a bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Almighty Vampire" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_ALMIGHTY_VAMPIRE">
+		<description>
+		</description>
+		<sheet>
+			<description><ul class="unstyled">
+				<li><strong>Damage Resistance:</strong> You have resistance to Necrotic; Bludgeoning, Piercing, and Slashing from Nonmagical Attacks.</li>
+				<li><strong>Regeneration:</strong> You regain 20 hit points at the start of your turn if you have at least 1 hit point and aren’t in sunlight or running water. If you take radiant damage or damage from holy water, this trait doesn't function at the start of your next turn.</li>
+				<li>Your Vampiric Touch attacks now add your Strength modifier, in addition to your Charisma modifier, to their damage rolls.</li>
+				<li>Your Darkvision now allows you to see through Darkness and Magical Darkness as well as you can see through daylight.</li>
+			</ul></description>
+		</sheet>
+	</element>
+	<element name="Pact of the Flame Blade" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE">
+		<supports>Pact of the Blade</supports>
+		<description>
+			<h5 class="caption">PACT OF THE FLAME BLADE</h5>
+			<p>At 3rd level, when you take this Weapon of the Glaive, you gain a new option for your Pact Weapon.  Now when you use your Pact Weapon feature you can call forth primordial flames.  You can form any shape of weapon with fire instead of ether. When you use your Pact Weapon this way you instead deal 3d6 fire damage.  The flaming blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet.  And the Flame Blade has the light and finesse traits.  At 7th level, when your Hex Level increases to 4, the damage increases by 1d6.  It increases by another 1d6 for every two Hex Levels beyond 4th.</p>
+			<h5 class="caption">FIERY BLOOD</h5>
+			<p>At third level you become resistant to Fire Damage.  You do not suffer Exhaustion or similar penalties from hot or cold conditions.</p>
+			<p class="indent">Additionally when you take damage from a creature within 60ft of you you can, as a Reaction, cause flames to lash out from you that creature.  The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one.  At higher levels this damage increases by 1d10 for each Hex Level beyond 2nd.</p>
+			<h5 class="caption">AURA OF FLAME</h5>
+			<p>Starting at 7th level your speed increases by 10 feet, this increases by another ten feet at 12th and 17th levels.</p>
+			<p class="indent">Your body now sheds bright light in a 20-foot radius and dim light in an additional 20 feet.</p>
+			<p class="indent">Also at 7th level you gain the ability to channel the power of your Flame Blade through your body and into the air around you. As a bonus action you can activate an Aura of Flame, which remains active until you fall unconscious or spend another bonus action to end it.  While this Aura of Flame is active a creature that  touches you or hits you with a melee attack while within 5 feet of you takes 5 (1d10) fire damage.  At 12th level the Aura increases.  The damage it deals is now 10 (2d10) Fire damage.  Also any creature that comes within 15 feet of you, or ends its turn within that area, also takes the Aura’s damage.  At 17th level the Aura improves again.  The damage increases to 15 (3d10) fire damage, and the area of the aura now expands to 30 feet.</p>
+			<h5 class="caption">BACKDRAFT</h5>
+			<p>Starting at 15th level you become immune to Fire damage and resistant to poison damage.  </p>
+			<p class="indent">In addition you have gained a greater control of your Aura of Flame.  Your Aura of Flame now only harms creatures of your choice, instead of all creatures in its area.  Your greater control also seems to make it difficult for the affected creatures to leave your aura.  Any creatures that you choose to have affected by your Aura have their speed halved while in your aura as the winds seem to howl toward your fiery center.</p>
+			<h5 class="caption">INFERNO</h5>
+			<p>At 20th level the primordial flame of your Flame Blade fully infuses you.  This can be a visible change, but it does not need to be.</p>
+			<ul class="unstyled">
+				<li><strong>Damage Resistance:</strong> You are now immune to poison damage and have resistance to Bludgeoning, Piercing, and Slashing from Nonmagical Attacks.  You also become immune to the Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, and Restrained conditions.</li>
+				<li><strong>Regeneration:</strong> When you would take Fire Damage you instead heal that much.</li>
+				<li><strong>Burning Body:</strong> Your body now sheds bright light in a 30-foot radius and dim light in an additional 30 feet.</li>
+				<li><strong>Dual Wielding:</strong> When you create a Flame Blade you can now make a pair of Flame Blades.  The second weapon can be used to make an attack as a bonus action using the two-weapon fighting rules.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you use your Pact Weapon you instead deal 3d6 fire damage. The flaming blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet. At 7th level, when your Hex Level increases to 4, the damage increases by 1d6.</description>
+		</sheet>
+		<rules>
+			<stat name="pact of the vampiric touch:dice" value="6" bonus="vampiric touch" />
+			<stat name="pact of the vampiric touch:dice" value="6" bonus="vampiric touch" />
+			<stat name="pact of the vampiric touch:dice" value="6" bonus="vampiric touch" />
+			<stat name="pact of the vampiric touch:dice" value="6" bonus="vampiric touch" level="7" />
+			<stat name="pact of the vampiric touch:dice" value="6" bonus="vampiric touch" level="9" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_FIERY_BLOOD" level="3"/>
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_AURA_OF_FLAME" level="7"/>
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_BACKDRAFT" level="15"/>
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_INFERNO" level="20"/>
+		</rules>
+	</element>
+	<element name="Fiery Blood" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_FIERY_BLOOD">
+		<description>
+		</description>
+		<sheet action="Reaction">
+			<description>When you take damage from a creature within 60ft of you you can cause flames to lash out from you that creature. The creature must make a Dexterity saving throw. It takes {{fiery blood:count}}d10 fire damage on a failed save, or half as much damage on a successful one.</description>
+		</sheet>
+		<rules>
+			<stat name="fiery blood:count" value="2" bonus="base" />
+			<stat name="fiery blood:count" value="1" bonus="base" level="5"/>
+			<stat name="fiery blood:count" value="1" bonus="base" level="7" />
+			<stat name="fiery blood:count" value="1" bonus="base" level="9" />
+		</rules>
+	</element>
+	<element name="Aura of Flame" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_AURA_OF_FLAME">
+		<description>
+		</description>
+		<sheet>
+			<description>Your Speed increases by {{eldritch glaive:aura of flame}} feet. </description>
+		</sheet>
+		<sheet action="Bonus">
+			<description>When a creature that touches or hits you with a melee attack while within {{aura of flame:distance}} feet of you, it takes {{aura of flame:count}}d10 fire damage.</description>
+		</sheet>
+		<rules>
+			<stat name="eldritch glaive:aura of flame" value="10" bonus="aura of flame" level="7" />
+			<stat name="aura of flame:distance" value="5" bonus="aura of flame" level="7" />
+			<stat name="aura of flame:count" value="1" bonus="aura of flame" level="7" />
+			<stat name="eldritch glaive:aura of flame" value="20" bonus="aura of flame" level="12" />
+			<stat name="eaura of flame:distance" value="15" bonus="aura of flame" level="12" />
+			<stat name="eaura of flame:count" value="2" bonus="aura of flame" level="12" />
+			<stat name="eldritch glaive:aura of flame" value="30" bonus="aura of flame" level="17" />
+			<stat name="eaura of flame:distance" value="30" bonus="aura of flame" level="17" />
+			<stat name="eaura of flame:count" value="3" bonus="aura of flame" level="17" />
+			<stat name="innate speed:misc" value="eldritch glaive:aura of flame" bonus="eldritch glaive" requirements="[innate speed:1]" />
+		</rules>
+	</element>
+	<element name="Backdraft" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_BACKDRAFT">
+		<description>
+		</description>
+		<sheet>
+			<description>You become immune to Fire damage and resistant to poison damage. In addition you have gained a greater control of your Aura of Flame.  Your Aura of Flame now only harms creatures of your choice, instead of all creatures in its area.  Your greater control also seems to make it difficult for the affected creatures to leave your aura.  Any creatures that you choose to have affected by your Aura have their speed halved while in your aura as the winds seem to howl toward your fiery center.</description>
+		</sheet>
+	</element>
+	<element name="Inferno" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_INFERNO">
+		<description>
+		</description>
+		<sheet>
+			<description><ul class="unstyled">
+				<li><strong>Damage Resistance:</strong> You are now immune to poison damage and have resistance to Bludgeoning, Piercing, and Slashing from Nonmagical Attacks.  You also become immune to the Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, and Restrained conditions.</li>
+				<li><strong>Regeneration:</strong> When you would take Fire Damage you instead heal that much.</li>
+				<li><strong>Burning Body:</strong> Your body now sheds bright light in a 30-foot radius and dim light in an additional 30 feet.</li>
+				<li><strong>Dual Wielding:</strong> When you create a Flame Blade you can now make a pair of Flame Blades.  The second weapon can be used to make an attack as a bonus action using the two-weapon fighting rules.</li>
+			</ul></description>
+		</sheet>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="The Eldritch Glaive" id="ID_DMSG_MMBH_CLASS_FEAID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_ABILITY_SCORE_IMPROVEMENTTURE_BLOOD_HUNTER_ABILITY_SCORE_IMPROVEMENT">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false">
+			<description>When you reach 4th, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Eldritch Glaive,4" level="4" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Eldritch Glaive,8" level="8" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Eldritch Glaive,12" level="12" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Eldritch Glaive,16" level="16" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Eldritch Glaive,19" level="19" />
+		</rules>
+	</element>
+	
+</elements>
