@@ -3,7 +3,7 @@
 	<info>
 		<name>The Eldritch Glaive</name>
 		<description> Hexblade but more focused on their weapon and without all that pesky spellcasting. They choose a weapon like spell to focus on. Such as Vampiric Touch or Flame Blade.</description>
-		<update version="0.0.7">
+		<update version="0.0.8">
 			<file name="class-eldrictch_glaive.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/classes/class-eldritch_glaive.xml" />
 		</update>
 	</info>
@@ -150,10 +150,10 @@
 			<description>These slots can power some of your abilities and invocations.  They cannot be used to cast spells like other warlocks, nor can they be used to fuel Paladin Smites or Sorcerer Sorcerery Points.</description>
 		</sheet>
 		<rules>
-			<stat name="eldritch glaive:hex slot:slots:count" value="1" level="1"/>
-			<stat name="eldritch glaive:hex slot:slots:count" value="1" level="2"/>
-			<stat name="eldritch glaive:hex slot:slots:count" value="1" level="11"/>
-			<stat name="eldritch glaive:hex slot:slots:count" value="1" level="17"/>
+			<stat name="hex slots:usage" value="1" level="1"/>
+			<stat name="hex slots:usage" value="1" level="2"/>
+			<stat name="hex slots:usage" value="1" level="11"/>
+			<stat name="hex slots:usage" value="1" level="17"/>
 		</rules>
 	</element>
 	<element name="Eldritch Glaive Focus" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_FOCUS">
