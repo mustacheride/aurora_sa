@@ -7,22 +7,7 @@
 			<file name="class-eldrictch_glaive.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/classes/class-eldritch_glaive.xml" />
 		</update>
 	</info>
-	
-	<element name="The Eldritch Glaive" type="Source" source="Core" id="ID_SA_MR_SOURCE_ELDRITCH_GLAIVE">
-		<description>
-			<p>Lorem Ipsum</p>
-		</description>
-		<setters>
-			<set name="abbreviation">RYUEG</set>
-			<set name="url">https://docs.google.com/document/d/1vnUBbvBMwKVx3LTdHi58Ob67-Y4USiGoP_ANLUEBrUs/edit#heading=h.io5mi0jf9sib</set>
-			<set name="image">https://i.pinimg.com/originals/b3/9b/32/b39b329e9866bae1f9a0d130e6ab0c42.jpg</set>
-			<set name="author" abbreviation="RYU" url="https://forums.somethingawful.com/member.php%3Faction%3Dgetinfo%26userid%3D125148">Ryuujin</set>
-			<set name="homebrew">true</set>
-			<!-- <set name="updated">20200211</set> -->
-		</setters>
-	</element>
-
-	<element name="Eldritch Glaive" type="Class" source="The Eldritch Glaive" id="ID_SA_MR_ELDRITCH_GLAIVE">
+	<element name="Eldritch Glaive" type="Class" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_ELDRITCH_GLAIVE">
 		<description>
 			<p>Lorem ipsum dolor sit amet</p>
 			<h4>CREATING AN ELDRITCH GLAIVE</h4>
@@ -124,7 +109,7 @@
 			</rules>
 		</multiclass>
 	</element>
-	<element name="Hex Slots" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_HEX_SLOTS">
+	<element name="Hex Slots" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_HEX_SLOTS">
 		<description>
 			<p>Your variant of the hexblade warlock bond with their weapon is particularly strong, granting you abilities beyond other hexblades, at the expense of the warlocks spellcasting ability.  As you level you gain Hex slots that recharge on a short rest and automatically scale with your level as listed in the Hex level chart.  These slots can power some of your abilities and invocations.  They cannot be used to cast spells like other warlocks, nor can they be used to fuel Paladin Smites or Sorcerer Sorcerery Points.</p>
 			<h5>SPELLCASTING ABILITY</h5>
@@ -146,7 +131,7 @@
 			<stat name="hex slots:usage" value="1" level="17"/>
 		</rules>
 	</element>
-	<element name="Eldritch Glaive Focus" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_FOCUS">
+	<element name="Eldritch Glaive Focus" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_FOCUS">
 		<description>
 			<p>Starting at 1st level, you gain the ability to Focus upon a target. As a bonus action, choose one creature you can see within 30 feet of you. The target is becomes your Focus target until the target dies, you die, or you are incapacitated.  It also ends on the target if you use another bonus action to Focus upon another target.  Until the Focus ends, you gain the following benefits:</p>
 			<p class="indent">You gain a bonus to damage rolls against the Focused target. The bonus equals your proficiency bonus.</p>
@@ -159,7 +144,7 @@
 		</description>
 		<sheet display="false" />
 	</element>
-	<element name="Hex Warrior" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_HEX_WARRIOR">
+	<element name="Hex Warrior" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_HEX_WARRIOR">
 		<description>
 			<p>At 1st level you gain the ability to bond with your weapon.  Whenever you finish a long rest, you can touch one weapon that you are proficient with and that lacks the two-handed property. When you attack with that weapon, you can use your Charisma modifier {{charisma:modifier}}, instead of Strength or Dexterity, for the attack and damage rolls. This benefit lasts until you finish a long rest. When you later gain the Pact of the Blade feature, this benefit extends to every pact weapon you conjure with that feature, no matter the weapon’s type.</p>
 		</description>
@@ -171,7 +156,7 @@
 			<stat name="hex warrior:damage" value="charisma:modifier" bonus="hex warrior" />
 		</rules>
 	</element>	
-	<element name="Eldritch Glaive Invocations" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_INVOCATIONS">
+	<element name="Eldritch Glaive Invocations" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_INVOCATIONS">
 		<description>
 			<p>In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability.</p>
 			<p class="indent">At 2nd level, you gain two eldritch invocations of your choice. Your invocation options are detailed at the end of the class description. When you gain certain warlock levels, you gain additional invocations of your choice, as shown in the Invocations Known column of the Warlock table.</p>
@@ -187,7 +172,7 @@
 			<select type="Class Feature" name="Eldritch Glaive Invocation (Level 18)" supports="Eldritch Glaive Invocation" level="18" />
 		</rules>
 	</element>
-	<element name="Pact of the Blade" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_PACT_OF_THE_BLADE">
+	<element name="Pact of the Blade" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_PACT_OF_THE_BLADE">
 		<description>
 			<p>At 3rd level you can use your action to create a pact weapon in your empty hand. You weave together threads of ether to create a weapon in your hand. It deals 2d4 magical bludgeoning, slashing or piercing damage, depending on weapon type, on a hit.</p>
 			<p class="indent">You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can’t affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks.  You can still change the shape of your Pact Weapon, and it still does the same damage based off of level, but it gains any properties of the magic weapon such as +1 or Flaming.</p>
@@ -201,7 +186,7 @@
 			<select type="Class Feature" name="Weapons of the Glaive" supports="Pact of the Blade" level="3"/>
 		</rules>
 	</element>
-	<element name="Pact of the Vampiric Touch" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH">
+	<element name="Pact of the Vampiric Touch" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH">
 		<supports>Pact of the Blade</supports>
 		<description>
 			<h5 class="caption">PACT OF THE VAMPIRIC TOUCH</h5>
@@ -239,7 +224,7 @@
 			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_ALMIGHTY_VAMPIRE" level="20"/>
 		</rules>
 	</element>
-	<element name="Unarmored Defense" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_UNARMORED_DEFENSE">
+	<element name="Unarmored Defense" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_UNARMORED_DEFENSE">
 		<description>
 		</description>
 		<sheet>
@@ -255,21 +240,21 @@
 			<stat name="ac:calculation" value="ac:unarmored defense eldritch glaive" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Defense (Eldritch Glaive)" />
 		</rules>
 	</element>
-	<element name="Creature of the Dark" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_CREATURE_OF_THE_DARK">
+	<element name="Creature of the Dark" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_CREATURE_OF_THE_DARK">
 		<description>
 		</description>
 		<sheet>
 			<description>You can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check, or using your hands. This works as Spider Climb. You also gain Darkvision of 120 feet, this darkvision works even in magical darkness.</description>
 		</sheet>
 	</element>
-	<element name="Flight of the Bat" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_FLIGHT_OF_THE_BAT">
+	<element name="Flight of the Bat" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_FLIGHT_OF_THE_BAT">
 		<description>
 		</description>
 		<sheet action="Bonus Action">
 			<description>You sprout a pair of bat wings from your back gaining a flying speed of {{speed}} ft. The wings last unti you dismiss them as a bonus action.</description>
 		</sheet>
 	</element>
-	<element name="Almighty Vampire" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_ALMIGHTY_VAMPIRE">
+	<element name="Almighty Vampire" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_ALMIGHTY_VAMPIRE">
 		<description>
 		</description>
 		<sheet alt="Almighty Vampire Damage Resistance">
@@ -285,7 +270,7 @@
 			<description>Your Darkvision now allows you to see through Darkness and Magical Darkness as well as you can see through daylight.</description>
 		</sheet>
 	</element>
-	<element name="Pact of the Flame Blade" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE">
+	<element name="Pact of the Flame Blade" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE">
 		<supports>Pact of the Blade</supports>
 		<description>
 			<h5 class="caption">PACT OF THE FLAME BLADE</h5>
@@ -322,7 +307,7 @@
 			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_INFERNO" level="20"/>
 		</rules>
 	</element>
-	<element name="Fiery Blood" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_FIERY_BLOOD">
+	<element name="Fiery Blood" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_FIERY_BLOOD">
 		<description>
 		</description>
 		<sheet action="Reaction">
@@ -335,7 +320,7 @@
 			<stat name="fiery blood:count" value="1" bonus="base" level="9" />
 		</rules>
 	</element>
-	<element name="Aura of Flame" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_AURA_OF_FLAME">
+	<element name="Aura of Flame" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_AURA_OF_FLAME">
 		<description>
 		</description>
 		<sheet>
@@ -355,14 +340,14 @@
 			<stat name="innate speed:misc" value="eldritch glaive:aura of flame" bonus="eldritch glaive" requirements="[innate speed:1]" />
 		</rules>
 	</element>
-	<element name="Backdraft" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_BACKDRAFT">
+	<element name="Backdraft" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_BACKDRAFT">
 		<description>
 		</description>
 		<sheet>
 			<description>You become immune to Fire damage and resistant to poison damage. In addition your Aura of Flame now only harms creatures of your choice.  Any chosen creatures have their speed halved while in your aura.</description>
 		</sheet>
 	</element>
-	<element name="Inferno" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_INFERNO">
+	<element name="Inferno" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_INFERNO">
 		<description>
 		</description>
 		<sheet alt="Damage Resistance">
@@ -378,7 +363,7 @@
 			<description>When you create a Flame Blade you can now make a pair of Flame Blades. The second weapon can be used to make an attack as a bonus action using the two-weapon fighting rules.</description>
 		</sheet>
 	</element>
-	<element name="Pact of the Shadow Blade" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE">
+	<element name="Pact of the Shadow Blade" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE">
 		<supports>Pact of the Blade</supports>
 		<description>
 			<h5 class="caption">PACT OF THE SHADOW BLADE</h5>
@@ -417,7 +402,7 @@
 			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_UTTERDARK" level="20"/>
 		</rules>
 	</element>
-	<element name="Sight of the Shadows" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_SIGHT_OF_THE_SHADOWS">
+	<element name="Sight of the Shadows" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_SIGHT_OF_THE_SHADOWS">
 		<description>
 		</description>
 		<sheet display="false">
@@ -428,7 +413,7 @@
 			<grant type="Spell" id="ID_SA_MR_SPELL_DEVILS_SIGHT"/>
 		</rules>
 	</element>
-	<element name="Shadow of Moil" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_SHADOW_OF_MOIL">
+	<element name="Shadow of Moil" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_SHADOW_OF_MOIL">
 		<description>
 		</description>
 		<sheet>
@@ -439,7 +424,7 @@
 			<stat name="stealth:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Silent as a Shadow" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_SILENT_AS_A_SHADOW">
+	<element name="Silent as a Shadow" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_SILENT_AS_A_SHADOW">
 		<description>
 		</description>
 		<sheet>
@@ -450,7 +435,7 @@
 			<stat name="dexterity:save:misc" value="10" />
 		</rules>
 	</element>
-	<element name="Utterdark" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_UTTERDARK">
+	<element name="Utterdark" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_UTTERDARK">
 		<description>
 		</description>
 		<sheet alt="Damage Resistance">
@@ -470,7 +455,7 @@
 			<stat name="stealth:passive" value="15" />
 		</rules>
 	</element>
-	<element name="Pact of the Stormbow" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_STORMBOW">
+	<element name="Pact of the Stormbow" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_STORMBOW">
 		<supports>Pact of the Blade</supports>
 		<description>
 			<h5 class="caption">PACT OF THE STORMBOW</h5>
@@ -517,7 +502,7 @@
 			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_STORMBOW_MAELSTROM" level="20"/>
 		</rules>
 	</element>
-	<element name="Stormsoul" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_STORMBOW_STORMSOUL">
+	<element name="Stormsoul" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_STORMBOW_STORMSOUL">
 		<description>
 		</description>
 		<sheet action="Reaction">
@@ -526,7 +511,7 @@
 			<description level="13">You gain immunity to thunder and lightning damages. You cannot be deafened or blinded.</description>
 		</sheet>
 	</element>
-	<element name="Thunder Step" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_STORMBOW_THUNDER_STEP">
+	<element name="Thunder Step" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_STORMBOW_THUNDER_STEP">
 		<description>
 		</description>
 		<sheet>
@@ -543,14 +528,14 @@
 			<stat name="thunder step:count" value="1" bonus="stormbow" level="19"/>	
 		</rules>
 	</element>
-	<element name="Investiture of Air" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_STORMBOW_INVESTITURE_OF_AIR">
+	<element name="Investiture of Air" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_STORMBOW_INVESTITURE_OF_AIR">
 		<description>
 		</description>
 		<sheet>
 			<description action="Action">As an Action you can cause swirling winds to engulf you. Ranged weapon attacks made against you have disadvantage on the attack roll. You gain a flying speed of 60 feet. You can use your action to create a 15-foot cube of within 60 feet of your.  Each creature must take a Constitution saving throw and takes 2d10 bludgeoning damage on a fail and is pushed 10 feet, it takes half as much damage on a success.</description>
 		</sheet>
 	</element>
-	<element name="Maelstrom" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_STORMBOW_MAELSTROM">
+	<element name="Maelstrom" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_STORMBOW_MAELSTROM">
 		<description>
 		</description>
 		<sheet alt="Damage Resistance">
@@ -569,7 +554,7 @@
 			<description>Each creature in your space must make a Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from you in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.  If the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone.</description>
 		</sheet>
 	</element>
-	<element name="Pact of the Ice Knife" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE">
+	<element name="Pact of the Ice Knife" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE">
 		<supports>Pact of the Blade</supports>
 		<description>
 			<h5 class="caption">PACT OF THE ICE KNIFE</h5>
@@ -626,7 +611,7 @@
 			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_MAELSTROM" level="20"/>
 		</rules>
 	</element>
-	<element name="Armor of Agathys" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_ARMOR_OF_AGATHYS">
+	<element name="Armor of Agathys" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_ARMOR_OF_AGATHYS">
 		<description>
 		</description>
 		<sheet>
@@ -644,7 +629,7 @@
 			<stat name="armor of agathys:count" value="5" level="19" />
 		</rules>
 	</element>
-	<element name="Control Ice and Snow" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_CONTROL_ICE_AND_SNOW">
+	<element name="Control Ice and Snow" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_CONTROL_ICE_AND_SNOW">
 		<description>
 		</description>
 		<sheet>
@@ -660,7 +645,7 @@
 			<stat name="thunder step:count" value="1" bonus="stormbow" level="19"/>	
 		</rules>
 	</element>
-	<element name="Investiture of Ice" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_INVESTITURE_OF_ICE">
+	<element name="Investiture of Ice" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_INVESTITURE_OF_ICE">
 		<description>
 		</description>
 		<sheet>
@@ -669,7 +654,7 @@
 			<description action="Action">Create a 15-foot cone of freezing wind extending from your outstretched hand in a direction you choose. Each creature in the cone must make a Constitution saving throw, take 4d6 cold damage on a failed save and have its speed halved until the start of your next turn, or half as much on a successful one.</description>
 		</sheet>
 	</element>
-	<element name="Maelstrom" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_MAELSTROM">
+	<element name="Maelstrom" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_MAELSTROM">
 		<description>
 		</description>
 		<sheet alt="Damage Resistance">
@@ -688,7 +673,7 @@
 			<description>Each creature in your space must make a Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from you in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.  If the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone.</description>
 		</sheet>
 	</element>
-	<element name="Ability Score Improvement" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_ABILITY_SCORE_IMPROVEMENT">
+	<element name="Ability Score Improvement" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_ABILITY_SCORE_IMPROVEMENT">
 		<compendium display="false" />
 		<description>
 			<p>When you reach 4th, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
@@ -706,7 +691,7 @@
 	</element>
 
 	<!-- Eldritch Glaive Invocations -->
-	<element name="ARMOR_OF_SHADOWS" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_ARMOR_OF_SHADOWS">
+	<element name="ARMOR_OF_SHADOWS" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_ARMOR_OF_SHADOWS">
 		<supports>Eldritch Glaive Invocation</supports>
 		<description>
 			<p>You can cast mage armor on yourself at will, without expending a Hex slot or material components.</p>
@@ -718,7 +703,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_MAGE_ARMOR" />
 		</rules>
 	</element>
-	<element name="Ascendant Step" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_ASCENDANT_STEP">
+	<element name="Ascendant Step" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_ASCENDANT_STEP">
 		<supports>Eldritch Glaive Invocation</supports>
 		<prerequisite>9th level</prerequisite>
 		<requirements>[level:9]</requirements>
@@ -732,7 +717,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_LEVITATE" />
 		</rules>
 	</element>
-	<element name="Aspect of the Moon" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_ASPECT_OF_THE_MOON">
+	<element name="Aspect of the Moon" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_ASPECT_OF_THE_MOON">
 		<supports>Eldritch Glaive Invocation</supports>
 		<description>
 			<p>You no longer need to sleep and can’t be forced to sleep by any means. To gain the benefits of a long rest, you can spend all 8 hours doing light activity, such as keeping watch.</p>
@@ -741,7 +726,7 @@
 			<description>You no longer need to sleep and can’t be forced to sleep by any means.</description>
 		</sheet>
 	</element>
-	<element name="Beast Speech" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_BEAST_SPEECH">
+	<element name="Beast Speech" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_BEAST_SPEECH">
 		<supports>Eldritch Glaive Invocation</supports>
 		<description>
 			<p>You can cast speak with animals at will, without expending a Hex slot.</p>
@@ -753,7 +738,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS" />
 		</rules>
 	</element>
-	<element name="Beguiling Influence" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_BEGUILING_INFLUENCE">
+	<element name="Beguiling Influence" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_BEGUILING_INFLUENCE">
 		<supports>Eldritch Glaive Invocation</supports>
 		<description>
 			<p>You gain proficiency in the Deception and Persuasion skills.</p>
@@ -766,7 +751,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
 		</rules>
 	</element>
-	<element name="Cloak of Flies" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_CLOAK_OF_FLIES">
+	<element name="Cloak of Flies" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_CLOAK_OF_FLIES">
 		<supports>Eldritch Glaive Invocation</supports>
 		<prerequisite>5th level</prerequisite>
 		<requirements>[level:5]</requirements>
@@ -778,7 +763,7 @@
 			<description>Create a 5 ft aura of buzzing flies. Gain Advantage on Charisma (Intimidation) checks but disadvantage on all other Charisma checks. Any Creature that starts its turn in the aura takes {{charisma:modifier}} damage.</description>
 		</sheet>
 	</element>
-	<element name="Devil's Sight" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_DEVILS_SIGHT">
+	<element name="Devil's Sight" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_DEVILS_SIGHT">
 		<supports>Eldritch Glaive Invocation</supports>
 		<description>
 			<p>You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.</p>
@@ -787,7 +772,7 @@
 			<description>You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.</description>
 		</sheet>
 	</element>
-	<element name="Eldritch Sight" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_ELDRITCH_SIGHT">
+	<element name="Eldritch Sight" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_ELDRITCH_SIGHT">
 		<supports>Eldritch Glaive Invocation</supports>
 		<description>
 			<p>You can cast detect magic at will, without expending a Hex slot.</p>
@@ -799,7 +784,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" />
 		</rules>
 	</element>
-	<element name="Eldritch Smite" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_ELDRITCH_SMITE">
+	<element name="Eldritch Smite" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_ELDRITCH_SMITE">
 		<supports>Eldritch Glaive Invocation</supports>
 		<prerequisite>5th level, Pact of the Blade</prerequisite>
 		<requirements>[level:5],ID_SA_MR_CLASS_FEATURE_PACT_OF_THE_BLADE</requirements>
@@ -810,7 +795,7 @@
 			<description>When you hit a creature with your pact weapon, you can expend an Eldritch Glaive Hex Slot to deal an extra 1d8 force damage, plus another 1d8 level of the Hex Slot. Knock the target prone if it is Huge or smaller.</description>
 		</sheet>
 	</element>
-	<element name="Eyes of the Rune Keeper" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_EYES_OF_THE_RUNE_KEEPER">
+	<element name="Eyes of the Rune Keeper" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_EYES_OF_THE_RUNE_KEEPER">
 		<supports>Eldritch Glaive Invocation</supports>
 		<description>
 			<p>You can read all writing.</p>
@@ -819,7 +804,7 @@
 			<description>You can read all writing.</description>
 		</sheet>
 	</element>
-	<element name="Fiendish Vigor" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_FIENDISH_VIGOR">
+	<element name="Fiendish Vigor" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_FIENDISH_VIGOR">
 		<supports>Eldritch Glaive Invocation</supports>
 		<description>
 			<p>You can cast false life on yourself at will as a 1st-level spell, without expending a Hex slot or material components.</p>
@@ -831,7 +816,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" />
 		</rules>
 	</element>
-	<element name="Gaze of Two Minds" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_GAZE_OF_TWO_MINDS">
+	<element name="Gaze of Two Minds" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_GAZE_OF_TWO_MINDS">
 		<supports>Eldritch Glaive Invocation</supports>
 		<description>
 			<p>You can use your action to touch a willing humanoid and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can use your action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. While perceiving through the other creature’s senses, you benefit from any special senses possessed by that creature, and you are blinded and deafened to your own surroundings.</p>
@@ -840,7 +825,7 @@
 			<description>You can use your action to touch a willing humanoid and perceive through its senses until the end of your next turn. While perceiving through the other creature’s senses, you benefit from any special senses possessed by that creature, and you are blinded and deafened to your own surroundings.</description>
 		</sheet>
 	</element>
-	<element name="Ghostly Gaze" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_GHOSTLY_GAZE">
+	<element name="Ghostly Gaze" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_GHOSTLY_GAZE">
 		<supports>Eldritch Glaive Invocation</supports>
 		<prerequisite>7th level</prerequisite>
 		<requirements>[level:7]</requirements>
@@ -851,7 +836,7 @@
 			<description>You can see through solid objects to a range of 30 feet.</description>
 		</sheet>
 	</element>
-	<element name="Gift of the Depths" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_GIFT_OF_THE_DEPTHS">
+	<element name="Gift of the Depths" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_GIFT_OF_THE_DEPTHS">
 		<supports>Eldritch Glaive Invocation</supports>
 		<prerequisite>5th level</prerequisite>
 		<requirements>[level:5]</requirements>
@@ -865,7 +850,7 @@
 			<stat name="innate speed:swim" value="innate speed" bonus="base" />
 		</rules>
 	</element>
-	<element name="Improved Pact Weapon" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_IMPROVED_PACT_WEAPON">
+	<element name="Improved Pact Weapon" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_IMPROVED_PACT_WEAPON">
 		<supports>Eldritch Glaive Invocation</supports>
 		<prerequisite>Pact of the Blade</prerequisite>
 		<requirements>ID_SA_MR_CLASS_FEATURE_PACT_OF_THE_BLADE</requirements>
@@ -876,7 +861,7 @@
 			<description>You can use any weapon you summon with your Pact of the Blade feature as a spellcasting focus for your Eldritch Glaive abilities.</description>
 		</sheet>
 	</element>
-	<element name="Lifedrinker" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_LIFEDRINKER">
+	<element name="Lifedrinker" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_LIFEDRINKER">
 		<supports>Eldritch Glaive Invocation</supports>
 		<prerequisite>Pact of the Blade, 12th level</prerequisite>
 		<requirements>ID_SA_MR_CLASS_FEATURE_PACT_OF_THE_BLADE,[level:12]</requirements>
@@ -891,7 +876,7 @@
 			<stat name="lifedrinker:damage" value="charisma:modifier" />
 		</rules>
 	</element>
-	<element name="Maddening Hex" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_MADDENING_HEX">
+	<element name="Maddening Hex" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_MADDENING_HEX">
 		<supports>Eldritch Glaive Invocation</supports>
 		<prerequisite>Pact of the Blade, 5th level</prerequisite>
 		<requirements>ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_FOCUS,[level:5]</requirements>
@@ -906,7 +891,7 @@
 			<stat name="maddening hex:damage" value="charisma:modifier" />
 		</rules>
 	</element>
-	<element name="Mask of Many Faces" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_MASK_OF_MANY_FACES">
+	<element name="Mask of Many Faces" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_MASK_OF_MANY_FACES">
 		<supports>Eldritch Glaive Invocation</supports>
 		<description>
 			<p>You can cast disguise self at will, without expending a Hex slot.</p>
@@ -918,7 +903,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" />
 		</rules>
 	</element>
-	<element name="Master of Myriad Forms" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_MASTER_OF_MYRIAD_FORMS">
+	<element name="Master of Myriad Forms" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_MASTER_OF_MYRIAD_FORMS">
 		<supports>Eldritch Glaive Invocation</supports>
 		<prerequisite>15th level</prerequisite>
 		<requirements>[level:15]</requirements>
@@ -932,7 +917,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" />
 		</rules>
 	</element>
-	<element name="Misty Visions" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_MISTY_VISIONS">
+	<element name="Misty Visions" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_MISTY_VISIONS">
 		<supports>Eldritch Glaive Invocation</supports>
 		<description>
 			<p>You can cast silent image at will, without expending a Hex slot.</p>
@@ -944,7 +929,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_SILENT_IMAGE" />
 		</rules>
 	</element>
-	<element name="One with Shadows" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_ONE_WITH_SHADOWS">
+	<element name="One with Shadows" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_ONE_WITH_SHADOWS">
 		<supports>Eldritch Glaive Invocation</supports>
 		<prerequisite>5th level</prerequisite>
 		<requirements>[level:5]</requirements>
@@ -955,7 +940,7 @@
 			<description>When you are in an area of dim light or darkness, you can use your action to become invisible until you move or take an action or a reaction.</description>
 		</sheet>
 	</element>
-	<element name="Otherworldly Leap" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_OTHERWORLDLY_LEAP">
+	<element name="Otherworldly Leap" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_OTHERWORLDLY_LEAP">
 		<supports>Eldritch Glaive Invocation</supports>
 		<prerequisite>9th level</prerequisite>
 		<requirements>[level:9]</requirements>
@@ -969,7 +954,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_JUMP" />
 		</rules>
 	</element>
-	<element name="Relentless Hex" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_RELENTLESS_HEX">
+	<element name="Relentless Hex" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_RELENTLESS_HEX">
 		<supports>Eldritch Glaive Invocation</supports>
 		<prerequisite>Pact of the Blade, 7th level</prerequisite>
 		<requirements>ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_FOCUS,[level:7]</requirements>
@@ -980,7 +965,7 @@
 			<description>When you target a creature with your Eldritch Glaive Focus, you can magically teleport up to 30 feet to an unoccupied space you can see within 5 feet of the target.</description>
 		</sheet>
 	</element>
-	<element name="Shroud of Shadow" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_SHROUD_OF_SHADOW">
+	<element name="Shroud of Shadow" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_SHROUD_OF_SHADOW">
 		<supports>Eldritch Glaive Invocation</supports>
 		<prerequisite>15th level</prerequisite>
 		<requirements>[level:15]</requirements>
@@ -994,7 +979,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" />
 		</rules>
 	</element>
-	<element name="Thirsting Blade" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_THIRSTING_BLADE">
+	<element name="Thirsting Blade" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_THIRSTING_BLADE">
 		<supports>Eldritch Glaive Invocation</supports>
 		<prerequisite>Pact of the Blade, 5th level</prerequisite>
 		<requirements>ID_SA_MR_CLASS_FEATURE_PACT_OF_THE_BLADE,[level:5]</requirements>
@@ -1005,7 +990,7 @@
 			<description>You can attack with your pact weapon twice, instead of once, whenever you take the Attack action on your turn.</description>
 		</sheet>
 	</element>
-	<element name="Tomb of Levistus" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_TOMB_OF_LEVISTUS">
+	<element name="Tomb of Levistus" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_TOMB_OF_LEVISTUS">
 		<supports>Eldritch Glaive Invocation</supports>
 		<prerequisite>5th level</prerequisite>
 		<requirements>[level:5]</requirements>
@@ -1038,7 +1023,7 @@
 			<stat name="tomb of levistus:count" value="10" level="20" />
 		</rules>	
 	</element>
-	<element name="Trickster's Escape" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_TRICKSTERS_ESCAPE">
+	<element name="Trickster's Escape" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_TRICKSTERS_ESCAPE">
 		<supports>Eldritch Glaive Invocation</supports>
 		<prerequisite>7th level</prerequisite>
 		<requirements>[level:7]</requirements>
@@ -1052,7 +1037,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" />
 		</rules>
 	</element>
-	<element name="Visions of Distant Realms" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_VISIONS_OF_DISTANT_REALMS">
+	<element name="Visions of Distant Realms" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_VISIONS_OF_DISTANT_REALMS">
 		<supports>Eldritch Glaive Invocation</supports>
 		<prerequisite>15th level</prerequisite>
 		<requirements>[level:15]</requirements>
@@ -1066,7 +1051,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_ARCANE_EYE" />
 		</rules>
 	</element>
-	<element name="Whispers of the Grave" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_WHISPERS_OF_THE_GRAVE">
+	<element name="Whispers of the Grave" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_WHISPERS_OF_THE_GRAVE">
 		<supports>Eldritch Glaive Invocation</supports>
 		<prerequisite>9th level</prerequisite>
 		<requirements>[level:9]</requirements>
@@ -1080,7 +1065,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" />
 		</rules>
 	</element>
-	<element name="Witch Sight" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_WITCH_SIGHT">
+	<element name="Witch Sight" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_WITCH_SIGHT">
 		<supports>Eldritch Glaive Invocation</supports>
 		<prerequisite>15th level</prerequisite>
 		<requirements>[level:15]</requirements>
