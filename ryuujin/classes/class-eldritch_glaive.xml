@@ -3,7 +3,7 @@
 	<info>
 		<name>The Eldritch Glaive</name>
 		<description> Hexblade but more focused on their weapon and without all that pesky spellcasting. They choose a weapon like spell to focus on. Such as Vampiric Touch or Flame Blade.</description>
-		<update version="0.0.8">
+		<update version="0.0.9">
 			<file name="class-eldrictch_glaive.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/classes/class-eldritch_glaive.xml" />
 		</update>
 	</info>
@@ -59,7 +59,7 @@
 				<thead>
 					<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-5">Hex Slots</td><td class="col-15">Hex Level</td><td class="col-15">Invocations Known</td></tr>
 				</thead>
-				<tr><td> 1st</td><td class="left">Aspect of the Glaive, Hex Slots, Eldritch Glaive’s Focus, Hex Warrior</td><td>1</td><td>1st</td><td>—</td></tr>
+				<tr><td> 1st</td><td class="left">Hex Slots, Eldritch Glaive’s Focus, Hex Warrior</td><td>1</td><td>1st</td><td>—</td></tr>
 				<tr><td> 2nd</td><td class="left">Eldritch Invocations</td><td>2</td><td>1st</td><td>2</td></tr>
 				<tr><td> 3rd</td><td class="left">Pact of the Blade</td><td>2</td><td>2nd</td><td>2</td></tr>
 				<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>2</td><td>2nd</td><td>2</td></tr>
@@ -80,7 +80,6 @@
 				<tr><td>19th</td><td class="left">Ability Score Improvement</td><td>4</td><td>5th</td><td>8</td></tr>
 				<tr><td>20th</td><td class="left">Eldritch Master</td><td>4</td><td>5th</td><td>8</td></tr>
 			</table>
-			<div element="ID_SA_MR_CLASS_FEATURE_ASPECT_OF_THE_GLAIVE" />
 			<div element="ID_SA_MR_CLASS_FEATURE_HEX_SLOTS" />
 			<div element="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_FOCUS" />
 			<div element="ID_SA_MR_CLASS_FEATURE_HEX_WARRIOR" />
@@ -105,7 +104,6 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_SA_MR_MULTICLASS_ELDRICTH_GLAIVE" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_SA_MR_MULTICLASS_ELDRICTH_GLAIVE" />
 			<select type="Proficiency" name="Skill Proficiency, Eldritch Glaive" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILLINTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_RELIGION" number="2" requirements="!ID_SA_MR_MULTICLASS_ELDRICTH_GLAIVE" />			
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_ASPECT_OF_THE_GLAIVE" level="1" />
 			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_HEX_SLOTS" level="1" />
 			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_HEX_WARRIOR" level="1" />
 			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_FOCUS" level="1" />
@@ -125,14 +123,6 @@
 				<select type="Proficiency" name="Skill Proficiency, Eldritch Glaive" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILLINTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_RELIGION" />	
 			</rules>
 		</multiclass>
-	</element>
-	<element name="Aspect of the Glaive" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ASPECT_OF_THE_GLAIVE">
-		<description>
-			<p>At 1st level, … some kind of archetype ability, WIP. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level.</p>
-		</description>
-		<sheet>
-			<description>WIP</description>
-		</sheet>
 	</element>
 	<element name="Hex Slots" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_HEX_SLOTS">
 		<description>
