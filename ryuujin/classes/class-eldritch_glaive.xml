@@ -3,7 +3,7 @@
 	<info>
 		<name>The Eldritch Glaive</name>
 		<description> Hexblade but more focused on their weapon and without all that pesky spellcasting. They choose a weapon like spell to focus on. Such as Vampiric Touch or Flame Blade.</description>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="class-eldrictch_glaive.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/classes/class-eldritch_glaive.xml" />
 		</update>
 	</info>
