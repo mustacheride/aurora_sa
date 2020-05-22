@@ -811,7 +811,7 @@
 	<element name="Eldritch Smite" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_ELDRITCH_SMITE">
 		<supports>Eldritch Glaive Invocation</supports>
 		<prerequisite>5th level, Pact of the Blade</prerequisite>
-		<requirements>[level:5]</requirements>
+		<requirements>[level:5],ID_SA_MR_CLASS_FEATURE_PACT_OF_THE_BLADE</requirements>
 		<description>
 			<p>Once per turn when you hit a creature with your pact weapon, you can expend an Eldritch Glaive Hex slot to deal an extra 1d8 force damage to the target, plus another 1d8 per level of the Hex slot, and you can knock the target prone if it is Huge or smaller.</p>
 		</description>
@@ -839,5 +839,264 @@
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" />
 		</rules>
+	</element>
+	<element name="Gaze of Two Minds" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_GAZE_OF_TWO_MINDS">
+		<supports>Eldritch Glaive Invocation</supports>
+		<description>
+			<p>You can use your action to touch a willing humanoid and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can use your action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. While perceiving through the other creature’s senses, you benefit from any special senses possessed by that creature, and you are blinded and deafened to your own surroundings.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can use your action to touch a willing humanoid and perceive through its senses until the end of your next turn. While perceiving through the other creature’s senses, you benefit from any special senses possessed by that creature, and you are blinded and deafened to your own surroundings.</description>
+		</sheet>
+	</element>
+	<element name="Ghostly Gaze" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_GHOSTLY_GAZE">
+		<supports>Eldritch Glaive Invocation</supports>
+		<prerequisite>7th level</prerequisite>
+		<requirements>[level:7]</requirements>
+		<description>
+			<p>As an action, you gain the ability to see through solid objects to a range of 30 feet. Within that range, you have darkvision if you don’t already have it. This special sight lasts for 1 minute or until your concentration ends (as if you were concentrating on a spell). During that time, you perceive objects as ghostly, transparent images.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can see through solid objects to a range of 30 feet.</description>
+		</sheet>
+	</element>
+	<element name="Gift of the Depths" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_GIFT_OF_THE_DEPTHS">
+		<supports>Eldritch Glaive Invocation</supports>
+		<prerequisite>5th level</prerequisite>
+		<requirements>[level:5]</requirements>
+		<description>
+			<p>You can breathe underwater, and you gain a swimming speed equal to your walking speed.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can breathe underwater, and you gain a swimming speed equal to your walking speed.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:swim" value="innate speed" bonus="base" />
+	</element>
+	<element name="Improved Pact Weapon" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_IMPROVED_PACT_WEAPON">
+		<supports>Eldritch Glaive Invocation</supports>
+		<prerequisite>Pact of the Blade</prerequisite>
+		<requirements>ID_SA_MR_CLASS_FEATURE_PACT_OF_THE_BLADE</requirements>
+		<description>
+			<p>You can use any weapon you summon with your Pact of the Blade feature as a spellcasting focus for your Eldritch Glaive abilities. In addition, the weapon gains a +1 bonus to its attack and damage rolls, unless it is a magic weapon that already has a bonus to those rolls. Finally, the weapon you conjure can be a shortbow, longbow, light crossbow, or heavy crossbow.</p>
+		</description>
+		<sheet>
+			<description>You can use any weapon you summon with your Pact of the Blade feature as a spellcasting focus for your Eldritch Glaive abilities.</description>
+		</sheet>
+	</element>
+	<element name="Lifedrinker" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_LIFEDRINKER">
+		<supports>Eldritch Glaive Invocation</supports>
+		<prerequisite>Pact of the Blade, 12th level</prerequisite>
+		<requirements>ID_SA_MR_CLASS_FEATURE_PACT_OF_THE_BLADE,[level:12]</requirements>
+		<description>
+			<p>When you hit a creature with your pact weapon, the creature takes extra untyped magic damage equal to your Charisma modifier (minimum 1).</p>
+		</description>
+		<sheet>
+			<description>When you hit a creature with your pact weapon, the creature takes extra {{lifedrinker:damage}} untyped magic damage.</description>
+		</sheet>
+		<rules>
+			<stat name="lifedrinker:damage" value="1" bonus="base" />
+			<stat name="lifedrinker:damage" value="charisma:modifier" />
+		</rules>
+	</element>
+	<element name="Maddening Hex" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_MADDENING_HEX">
+		<supports>Eldritch Glaive Invocation</supports>
+		<prerequisite>Pact of the Blade, 5th level</prerequisite>
+		<requirements>ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_FOCUS,[level:5]</requirements>
+		<description>
+			<p>As a bonus action, you cause a psychic disturbance around the target affected by your Eldritch Glaive’s Focus. When you do so, you deal psychic damage to the target and each creature of your choice that you can see within 5 feet of it. The psychic damage equals your Charisma modifier (minimum of 1 damage). To use this invocation, you must be able to see the Focused target, and it must be within 30 feet of you.</p>
+		</description>
+		<sheet action="Bonus">
+			<description>When you target a creature with your Eldritch Glaive Focus, you deal {{maddening hex:damage}} psychic damage to the target and each creature of your choice that you can see within 5 feet of it.</description>
+		</sheet>
+		<rules>
+			<stat name="maddening hex:damage" value="1" bonus="base" />
+			<stat name="maddening hex:damage" value="charisma:modifier" />
+		</rules>
+	</element>
+	<element name="Mask of Many Faces" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_MASK_OF_MANY_FACES">
+		<supports>Eldritch Glaive Invocation</supports>
+		<description>
+			<p>You can cast disguise self at will, without expending a Hex slot.</p>
+		</description>
+		<sheet>
+			<description>You can cast disguise self at will, without expending a Hex slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" />
+		</rules>
+	</element>
+	<element name="Master of Myriad Forms" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_MASTER_OF_MYRIAD_FORMS">
+		<supports>Eldritch Glaive Invocation</supports>
+		<prerequisite>15th level</prerequisite>
+		<requirements>[level:15]</requirements>
+		<description>
+			<p>You can cast alter self at will, without expending a Hex slot.</p>
+		</description>
+		<sheet>
+			<description>You can cast alter self at will, without expending a Hex slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" />
+		</rules>
+	</element>
+	<element name="Misty Visions" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_MISTY_VISIONS">
+		<supports>Eldritch Glaive Invocation</supports>
+		<description>
+			<p>You can cast silent image at will, without expending a Hex slot.</p>
+		</description>
+		<sheet>
+			<description>You can cast silent image at will, without expending a Hex slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SILENT_IMAGE" />
+		</rules>
+	</element>
+	<element name="One with Shadows" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_ONE_WITH_SHADOWS">
+		<supports>Eldritch Glaive Invocation</supports>
+		<prerequisite>5th level</prerequisite>
+		<requirements>[level:5]</requirements>
+		<description>
+			<p>When you are in an area of dim light or darkness, you can use your action to become invisible until you move or take an action or a reaction.</p>
+		</description>
+		<sheet>
+			<description>When you are in an area of dim light or darkness, you can use your action to become invisible until you move or take an action or a reaction.</description>
+		</sheet>
+	</element>
+	<element name="Otherworldly Leap" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_OTHERWORLDLY_LEAP">
+		<supports>Eldritch Glaive Invocation</supports>
+		<prerequisite>9th level</prerequisite>
+		<requirements>[level:9]</requirements>
+		<description>
+			<p>You can cast jump on yourself at will, without expending a Hex slot or material components.</p>
+		</description>
+		<sheet>
+			<description>You can cast jump on yourself at will, without expending a Hex slot or material components.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_JUMP" />
+		</rules>
+	</element>
+	<element name="Relentless Hex" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_RELENTLESS_HEX">
+		<supports>Eldritch Glaive Invocation</supports>
+		<prerequisite>Pact of the Blade, 7th level</prerequisite>
+		<requirements>ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_FOCUS,[level:7]</requirements>
+		<description>
+			<p>Your Focus creates a temporary bond between you and your target. As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see within 5 feet of the target Focused by your Eldritch Glaive’s Focus.  To teleport in this way, you must be able to see the cursed target.</p>
+		</description>
+		<sheet action="Bonus">
+			<description>When you target a creature with your Eldritch Glaive Focus, you can magically teleport up to 30 feet to an unoccupied space you can see within 5 feet of the target.</description>
+		</sheet>
+	</element>
+	<element name="Shroud of Shadow" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_SHROUD_OF_SHADOW">
+		<supports>Eldritch Glaive Invocation</supports>
+		<prerequisite>15th level</prerequisite>
+		<requirements>[level:15]</requirements>
+		<description>
+			<p>You can cast invisibility at will, without expending a Hex slot.</p>
+		</description>
+		<sheet>
+			<description>You can cast invisibility at will, without expending a Hex slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" />
+		</rules>
+	</element>
+	<element name="Thirsting Blade" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_THIRSTING_BLADE">
+		<supports>Eldritch Glaive Invocation</supports>
+		<prerequisite>Pact of the Blade, 5th level</prerequisite>
+		<requirements>ID_SA_MR_CLASS_FEATURE_PACT_OF_THE_BLADE,[level:5]</requirements>
+		<description>
+			<p>You can attack with your pact weapon twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack with your pact weapon twice, instead of once, whenever you take the Attack action on your turn.</description>
+		</sheet>
+	</element>
+	<element name="Tomb of Levistus" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_TOMB_OF_LEVISTUS">
+		<supports>Eldritch Glaive Invocation</supports>
+		<prerequisite>5th level</prerequisite>
+		<requirements>[level:5]</requirements>
+		<description>
+			<p>As a reaction when you take damage, you can entomb yourself in ice, which melts away at the end of your next turn. You gain 10 temporary hit points per warlock level, which take as much of the triggering damage as possible. Immediately after you take the damage, you gain vulnerability to fire damage, your speed is reduced to 0, and you are incapacitated. These effects, including any remaining temporary hit points, all end when the ice melts.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When you take damage, are shroueded in ice and gain {{tomb of levistus:count}} temporary hit points which take as much triggering damage as possible. You gain vulnerability to fire damage, your speed is reduced to 0 and you are incapacitated. These effects last until the ice melts.</description>
+		</sheet>
+		<rules>
+			<stat name="tomb of levistus:count" value="10" />
+			<stat name="tomb of levistus:count" value="10" level="2" />
+			<stat name="tomb of levistus:count" value="10" level="3" />
+			<stat name="tomb of levistus:count" value="10" level="4" />
+			<stat name="tomb of levistus:count" value="10" level="5" />
+			<stat name="tomb of levistus:count" value="10" level="6" />
+			<stat name="tomb of levistus:count" value="10" level="7" />
+			<stat name="tomb of levistus:count" value="10" level="8" />
+			<stat name="tomb of levistus:count" value="10" level="9" />
+			<stat name="tomb of levistus:count" value="10" level="10" />
+			<stat name="tomb of levistus:count" value="10" level="11" />
+			<stat name="tomb of levistus:count" value="10" level="12" />
+			<stat name="tomb of levistus:count" value="10" level="13" />
+			<stat name="tomb of levistus:count" value="10" level="14" />
+			<stat name="tomb of levistus:count" value="10" level="15" />
+			<stat name="tomb of levistus:count" value="10" level="16" />
+			<stat name="tomb of levistus:count" value="10" level="17" />
+			<stat name="tomb of levistus:count" value="10" level="18" />
+			<stat name="tomb of levistus:count" value="10" level="19" />
+			<stat name="tomb of levistus:count" value="10" level="20" />
+		</rules>	
+	</element>
+	<element name="Trickster's Escape" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_TRICKSTERS_ESCAPE">
+		<supports>Eldritch Glaive Invocation</supports>
+		<prerequisite>7th level</prerequisite>
+		<requirements>[level:7]</requirements>
+		<description>
+			<p>You can cast freedom of movement at will, without expending a Hex slot.</p>
+		</description>
+		<sheet>
+			<description>You can cast freedom of movement at will, without expending a Hex slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" />
+		</rules>
+	</element>
+	<element name="Visions of Distant Realms" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_VISIONS_OF_DISTANT_REALMS">
+		<supports>Eldritch Glaive Invocation</supports>
+		<prerequisite>15th level</prerequisite>
+		<requirements>[level:15]</requirements>
+		<description>
+			<p>You can cast arcane eye at will, without expending a Hex slot.</p>
+		</description>
+		<sheet>
+			<description>You can cast arcane eye at will, without expending a Hex slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ARCANE_EYE" />
+		</rules>
+	</element>
+	<element name="Whispers of the Grave" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_WHISPERS_OF_THE_GRAVE">
+		<supports>Eldritch Glaive Invocation</supports>
+		<prerequisite>9th level</prerequisite>
+		<requirements>[level:9]</requirements>
+		<description>
+			<p>You can cast speak with dead at will, without expending a Hex slot.</p>
+		</description>
+		<sheet>
+			<description>You can cast speak with dead at will, without expending a Hex slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" />
+		</rules>
+	</element>
+	<element name="Witch Sight" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_WITCH_SIGHT">
+		<supports>Eldritch Glaive Invocation</supports>
+		<prerequisite>15th level</prerequisite>
+		<requirements>[level:15]</requirements>
+		<description>
+			<p>You can see the true form of any shapechanger or creature concealed by illusion or transmutation magic while the creature is within 30 feet of you and within line of sight.</p>
+		</description>
+		<sheet>
+			<description>You can see the true form of any shapechanger or creature concealed by illusion or transmutation magic while the creature is within 30 feet of you and within line of sight.</description>
+		</sheet>
 	</element>
 </elements>
