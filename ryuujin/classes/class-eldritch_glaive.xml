@@ -3,7 +3,7 @@
 	<info>
 		<name>The Eldritch Glaive</name>
 		<description>Hexblade but more focused on their weapon and without all that pesky spellcasting. They choose a weapon like spell to focus on. Such as Vampiric Touch or Flame Blade.</description>
-		<update version="0.0.12">
+		<update version="0.0.13">
 			<file name="class-eldrictch_glaive.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/classes/class-eldritch_glaive.xml" />
 		</update>
 	</info>
@@ -126,9 +126,9 @@
 		</sheet>
 		<rules>
 			<stat name="hex slots:usage" value="1" level="1"/>
-			<stat name="hex slots:usage" value="1" level="2"/>
-			<stat name="hex slots:usage" value="1" level="11"/>
-			<stat name="hex slots:usage" value="1" level="17"/>
+			<stat name="hex slots:usage" value="2" level="2"/>
+			<stat name="hex slots:usage" value="3" level="11"/>
+			<stat name="hex slots:usage" value="4" level="17"/>
 		</rules>
 	</element>
 	<element name="Eldritch Glaive Focus" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_FOCUS">
@@ -153,7 +153,6 @@
 		</sheet>
 		<rules>
 			<stat name="hex warrior:attack" value="charisma:modifier" bonus="hex warrior" />
-			<stat name="hex warrior:damage" value="charisma:modifier" bonus="hex warrior" />
 		</rules>
 	</element>	
 	<element name="Eldritch Glaive Invocations" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_INVOCATIONS">
@@ -299,8 +298,8 @@
 		</sheet>
 		<rules>
 			<stat name="pact of the flame blade:count" value="3" bonus="flame blade" />
-			<stat name="pact of the flame blade:count" value="1" bonus="flame blade" level="7" />
-			<stat name="pact of the flame blade:count" value="1" bonus="flame blade" level="9" />
+			<stat name="pact of the flame blade:count" value="4" bonus="flame blade" level="7" />
+			<stat name="pact of the flame blade:count" value="5" bonus="flame blade" level="9" />
 			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_FIERY_BLOOD" level="3"/>
 			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_AURA_OF_FLAME" level="7"/>
 			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_BACKDRAFT" level="15"/>
@@ -315,9 +314,9 @@
 		</sheet>
 		<rules>
 			<stat name="fiery blood:count" value="2" bonus="base" />
-			<stat name="fiery blood:count" value="1" bonus="base" level="5"/>
-			<stat name="fiery blood:count" value="1" bonus="base" level="7" />
-			<stat name="fiery blood:count" value="1" bonus="base" level="9" />
+			<stat name="fiery blood:count" value="3" bonus="base" level="5"/>
+			<stat name="fiery blood:count" value="4" bonus="base" level="7" />
+			<stat name="fiery blood:count" value="5" bonus="base" level="9" />
 		</rules>
 	</element>
 	<element name="Aura of Flame" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_AURA_OF_FLAME">
@@ -325,18 +324,20 @@
 		</description>
 		<sheet>
 			<description>Your Speed increases by {{eldritch glaive:aura of flame}} feet. </description>
+		</sheet>
+		<sheet>
 			<description action="Bonus">When a creature that touches or hits you with a melee attack while within {{aura of flame:distance}} feet of you, it takes {{aura of flame:count}}d10 fire damage.</description>
 		</sheet>
 		<rules>
 			<stat name="eldritch glaive:aura of flame" value="10" bonus="aura of flame" level="7" />
-			<stat name="aura of flame:distance" value="5" bonus="aura of flame" level="7" />
-			<stat name="aura of flame:count" value="1" bonus="aura of flame" level="7" />
 			<stat name="eldritch glaive:aura of flame" value="20" bonus="aura of flame" level="12" />
-			<stat name="eaura of flame:distance" value="15" bonus="aura of flame" level="12" />
-			<stat name="eaura of flame:count" value="2" bonus="aura of flame" level="12" />
 			<stat name="eldritch glaive:aura of flame" value="30" bonus="aura of flame" level="17" />
-			<stat name="eaura of flame:distance" value="30" bonus="aura of flame" level="17" />
-			<stat name="eaura of flame:count" value="3" bonus="aura of flame" level="17" />
+			<stat name="aura of flame:distance" value="5" bonus="aura of flame" level="7" />
+			<stat name="aura of flame:distance" value="15" bonus="aura of flame" level="12" />
+			<stat name="aura of flame:distance" value="30" bonus="aura of flame" level="17" />
+			<stat name="aura of flame:count" value="1" bonus="aura of flame" level="7" />
+			<stat name="aura of flame:count" value="2" bonus="aura of flame" level="12" />
+			<stat name="aura of flame:count" value="3" bonus="aura of flame" level="17" />
 			<stat name="innate speed:misc" value="eldritch glaive:aura of flame" bonus="eldritch glaive" requirements="[innate speed:1]" />
 		</rules>
 	</element>
@@ -486,16 +487,16 @@
 		</sheet>
 		<rules>
 			<stat name="pact of the stormbow:move" value="1" bonus="stormbow" />
+			<stat name="pact of the stormbow:move" value="2" bonus="stormbow" level="5"/>
+			<stat name="pact of the stormbow:move" value="3" bonus="stormbow" level="11"/>
+			<stat name="pact of the stormbow:move" value="4" bonus="stormbow" level="17"/>
 			<stat name="pact of the stormbow:damage" value="2" bonus="stormbow" />
+			<stat name="pact of the stormbow:damage" value="3" bonus="stormbow" level="5" />
+			<stat name="pact of the stormbow:damage" value="4" bonus="stormbow" level="11" />
+			<stat name="pact of the stormbow:damage" value="5" bonus="stormbow" level="17" />
 			<stat name="pact of the stormbow:attack" value="1" bonus="stormbow" level="5" />
-			<stat name="pact of the stormbow:damage" value="1" bonus="stormbow" level="5" />
-			<stat name="pact of the stormbow:move" value="1" bonus="stormbow" level="5"/>
-			<stat name="pact of the stormbow:attack" value="1" bonus="stormbow" level="11" />
-			<stat name="pact of the stormbow:damage" value="1" bonus="stormbow" level="11" />
-			<stat name="pact of the stormbow:move" value="1" bonus="stormbow" level="11"/>
-			<stat name="pact of the stormbow:attack" value="1" bonus="stormbow" level="17" />
-			<stat name="pact of the stormbow:damage" value="1" bonus="stormbow" level="17" />
-			<stat name="pact of the stormbow:move" value="1" bonus="stormbow" level="17"/>
+			<stat name="pact of the stormbow:attack" value="2" bonus="stormbow" level="11" />
+			<stat name="pact of the stormbow:attack" value="3" bonus="stormbow" level="17" />
 			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_STORMBOW_STORMSOUL" level="3"/>
 			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_STORMBOW_THUNDER_STEP" level="7"/>
 			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_STORMBOW_INVESTITURE_OF_AIR" level="15"/>
@@ -520,12 +521,12 @@
 		</sheet>
 		<rules>
 			<stat name="thunder step:count" value="3" bonus="stormbow" />
-			<stat name="thunder step:count" value="1" bonus="stormbow" level="9"/>	
-			<stat name="thunder step:count" value="1" bonus="stormbow" level="11"/>	
-			<stat name="thunder step:count" value="1" bonus="stormbow" level="13"/>	
-			<stat name="thunder step:count" value="1" bonus="stormbow" level="15"/>	
-			<stat name="thunder step:count" value="1" bonus="stormbow" level="17"/>	
-			<stat name="thunder step:count" value="1" bonus="stormbow" level="19"/>	
+			<stat name="thunder step:count" value="4" bonus="stormbow" level="9"/>	
+			<stat name="thunder step:count" value="5" bonus="stormbow" level="11"/>	
+			<stat name="thunder step:count" value="6" bonus="stormbow" level="13"/>	
+			<stat name="thunder step:count" value="7" bonus="stormbow" level="15"/>	
+			<stat name="thunder step:count" value="8" bonus="stormbow" level="17"/>	
+			<stat name="thunder step:count" value="9" bonus="stormbow" level="19"/>	
 		</rules>
 	</element>
 	<element name="Investiture of Air" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_STORMBOW_INVESTITURE_OF_AIR">
@@ -593,18 +594,18 @@
 		</sheet>
 		<rules>
 			<stat name="pact of the ice knife:damage" value="1" bonus="ice knife" />
+			<stat name="pact of the ice knife:damage" value="2" bonus="ice knife" level="5" />
+			<stat name="pact of the ice knife:damage" value="3" bonus="ice knife" level="11" />
+			<stat name="pact of the ice knife:damage" value="4" bonus="ice knife" level="17" />
 			<stat name="pact of the ice knife:exploding" value="3" />
-			<stat name="pact of the ice knife:damage" value="1" bonus="ice knife" level="5" />
-			<stat name="pact of the ice knife:exploding" value="1" level="5" />
-			<stat name="pact of the ice knife:exploding" value="1" level="7" />
-			<stat name="pact of the ice knife:exploding" value="1" level="9" />
-			<stat name="pact of the ice knife:damage" value="1" bonus="ice knife" level="11" />
-			<stat name="pact of the ice knife:exploding" value="1" level="11" />
-			<stat name="pact of the ice knife:exploding" value="1" level="13" />
-			<stat name="pact of the ice knife:exploding" value="1" level="15" />
-			<stat name="pact of the ice knife:damage" value="1" bonus="ice knife" level="17" />
-			<stat name="pact of the ice knife:exploding" value="1" level="17" />
-			<stat name="pact of the ice knife:exploding" value="1" level="19" />
+			<stat name="pact of the ice knife:exploding" value="4" level="5" />
+			<stat name="pact of the ice knife:exploding" value="5" level="7" />
+			<stat name="pact of the ice knife:exploding" value="6" level="9" />
+			<stat name="pact of the ice knife:exploding" value="7" level="11" />
+			<stat name="pact of the ice knife:exploding" value="8" level="13" />
+			<stat name="pact of the ice knife:exploding" value="9" level="15" />
+			<stat name="pact of the ice knife:exploding" value="10" level="17" />
+			<stat name="pact of the ice knife:exploding" value="11" level="19" />
 			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_ARMOR_OF_AGATHYS" level="3"/>
 			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_CONTROL_ICE_AND_SNOW" level="7"/>
 			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_INVESTITURE_OF_ICE" level="15"/>
@@ -619,14 +620,14 @@
 		</sheet>
 		<rules>
 			<stat name="armor of agathys:count" value="10" />
-			<stat name="armor of agathys:count" value="5" level="5" />
-			<stat name="armor of agathys:count" value="5" level="7" />
-			<stat name="armor of agathys:count" value="5" level="9" />
-			<stat name="armor of agathys:count" value="5" level="11" />
-			<stat name="armor of agathys:count" value="5" level="13" />
-			<stat name="armor of agathys:count" value="5" level="15" />
-			<stat name="armor of agathys:count" value="5" level="17" />
-			<stat name="armor of agathys:count" value="5" level="19" />
+			<stat name="armor of agathys:count" value="15" level="5" />
+			<stat name="armor of agathys:count" value="20" level="7" />
+			<stat name="armor of agathys:count" value="25" level="9" />
+			<stat name="armor of agathys:count" value="30" level="11" />
+			<stat name="armor of agathys:count" value="35" level="13" />
+			<stat name="armor of agathys:count" value="40" level="15" />
+			<stat name="armor of agathys:count" value="45" level="17" />
+			<stat name="armor of agathys:count" value="50" level="19" />
 		</rules>
 	</element>
 	<element name="Control Ice and Snow" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_CONTROL_ICE_AND_SNOW">
@@ -637,12 +638,12 @@
 		</sheet>
 		<rules>
 			<stat name="thunder step:count" value="3" bonus="stormbow" />
-			<stat name="thunder step:count" value="1" bonus="stormbow" level="9"/>	
-			<stat name="thunder step:count" value="1" bonus="stormbow" level="11"/>	
-			<stat name="thunder step:count" value="1" bonus="stormbow" level="13"/>	
-			<stat name="thunder step:count" value="1" bonus="stormbow" level="15"/>	
-			<stat name="thunder step:count" value="1" bonus="stormbow" level="17"/>	
-			<stat name="thunder step:count" value="1" bonus="stormbow" level="19"/>	
+			<stat name="thunder step:count" value="4" bonus="stormbow" level="9"/>	
+			<stat name="thunder step:count" value="5" bonus="stormbow" level="11"/>	
+			<stat name="thunder step:count" value="6" bonus="stormbow" level="13"/>	
+			<stat name="thunder step:count" value="7" bonus="stormbow" level="15"/>	
+			<stat name="thunder step:count" value="8" bonus="stormbow" level="17"/>	
+			<stat name="thunder step:count" value="9" bonus="stormbow" level="19"/>	
 		</rules>
 	</element>
 	<element name="Investiture of Ice" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_INVESTITURE_OF_ICE">
@@ -1002,25 +1003,25 @@
 		</sheet>
 		<rules>
 			<stat name="tomb of levistus:count" value="10" />
-			<stat name="tomb of levistus:count" value="10" level="2" />
-			<stat name="tomb of levistus:count" value="10" level="3" />
-			<stat name="tomb of levistus:count" value="10" level="4" />
-			<stat name="tomb of levistus:count" value="10" level="5" />
-			<stat name="tomb of levistus:count" value="10" level="6" />
-			<stat name="tomb of levistus:count" value="10" level="7" />
-			<stat name="tomb of levistus:count" value="10" level="8" />
-			<stat name="tomb of levistus:count" value="10" level="9" />
-			<stat name="tomb of levistus:count" value="10" level="10" />
-			<stat name="tomb of levistus:count" value="10" level="11" />
-			<stat name="tomb of levistus:count" value="10" level="12" />
-			<stat name="tomb of levistus:count" value="10" level="13" />
-			<stat name="tomb of levistus:count" value="10" level="14" />
-			<stat name="tomb of levistus:count" value="10" level="15" />
-			<stat name="tomb of levistus:count" value="10" level="16" />
-			<stat name="tomb of levistus:count" value="10" level="17" />
-			<stat name="tomb of levistus:count" value="10" level="18" />
-			<stat name="tomb of levistus:count" value="10" level="19" />
-			<stat name="tomb of levistus:count" value="10" level="20" />
+			<stat name="tomb of levistus:count" value="20" level="2" />
+			<stat name="tomb of levistus:count" value="30" level="3" />
+			<stat name="tomb of levistus:count" value="40" level="4" />
+			<stat name="tomb of levistus:count" value="50" level="5" />
+			<stat name="tomb of levistus:count" value="60" level="6" />
+			<stat name="tomb of levistus:count" value="70" level="7" />
+			<stat name="tomb of levistus:count" value="80" level="8" />
+			<stat name="tomb of levistus:count" value="90" level="9" />
+			<stat name="tomb of levistus:count" value="100" level="10" />
+			<stat name="tomb of levistus:count" value="110" level="11" />
+			<stat name="tomb of levistus:count" value="120" level="12" />
+			<stat name="tomb of levistus:count" value="130" level="13" />
+			<stat name="tomb of levistus:count" value="140" level="14" />
+			<stat name="tomb of levistus:count" value="150" level="15" />
+			<stat name="tomb of levistus:count" value="160" level="16" />
+			<stat name="tomb of levistus:count" value="170" level="17" />
+			<stat name="tomb of levistus:count" value="180" level="18" />
+			<stat name="tomb of levistus:count" value="190" level="19" />
+			<stat name="tomb of levistus:count" value="200" level="20" />
 		</rules>	
 	</element>
 	<element name="Trickster's Escape" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_TRICKSTERS_ESCAPE">
