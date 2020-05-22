@@ -3,7 +3,7 @@
 	<info>
 		<name>The Eldritch Glaive</name>
 		<description> Hexblade but more focused on their weapon and without all that pesky spellcasting. They choose a weapon like spell to focus on. Such as Vampiric Touch or Flame Blade.</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="class-eldrictch_glaive.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/classes/class-eldritch_glaive.xml" />
 		</update>
 	</info>
@@ -574,8 +574,9 @@
 		</sheet>
 		<sheet alt="Air Form">
 			<description>Your body, including any gear you are wearing or carrying, becomes as though Air.  You can enter a hostile creature's space and stop there. You can move through a space as narrow as 1 inch wide without squeezing.</description>
-				<li><strong>Whirlwind:</strong> Each creature in your space must make a Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from you in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.  If the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone.</li>
-			</ul></description>
+		</sheet>
+		<sheet alt="Whirlwind">
+			<description>Each creature in your space must make a Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from you in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.  If the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone.</description>
 		</sheet>
 	</element>
 	<element name="Pact of the Ice Knife" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE">
