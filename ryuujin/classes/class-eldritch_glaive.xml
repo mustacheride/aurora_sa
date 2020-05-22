@@ -3,7 +3,7 @@
 	<info>
 		<name>The Eldritch Glaive</name>
 		<description> Hexblade but more focused on their weapon and without all that pesky spellcasting. They choose a weapon like spell to focus on. Such as Vampiric Touch or Flame Blade.</description>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="class-eldrictch_glaive.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/classes/class-eldritch_glaive.xml" />
 		</update>
 	</info>
@@ -873,6 +873,7 @@
 		</sheet>
 		<rules>
 			<stat name="innate speed:swim" value="innate speed" bonus="base" />
+		</rules>
 	</element>
 	<element name="Improved Pact Weapon" type="Class Feature" source="The Eldritch Glaive" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_IMPROVED_PACT_WEAPON">
 		<supports>Eldritch Glaive Invocation</supports>
