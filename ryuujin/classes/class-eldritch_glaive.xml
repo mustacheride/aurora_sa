@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>The Eldritch Glaive</name>
-		<description> Hexblade but more focused on their weapon and without all that pesky spellcasting. They choose a weapon like spell to focus on. Such as Vampiric Touch or Flame Blade.</description>
+		<description>Hexblade but more focused on their weapon and without all that pesky spellcasting. They choose a weapon like spell to focus on. Such as Vampiric Touch or Flame Blade.</description>
 		<update version="0.0.10">
 			<file name="class-eldrictch_glaive.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/classes/class-eldritch_glaive.xml" />
 		</update>
@@ -72,14 +72,14 @@
 			<div element="ID_SA_MR_CLASS_FEATURE_PACT_OF_THE_BLADE" />
 			<div element="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_ABILITY_SCORE_IMPROVEMENT" />
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_ELDRITCH_MASTER" />
-
-
 		</description>
 		<setters>
-			<set name="short">Aa class based around the concept of the Hexblade but more focused on their weapon and without all that pesky spellcasting. They choose a weapon like spell to focus on. Such as Vampiric Touch or Flame Blade.</set>
+			<set name="short">Hexblade but more focused on their weapon and without all that pesky spellcasting.</set>
 			<set name="hd">d10</set>
 		</setters>
 		<sheet display="false" />
+			<description>Hexblade but more focused on their weapon and without all that pesky spellcasting.</description>
+		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
