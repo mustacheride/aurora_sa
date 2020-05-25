@@ -495,11 +495,11 @@
 			You are blind beyond the range of your Blindsight, but become immune to the Blinded condition.</description>
 		</sheet>
 		<rules>
-			<stat name="ooze blindsight:value" value="30" \>
-			<stat name="ooze blindsight:value" value="60" level="6" \>
-			<stat name="ooze blindsight:value" value="90" level="9" \>
-			<stat name="ooze blindsight:value" value="120" level="14" \>
-			<stat name="ooze blindsight:value" value="150" level="18" \>
+			<stat name="ooze blindsight:value" value="30" />
+			<stat name="ooze blindsight:value" value="60" level="6" />
+			<stat name="ooze blindsight:value" value="90" level="9" />
+			<stat name="ooze blindsight:value" value="120" level="14" />
+			<stat name="ooze blindsight:value" value="150" level="18" />
 		</rules>
 	</element>
 	<element name="Extra Attack" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_EXTRA_ATTACK">
@@ -567,7 +567,7 @@
 	</element>
 	<element name="Immutable" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_IMMUTABLE">
 		<description>
-			<p>Beginning at 16th level, you become immune to the Exhausted, Charmed, Deafened, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned, Restrained, Stunned or Unconscious conditions.<p>
+			<p>Beginning at 16th level, you become immune to the Exhausted, Charmed, Deafened, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned, Restrained, Stunned or Unconscious conditions.</p>
 			<p class="indent">You cannot be polymorphed against your will.</p>
 		</description>
 		<sheet>
