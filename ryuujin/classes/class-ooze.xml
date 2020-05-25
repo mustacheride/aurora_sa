@@ -407,6 +407,7 @@
 		</description>
 		<sheet>
 			<description>When two or more of your jellies are within 5 feet of a target they have advantage on attack rolls and opposed strength checks against that target.</description>
+		</sheet>
 	</element>
 	<element name="Ochre Immunity" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_OCHRE_IMMUNITY">
 		<description>
