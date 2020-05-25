@@ -3,7 +3,7 @@
 	<info>
 		<name>The Ooze</name>
 		<description>You're an Ooze.</description>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="class-ooze.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/classes/class-ooze.xml" />
 		</update>
 	</info>
@@ -435,9 +435,9 @@
 			<stat name="ac:unarmored defense ooze:base" value="10" />
 			<stat name="ac:unarmored defense ooze:constitution" value="constitution:modifier" />
 			<stat name="ac:unarmored defense ooze:proficiency" value="proficiency" />
-			<stat name="ac:unarmored defense ooze" value="ac:unarmored defense monk:base" />
-			<stat name="ac:unarmored defense ooze" value="ac:unarmored defense monk:constitution" />
-			<stat name="ac:unarmored defense ooze" value="ac:unarmored defense monk:proficiency" />
+			<stat name="ac:unarmored defense ooze" value="ac:unarmored defense ooze:base" />
+			<stat name="ac:unarmored defense ooze" value="ac:unarmored defense ooze:constitution" />
+			<stat name="ac:unarmored defense ooze" value="ac:unarmored defense ooze:proficiency" />
 			<stat name="ac:calculation" value="ac:unarmored defense ooze" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Defense (Ooze)" />
 		</rules>
 	</element>
