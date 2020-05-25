@@ -3,7 +3,7 @@
 	<info>
 		<name>The Ooze</name>
 		<description>You're an Ooze.</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="class-ooze.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/classes/class-ooze.xml" />
 		</update>
 	</info>
