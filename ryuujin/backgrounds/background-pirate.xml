@@ -4,12 +4,11 @@
 		<name>Pirate</name>
 		<description>Pirate Background</description>
 		<author url="https://forums.somethingawful.com/member.php%3Faction%3Dgetinfo%26userid%3D167780">Zore</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="background-pirate.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/backgrounds/background-pirate.xml" />
 		</update>
 	</info>
-
-	<element name="Pirate" type="Background" "SA Trad Games: Ryuujin" id="ID_MR_SA_BACKGROUND_PIRATE">
+	<element name="Pirate" type="Background" source="SA Trad Games: Ryuujin" id="ID_MR_SA_BACKGROUND_PIRATE">
 		<description>
 			<p>No matter where you go, people are afraid of you due to your reputation. When you are in a civilized settlement, you can get away with minor criminal offenses, such as refusing to pay for food at a tavern or breaking down doors at a local shop,  since most people will not report your activity to the authorities.</p>
 			<ul class="unstyled">
