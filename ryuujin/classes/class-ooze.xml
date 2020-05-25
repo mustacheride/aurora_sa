@@ -3,7 +3,7 @@
 	<info>
 		<name>The Ooze</name>
 		<description>You're an Ooze.</description>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="class-ooze.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/classes/class-ooze.xml" />
 		</update>
 	</info>
@@ -469,6 +469,14 @@
 		</description>
 		<sheet>
 			<description>You add your Constitution modifier ({{constitution:modifier}}) as a bonus to all Strength checks.</description>
+		</sheet>
+	</element>
+	<element name="Crushing Psuedopods" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_CRUSHING_PSUEDOPODS">
+		<description>
+			<p>Your Ooze Touch unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+		</description>
+		<sheet>
+			<description>Your Ooze Touch unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
 		</sheet>
 	</element>
 	<element name="Ability Score Improvement" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_OOZE_ABILITY_SCORE_IMPROVEMENT">
