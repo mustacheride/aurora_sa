@@ -491,15 +491,15 @@
 			<p class="ident">When you gain this feature whatever form of normal sight you may have had recedes.  You are blind beyond the range of your Blindsight, but become immune to the Blinded condition.</p>
 		</description>
 		<sheet>
-			<description>You have Blindsight {{blindsight:value}}ft.
+			<description>You have Blindsight {{ooze blindsight:value}}ft.
 			You are blind beyond the range of your Blindsight, but become immune to the Blinded condition.</description>
 		</sheet>
 		<rules>
-			<stat name="blindsight:value" value="30" \>
-			<stat name="blindsight:value" value="60" level="6" \>
-			<stat name="blindsight:value" value="90" level="9" \>
-			<stat name="blindsight:value" value="120" level="14" \>
-			<stat name="blindsight:value" value="150" level="18" \>
+			<stat name="ooze blindsight:value" value="30" \>
+			<stat name="ooze blindsight:value" value="60" level="6" \>
+			<stat name="ooze blindsight:value" value="90" level="9" \>
+			<stat name="ooze blindsight:value" value="120" level="14" \>
+			<stat name="ooze blindsight:value" value="150" level="18" \>
 		</rules>
 	</element>
 	<element name="Extra Attack" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_EXTRA_ATTACK">
