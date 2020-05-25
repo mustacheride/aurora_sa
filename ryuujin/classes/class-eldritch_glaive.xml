@@ -3,7 +3,7 @@
 	<info>
 		<name>The Eldritch Glaive</name>
 		<description>Hexblade but more focused on their weapon and without all that pesky spellcasting. They choose a weapon like spell to focus on. Such as Vampiric Touch or Flame Blade.</description>
-		<update version="0.0.13">
+		<update version="0.0.14">
 			<file name="class-eldrictch_glaive.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/classes/class-eldritch_glaive.xml" />
 		</update>
 	</info>
@@ -286,26 +286,11 @@
 	<element name="Pact of the Flame Blade" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE">
 		<supports>Pact of the Blade</supports>
 		<description>
-			<h5 class="caption">PACT OF THE FLAME BLADE</h5>
-			<p>At 3rd level, when you take this Weapon of the Glaive, you gain a new option for your Pact Weapon.  Now when you use your Pact Weapon feature you can call forth primordial flames.  You can form any shape of weapon with fire instead of ether. When you use your Pact Weapon this way you instead deal 3d6 fire damage.  The flaming blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet.  And the Flame Blade has the light and finesse traits.  At 7th level, when your Hex Level increases to 4, the damage increases by 1d6.  It increases by another 1d6 for every two Hex Levels beyond 4th.</p>
-			<h5 class="caption">FIERY BLOOD</h5>
-			<p>At third level you become resistant to Fire Damage.  You do not suffer Exhaustion or similar penalties from hot or cold conditions.</p>
-			<p class="indent">Additionally when you take damage from a creature within 60ft of you you can, as a Reaction, cause flames to lash out from you that creature.  The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one.  At higher levels this damage increases by 1d10 for each Hex Level beyond 2nd.</p>
-			<h5 class="caption">AURA OF FLAME</h5>
-			<p>Starting at 7th level your speed increases by 10 feet, this increases by another ten feet at 12th and 17th levels.</p>
-			<p class="indent">Your body now sheds bright light in a 20-foot radius and dim light in an additional 20 feet.</p>
-			<p class="indent">Also at 7th level you gain the ability to channel the power of your Flame Blade through your body and into the air around you. As a bonus action you can activate an Aura of Flame, which remains active until you fall unconscious or spend another bonus action to end it.  While this Aura of Flame is active a creature that  touches you or hits you with a melee attack while within 5 feet of you takes 5 (1d10) fire damage.  At 12th level the Aura increases.  The damage it deals is now 10 (2d10) Fire damage.  Also any creature that comes within 15 feet of you, or ends its turn within that area, also takes the Aura’s damage.  At 17th level the Aura improves again.  The damage increases to 15 (3d10) fire damage, and the area of the aura now expands to 30 feet.</p>
-			<h5 class="caption">BACKDRAFT</h5>
-			<p>Starting at 15th level you become immune to Fire damage and resistant to poison damage.  </p>
-			<p class="indent">In addition you have gained a greater control of your Aura of Flame.  Your Aura of Flame now only harms creatures of your choice, instead of all creatures in its area.  Your greater control also seems to make it difficult for the affected creatures to leave your aura.  Any creatures that you choose to have affected by your Aura have their speed halved while in your aura as the winds seem to howl toward your fiery center.</p>
-			<h5 class="caption">INFERNO</h5>
-			<p>At 20th level the primordial flame of your Flame Blade fully infuses you.  This can be a visible change, but it does not need to be.</p>
-			<ul class="unstyled">
-				<li><strong>Damage Resistance:</strong> You are now immune to poison damage and have resistance to Bludgeoning, Piercing, and Slashing from Nonmagical Attacks.  You also become immune to the Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, and Restrained conditions.</li>
-				<li><strong>Regeneration:</strong> When you would take Fire Damage you instead heal that much.</li>
-				<li><strong>Burning Body:</strong> Your body now sheds bright light in a 30-foot radius and dim light in an additional 30 feet.</li>
-				<li><strong>Dual Wielding:</strong> When you create a Flame Blade you can now make a pair of Flame Blades.  The second weapon can be used to make an attack as a bonus action using the two-weapon fighting rules.</li>
-			</ul>
+			<p>At 3rd level, when you take this Weapon of the Glaive, you gain a new option for your Pact Weapon.  Now when you use your Pact Weapon feature you can call forth primordial flames.  You can form any shape of weapon with fire instead of ether. When you use your Pact Weapon this way you instead deal 3d6 fire damage.  The flaming blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet.  And the Flame Blade has the light and finesse traits.  At 7th level, when your Hex Level increases to 4, the damage increases by 1d6.  It increases by another 1d6 for every two Hex Levels beyond 4th.</p>	
+			<div element="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_FIERY_BLOOD" />
+			<div element="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_AURA_OF_FLAME" />
+			<div element="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_BACKDRAFT" />
+			<div element="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_INFERNO" />
 		</description>
 		<sheet>
 			<description>When you use your Pact Weapon you instead deal {{pact of the flame blade:count}}d6 fire damage. The flaming blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet.</description>
@@ -322,9 +307,12 @@
 	</element>
 	<element name="Fiery Blood" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_FIERY_BLOOD">
 		<description>
+			<p>At third level you become resistant to Fire Damage.  You do not suffer Exhaustion or similar penalties from hot or cold conditions.</p>
+			<p class="indent">Additionally when you take damage from a creature within 60ft of you you can, as a Reaction, cause flames to lash out from you that creature.  The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one.  At higher levels this damage increases by 1d10 for each Hex Level beyond 2nd.</p>
 		</description>
 		<sheet action="Reaction">
-			<description>When you take damage from a creature within 60ft of you the creature must make a Dexterity saving throw. It takes {{fiery blood:count}}d10 fire damage on a failed save, or half as much on success.</description>
+			<description>When you take damage from a creature within 60ft of you the creature must make a Dexterity saving throw. 
+			It takes {{fiery blood:count}}d10 fire damage on a failed save, or half as much on success.</description>
 		</sheet>
 		<rules>
 			<stat name="fiery blood:count" value="2" bonus="base" />
@@ -335,11 +323,12 @@
 	</element>
 	<element name="Aura of Flame" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_AURA_OF_FLAME">
 		<description>
+			<p>Starting at 7th level your speed increases by 10 feet, this increases by another ten feet at 12th and 17th levels.</p>
+			<p class="indent">Your body now sheds bright light in a 20-foot radius and dim light in an additional 20 feet.</p>
+			<p class="indent">Also at 7th level you gain the ability to channel the power of your Flame Blade through your body and into the air around you. As a bonus action you can activate an Aura of Flame, which remains active until you fall unconscious or spend another bonus action to end it.  While this Aura of Flame is active a creature that  touches you or hits you with a melee attack while within 5 feet of you takes 5 (1d10) fire damage.  At 12th level the Aura increases.  The damage it deals is now 10 (2d10) Fire damage.  Also any creature that comes within 15 feet of you, or ends its turn within that area, also takes the Aura’s damage.  At 17th level the Aura improves again.  The damage increases to 15 (3d10) fire damage, and the area of the aura now expands to 30 feet.</p>
 		</description>
 		<sheet>
 			<description>Your Speed increases by {{eldritch glaive:aura of flame}} feet. </description>
-		</sheet>
-		<sheet>
 			<description action="Bonus">When a creature that touches or hits you with a melee attack while within {{aura of flame:distance}} feet of you, it takes {{aura of flame:count}}d10 fire damage.</description>
 		</sheet>
 		<rules>
@@ -357,55 +346,46 @@
 	</element>
 	<element name="Backdraft" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_BACKDRAFT">
 		<description>
+			<p>Starting at 15th level you become immune to Fire damage and resistant to poison damage.  </p>
+			<p class="indent">In addition you have gained a greater control of your Aura of Flame.  Your Aura of Flame now only harms creatures of your choice, instead of all creatures in its area.  Your greater control also seems to make it difficult for the affected creatures to leave your aura.  Any creatures that you choose to have affected by your Aura have their speed halved while in your aura as the winds seem to howl toward your fiery center.</p>
 		</description>
 		<sheet>
-			<description>You become immune to Fire damage and resistant to poison damage. In addition your Aura of Flame now only harms creatures of your choice.  Any chosen creatures have their speed halved while in your aura.</description>
+			<description>You become immune to Fire damage and resistant to poison damage.
+			In addition your Aura of Flame now only harms creatures of your choice.
+			Any chosen creatures have their speed halved while in your aura.</description>
 		</sheet>
 	</element>
 	<element name="Inferno" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_INFERNO">
 		<description>
+			<p>At 20th level the primordial flame of your Flame Blade fully infuses you.  This can be a visible change, but it does not need to be.</p>
+			<ul class="unstyled">
+				<li><strong>Damage Resistance:</strong> You are now immune to poison damage and have resistance to Bludgeoning, Piercing, and Slashing from Nonmagical Attacks.  You also become immune to the Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, and Restrained conditions.</li>
+				<li><strong>Regeneration:</strong> When you would take Fire Damage you instead heal that much.</li>
+				<li><strong>Burning Body:</strong> Your body now sheds bright light in a 30-foot radius and dim light in an additional 30 feet.</li>
+				<li><strong>Dual Wielding:</strong> When you create a Flame Blade you can now make a pair of Flame Blades.  The second weapon can be used to make an attack as a bonus action using the two-weapon fighting rules.</li>
+			</ul>
 		</description>
-		<sheet alt="Damage Resistance">
-			<description>You are now immune to poison damage and have resistance to Bludgeoning, Piercing, and Slashing from Nonmagical Attacks.  You also become immune to the Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, and Restrained conditions.</description>
-		</sheet>
-		<sheet alt="Regeneration">
-			<description>When you would take Fire Damage you instead heal that much.</description>
-		</sheet>
-		<sheet alt="Burning Body">
-			<description>Your body now sheds bright light in a 30-foot radius and dim light in an additional 30 feet.</description>
-		</sheet>
-		<sheet alt="Dual Weilding">
-			<description>When you create a Flame Blade you can now make a pair of Flame Blades. The second weapon can be used to make an attack as a bonus action using the two-weapon fighting rules.</description>
+		<sheet>
+			<description>• You are now immune to poison damage and have resistance to Bludgeoning, Piercing, and Slashing from Nonmagical Attacks.
+			• You also become immune to the Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, and Restrained conditions.
+			• When you would take Fire Damage you instead heal that much.
+			• Your body now sheds bright light in a 30-foot radius and dim light in an additional 30 feet
+			• When you create a Flame Blade you can now make a pair of Flame Blades. The second weapon can be used to make an attack as a bonus action using the two-weapon fighting rules.</description>
 		</sheet>
 	</element>
 	<element name="Pact of the Shadow Blade" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE">
 		<supports>Pact of the Blade</supports>
 		<description>
-			<h5 class="caption">PACT OF THE SHADOW BLADE</h5>
 			<p>At 3rd level, when you take this Weapon of the Glaive, you gain a new option for your Pact Weapon.  Now when you use your Pact Weapon feature you weave together threads of shadow to create a weapon of solidified gloom in your hand.  While using your Pact Weapon this way it deals 2d8 psychic damage on a hit and has the finesse, light and thrown properties (range 20/60).  In addition, when you use the weapon to attack a target in dim light or darkness, you make the attack roll with advantage.  If you drop the weapon or throw it, it dissipates at the end of the turn.  Thereafter, while the spell persists, you can use a bonus action to cause the weapon to reappear in your hand.  If you have the Thirsting Blade invocation and throw the weapon you can have it reappear in your hand in time to make your second attack as part of your attack action without needing to use a bonus action to call it back to your hand.</p>
 			<p class="indent">At 5th level, when your Hex Level increases to 3, the damage increases by 1d8.  It increases by another 1d8 for every two Hex Levels beyond 3rd.</p>
-			<h5 class="caption">SIGHT OF THE SHADOWS</h5>
-			<p>At 3rd level you gain the Armor of Shadows and Devil’s Sight invocations.  If you already had one or more of them you can retrain your previous invocation selections into another invocation.</p>
-			<p class="indent">Additionally when you take damage from a creature within 60ft of you you can, as a Reaction, cause flames to lash out from you that creature.  The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one.  At higher levels this damage increases by 1d10 for each Hex Level beyond 2nd.</p>
-			<h5 class="caption">SHADOW OF MOIL</h5>
-			<p>Starting at 7th level you can, as a bonus action, cause flame-like shadows to wreathe your body until you fall unconscious or use another bonus action to end the effect, causing you to become heavily obscured to others. The shadows turn dim light within 10 feet of you into darkness, and bright light in the same area to dim light.</p>
-			<p class="indent">While under this effect, you have resistance to radiant damage. In addition, whenever a creature within 10 feet of you hits you with an attack, the shadows lash out at that creature, dealing it 2d8 necrotic damage.</p>
-			<p class="indent">You now have Expertise in Stealth, if you were already proficient in Stealth you can retrain to another skill.</p>
-			<h5 class="caption">SILENT AS A SHADOW</h5>
-			<p>Starting at 15th level, you gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action you can teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness. You then have advantage on the first melee attack you make before the end of the turn.</p>
-			<p class="indent">In addition a veil of shadows and silence radiates from you, masking you and your companions from detection.  Each creature of your choice, including yourself, has a +10 bonus to Dexterity (Stealth) checks and can’t be tracked except by magical means.  A creature that receives this bonus leaves behind no tracks or other traces of its passage.</p>
-			<h5 class="caption">UTTERDARK</h5>
-			<p>At 20th level, you gain the ability to infuse your entire body with the shadows you weave.  This can be a visible change, but it does not need to be.</p>
-			<ul class="unstyled">
-				<li><strong>Damage Resistance:</strong>  You have resistance to Acid, Cold, Fire, Lightning, Thunder; Bludgeoning, Piercing, and Slashing from Nonmagical Attacks.  You have immunity to Necrotic and Poison damage.  You are immune to the  Exhaustion, Frightened, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained conditions.</li>
-				<li>You have a Passive Stealth score of 15+your Stealth skill.  You can choose to suppress this, but otherwise are always considered to have rolled a 15 on a d20 for a Stealth check.  If you wish you can roll for Stealth, but any roll of 14 or below instead counts as a 15, thus not allowing you to get a result below your passive stealth.</li>
-				<li><strong>Amorphous:</strong> You can move through a space as narrow as 1 inch wide without squeezing.</li>
-				<li>You can choose to radiate an aura of magical darkness up to 120 feet from you, creatures of your choice can see through this magical darkness as if they benefited from Devil’s Sight.</li>
-				<li>Your Darkvision now has no range limitation, this allows you to see through Darkness and Magical Darkness as well as you can see through day.</li>
-			</ul>
+			<div element="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_SIGHT_OF_THE_SHADOWS" />
+			<div element="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_SHADOW_OF_MOIL" />
+			<div element="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_SILENT_AS_A_SHADOW" />
+			<div element="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_UTTERDARK" />
 		</description>
 		<sheet>
-			<description>When you use your Pact Weapon you instead deal {{pact of the vampiric touch:dice}}d8 psychic damage. When you use the weapon to attack a target in dim light or darkness, you make the attack roll with advantage.</description>
+			<description>When you use your Pact Weapon you instead deal {{pact of the vampiric touch:dice}}d8 psychic damage.
+			When you use the weapon to attack a target in dim light or darkness, you make the attack roll with advantage.</description>
 		</sheet>
 		<rules>
 			<stat name="pact of the vampiric touch:dice" value="2" bonus="vampiric touch" />
@@ -419,6 +399,8 @@
 	</element>
 	<element name="Sight of the Shadows" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_SIGHT_OF_THE_SHADOWS">
 		<description>
+			<p>At 3rd level you gain the Armor of Shadows and Devil’s Sight invocations.  If you already had one or more of them you can retrain your previous invocation selections into another invocation.</p>
+			<p class="indent">Additionally when you take damage from a creature within 60ft of you you can, as a Reaction, cause flames to lash out from you that creature.  The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one.  At higher levels this damage increases by 1d10 for each Hex Level beyond 2nd.</p>
 		</description>
 		<sheet display="false">
 			<description>You gain the Armor of Shadows and Devil’s Sight invocations.</description>
@@ -430,10 +412,14 @@
 	</element>
 	<element name="Shadow of Moil" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_SHADOW_OF_MOIL">
 		<description>
+			<p>Starting at 7th level you can, as a bonus action, cause flame-like shadows to wreathe your body until you fall unconscious or use another bonus action to end the effect, causing you to become heavily obscured to others. The shadows turn dim light within 10 feet of you into darkness, and bright light in the same area to dim light.</p>
+			<p class="indent">While under this effect, you have resistance to radiant damage. In addition, whenever a creature within 10 feet of you hits you with an attack, the shadows lash out at that creature, dealing it 2d8 necrotic damage.</p>
+			<p class="indent">You now have Expertise in Stealth, if you were already proficient in Stealth you can retrain to another skill.</p>
 		</description>
 		<sheet>
 			<description>You have Expertise in Stealth.</description>
-			<description action="Bonus">You are heavily obscured to others and are resitant to radiant damage. When a creature whithin 10 ft hits you with an attack, the shadows lash out dealing 2d8 necrotic damage.</description>
+			<description action="Bonus">You are heavily obscured to others and are resitant to radiant damage.
+			When a creature whithin 10 ft hits you with an attack, the shadows lash out dealing 2d8 necrotic damage.</description>
 		</sheet>
 		<rules>
 			<stat name="stealth:proficiency" value="proficiency" bonus="double" />
@@ -441,10 +427,13 @@
 	</element>
 	<element name="Silent as a Shadow" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_SILENT_AS_A_SHADOW">
 		<description>
+			<p>Starting at 15th level, you gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action you can teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness. You then have advantage on the first melee attack you make before the end of the turn.</p>
+			<p class="indent">In addition a veil of shadows and silence radiates from you, masking you and your companions from detection.  Each creature of your choice, including yourself, has a +10 bonus to Dexterity (Stealth) checks and can’t be tracked except by magical means.  A creature that receives this bonus leaves behind no tracks or other traces of its passage.</p>
 		</description>
 		<sheet>
 			<description>Each creature of your choice, including yourself, has a +10 bonus to Dexterity (Stealth) checks and can’t be tracked except by magical means.</description>
-			<description action="Bonus">When you are in dim light or darkness you can teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness. You have advantage on the first melee attack you make before the end of the turn.</description>
+			<description action="Bonus">When you are in dim light or darkness you can teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness.
+			You have advantage on the first melee attack you make before the end of the turn.</description>
 		</sheet>
 		<rules>
 			<stat name="dexterity:save:misc" value="10" />
@@ -452,19 +441,23 @@
 	</element>
 	<element name="Utterdark" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_UTTERDARK">
 		<description>
+			<p>At 20th level, you gain the ability to infuse your entire body with the shadows you weave.  This can be a visible change, but it does not need to be.</p>
+			<ul class="unstyled">
+				<li><strong>Damage Resistance:</strong>  You have resistance to Acid, Cold, Fire, Lightning, Thunder; Bludgeoning, Piercing, and Slashing from Nonmagical Attacks.  You have immunity to Necrotic and Poison damage.  You are immune to the  Exhaustion, Frightened, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained conditions.</li>
+				<li>You have a Passive Stealth score of 15+your Stealth skill.  You can choose to suppress this, but otherwise are always considered to have rolled a 15 on a d20 for a Stealth check.  If you wish you can roll for Stealth, but any roll of 14 or below instead counts as a 15, thus not allowing you to get a result below your passive stealth.</li>
+				<li><strong>Amorphous:</strong> You can move through a space as narrow as 1 inch wide without squeezing.</li>
+				<li>You can choose to radiate an aura of magical darkness up to 120 feet from you, creatures of your choice can see through this magical darkness as if they benefited from Devil’s Sight.</li>
+				<li>Your Darkvision now has no range limitation, this allows you to see through Darkness and Magical Darkness as well as you can see through day.</li>
+			</ul>
 		</description>
-		<sheet alt="Damage Resistance">
-			<description>You have resistance to Acid, Cold, Fire, Lightning, Thunder; Bludgeoning, Piercing, and Slashing from Nonmagical Attacks.  You have immunity to Necrotic and Poison damage. You are immune to the Exhaustion, Frightened, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained conditions.</description>
-		</sheet>
-		<sheet display="false">
-			<description>You have a Passive Stealth score of 15+your Stealth skill.  You can choose to suppress this, but otherwise are always considered to have rolled a 15 on a d20 for a Stealth check.  If you wish you can roll for Stealth, but any roll of 14 or below instead counts as a 15, thus not allowing you to get a result below your passive stealth.</description>
-		</sheet>
-		<sheet alt="Amorphous">
-			<description>You can move through a space as narrow as 1 inch wide without squeezing.</description>
-		</sheet>
 		<sheet>
-			<description>You can radiate an aura of 120 feet, creatures of your choice can see through this magical darkness as if they benefited from Devil’s Sight.</description>
-			<description>Your Darkvision now has no range limitation, this allows you to see through Darkness and Magical Darkness as well as you can see through day.</description>
+			<description>• You have resistance to Acid, Cold, Fire, Lightning, Thunder; Bludgeoning, Piercing, and Slashing from Nonmagical Attacks.  You have immunity to Necrotic and Poison damage. 
+			• You are immune to the Exhaustion, Frightened, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained conditions
+			• You have a Passive Stealth score of 15+your Stealth skill.  You can choose to suppress this, but otherwise are always considered to have rolled a 15 on a d20 for a Stealth check.  
+		      If you wish you can roll for Stealth, but any roll of 14 or below instead counts as a 15, thus not allowing you to get a result below your passive stealth
+			• You can move through a space as narrow as 1 inch wide without squeezing
+			• You can radiate an aura of 120 feet, creatures of your choice can see through this magical darkness as if they benefited from Devil’s sight
+			• Your Darkvision now has no range limitation, this allows you to see through Darkness and Magical Darkness as well as you can see through day.</description>
 		</sheet>
 		<rules>
 			<stat name="stealth:passive" value="15" />
@@ -473,27 +466,12 @@
 	<element name="Pact of the Stormbow" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_STORMBOW">
 		<supports>Pact of the Blade</supports>
 		<description>
-			<h5 class="caption">PACT OF THE STORMBOW</h5>
 			<p>At 3rd level, when you take this Weapon of the Glaive, you gain a new option for your Pact Weapon.  Now when you use your Pact Weapon feature you can form a special weapon out of pure thunder and lightning, your Stormbow.  This does not have to look like a bow.  Your Stormbow deals 2d8 damage, half the dice are thunder and half are lightning.  Your attacks with this Stormbow have advantage against targets either wearing metal armor or made primarily of metal, and upon hitting a target with your Stormbow your next attack against them before the end of your next turn has advantage.  An enemy hit by your Stormbow is sheathed in booming energy until the start of your next turn and the first time your target willing moves before then it immediately takes 1d8 thunder damage.  This is a ranged weapon with a range of 150/600, the unique nature of the weapon allows you to strike out with it as a melee weapon with the finesse property.</p>
 			<p class="indent">At 5th level the Stormbow deals an additional 1d8 thunder damage to both rolls, as well as an additional 1d8 lightning damage upon a hit.  All of these increase by an additional 1d8 at 11th level, and 17th level to an eventual 4d8 lightning and 4d8 thunder upon a hit and 4d8 thunder upon willingly moving.</p>
-			<h5 class="caption">STORMSOUL</h5>
-			<p>At 3rd level you gain resistance to thunder and lightning damages.  At 7th level you cannot be deafened or blinded.  At 13th level you gain immunity to thunder and lightning damage.</p>
-			<p class="indent">Additionally when you take damage from a creature within 60ft of you you can, as a Reaction, cause flames to lash out from you that creature.  The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one.  At higher levels this damage increases by 1d10 for each Hex Level beyond 2nd.</p>
-			<h5 class="caption">THUNDER STEP</h5>
-			<p>Starting at 7th level you can, as an action, teleport yourself to an unoccupied space you can see within range.  Immediately after you disappear, a thunderous boom sounds, and each creature within 10 feet of the space you left must make a Constitution saving throw, taking 3d10 thunder damage on a failed save, or half as much on damage on a successful one.  The thunder can be heard from up to 300 feet away.</p>
-			<p class="indent">You can bring along objects as long as their weight doesn’t exceed what you can carry.  You can also teleport one willing creature of your size or smaller who is carrying gear up to its carrying capacity.  The creature must be within 5 feet of you when you use this ability, and there must be an unoccupied space within 5 feet of your destination space for the creature to appear in; otherwise the creature is left behind.  The damage this ability does increases by 1d10 for every 2 levels after 7th.  At 15th level you can now use this ability as a Bonus Action instead of an Action.</p>
-			<h5 class="caption">INVESTITURE OF AIR</h5>
-			<p>The power of your Stormbow begins to erupt from you starting at 15th level.  As an Action you can cause swirling winds to engulf you, until you choose to end the effect as a Reaction or until you lose consciousness.  While engulfed in these winds you gain a number of benefits such as:  Ranged weapon attacks made against you have disadvantage on the attack roll.  You gain a flying speed of 60 feet.  If you are still flying when this effect ends you fall, unless you can somehow prevent it.  You can use your action to create a 15-foot cube of swirling wind centered on a point you can see within 60 feet of your.  Each creature in that area must make a Constitution saving throw.  A creature in that area must make a Constitution saving throw.  A creature takes 2d10 bludgeoning damage on a failed save, or half as much damage on a successful one.  If a Large or smaller creature fails the save, that creature is also pushed up to 10 feet away from the center of the cube.</p>
-			<p class="indent">In addition a veil of shadows and silence radiates from you, masking you and your companions from detection.  Each creature of your choice, including yourself, has a +10 bonus to Dexterity (Stealth) checks and can’t be tracked except by magical means.  A creature that receives this bonus leaves behind no tracks or other traces of its passage.</p>
-			<h5 class="caption">MAELSTROM</h5>
-			<p>At 20th level, you gain the ability to infuse your entire body with the shadows you weave.  This can be a visible change, but it does not need to be.</p>
-			<ul class="unstyled">
-				<li><strong>Damage Resistance:</strong> You are now immune to poison damage and have resistance to Bludgeoning, Piercing, and Slashing from Nonmagical Attacks.  You also become immune to the Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, and Restrained conditions</li>
-				<li><strong>Regeneration:</strong> When you would take Thunder or Lightning Damage you instead heal that much. </li>
-				<li><strong>Darkvision:</strong> You gain Darkvision 60 ft, or your existing Darkvision increases by 60 ft.</li>
-				<li><strong>Air Form:</strong> Your body, including any gear you are wearing or carrying, becomes as though Air.  You can enter a hostile creature's space and stop there. You can move through a space as narrow as 1 inch wide without squeezing.</li>
-				<li><strong>Whirlwind:</strong> Each creature in your space must make a Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from you in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.  If the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone.</li>
-			</ul>
+			<div element="ID_SA_MR_CLASS_FEATURE_STORMBOW_STORMSOUL" />
+			<div element="ID_SA_MR_CLASS_FEATURE_STORMBOW_THUNDER_STEP" />
+			<div element="ID_SA_MR_CLASS_FEATURE_STORMBOW_INVESTITURE_OF_AIR" />
+			<div element="ID_SA_MR_CLASS_FEATURE_STORMBOW_MAELSTROM" />
 		</description>
 		<sheet>
 			<description>When you use your Pact Weapon you instead deal {{pact of the stormbow:damage}}d8 damage, half of the dice are thunder and half are lightning.  Your attacks with this Stormbow have advantage against targets either wearing metal armor or made primarily of metal, and upon hitting a target with your Stormbow your next attack against them before the end of your next turn has advantage.  When an enemy hit by your Stormbow willing moves before the end of your next turn it immediately takes {{pact of the stormbow:move}}d8 thunder damage.  This is a ranged attack with a range of 150/600</description>
@@ -519,6 +497,8 @@
 	</element>
 	<element name="Stormsoul" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_STORMBOW_STORMSOUL">
 		<description>
+			<p>At 3rd level you gain resistance to thunder and lightning damages.  At 7th level you cannot be deafened or blinded.  At 13th level you gain immunity to thunder and lightning damage.</p>
+			<p class="indent">Additionally when you take damage from a creature within 60ft of you you can, as a Reaction, cause flames to lash out from you that creature.  The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one.  At higher levels this damage increases by 1d10 for each Hex Level beyond 2nd.</p>
 		</description>
 		<sheet action="Reaction">
 			<description>You gain resistance to thunder and lightning damages.</description>
@@ -528,10 +508,14 @@
 	</element>
 	<element name="Thunder Step" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_STORMBOW_THUNDER_STEP">
 		<description>
+			<p>Starting at 7th level you can, as an action, teleport yourself to an unoccupied space you can see within range.  Immediately after you disappear, a thunderous boom sounds, and each creature within 10 feet of the space you left must make a Constitution saving throw, taking 3d10 thunder damage on a failed save, or half as much on damage on a successful one.  The thunder can be heard from up to 300 feet away.</p>
+			<p class="indent">You can bring along objects as long as their weight doesn’t exceed what you can carry.  You can also teleport one willing creature of your size or smaller who is carrying gear up to its carrying capacity.  The creature must be within 5 feet of you when you use this ability, and there must be an unoccupied space within 5 feet of your destination space for the creature to appear in; otherwise the creature is left behind.  The damage this ability does increases by 1d10 for every 2 levels after 7th.  At 15th level you can now use this ability as a Bonus Action instead of an Action.</p>
 		</description>
 		<sheet>
-			<description action="Action">You can teleport yourself to an unoccupied space you can see within range.  Each creature within 10 feet must make a Constitution saving throw, taking {{thunder step:count}}d10 thunder damage on a failed save, or half on a successful one.</description>
-			<description action="Bonus" level="15">You can teleport yourself to an unoccupied space you can see within range.  Each creature within 10 feet must make a Constitution saving throw, taking {{thunder step:count}}d10 thunder damage on a failed save, or half on a successful one.</description>
+			<description action="Action">You can teleport yourselfas well as one willing creature of your size or smaller to an unoccupied space you can see within range.
+			Each creature within 10 feet must make a Constitution saving throw, taking {{thunder step:count}}d10 thunder damage on a failed save, or half on a successful one.</description>
+			<description action="Bonus" level="15">You can teleport yourself to an unoccupied space you can see within range.
+			Each creature within 10 feet must make a Constitution saving throw, taking {{thunder step:count}}d10 thunder damage on a failed save, or half on a successful one.</description>
 		</sheet>
 		<rules>
 			<stat name="thunder step:count" value="3" bonus="stormbow" />
@@ -545,63 +529,48 @@
 	</element>
 	<element name="Investiture of Air" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_STORMBOW_INVESTITURE_OF_AIR">
 		<description>
+			<p>The power of your Stormbow begins to erupt from you starting at 15th level.  As an Action you can cause swirling winds to engulf you, until you choose to end the effect as a Reaction or until you lose consciousness.  While engulfed in these winds you gain a number of benefits such as:  Ranged weapon attacks made against you have disadvantage on the attack roll.  You gain a flying speed of 60 feet.  If you are still flying when this effect ends you fall, unless you can somehow prevent it.  You can use your action to create a 15-foot cube of swirling wind centered on a point you can see within 60 feet of your.  Each creature in that area must make a Constitution saving throw.  A creature in that area must make a Constitution saving throw.  A creature takes 2d10 bludgeoning damage on a failed save, or half as much damage on a successful one.  If a Large or smaller creature fails the save, that creature is also pushed up to 10 feet away from the center of the cube.</p>
+			<p class="indent">In addition a veil of shadows and silence radiates from you, masking you and your companions from detection.  Each creature of your choice, including yourself, has a +10 bonus to Dexterity (Stealth) checks and can’t be tracked except by magical means.  A creature that receives this bonus leaves behind no tracks or other traces of its passage.</p>
 		</description>
 		<sheet>
-			<description action="Action">As an Action you can cause swirling winds to engulf you. Ranged weapon attacks made against you have disadvantage on the attack roll. You gain a flying speed of 60 feet. You can use your action to create a 15-foot cube of within 60 feet of your.  Each creature must take a Constitution saving throw and takes 2d10 bludgeoning damage on a fail and is pushed 10 feet, it takes half as much damage on a success.</description>
+			<description action="Action">As an Action you can cause swirling winds to engulf you and gain the following effects:
+			• Ranged weapon attacks made against you have disadvantage on the attack roll
+			• You gain a flying speed of 60 feet
+			• You can use your action to create a 15-foot cube of within 60 feet of you.
+			  Each creature in the cube must take a Constitution saving throw and takes 2d10 bludgeoning damage on fail and is pushed 10 feet, takes half on a success.</description>
 		</sheet>
 	</element>
 	<element name="Maelstrom" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_STORMBOW_MAELSTROM">
 		<description>
+			<p>At 20th level, you gain the ability to infuse your entire body with the shadows you weave.  This can be a visible change, but it does not need to be.</p>
+			<ul class="unstyled">
+				<li><strong>Damage Resistance:</strong> You are now immune to poison damage and have resistance to Bludgeoning, Piercing, and Slashing from Nonmagical Attacks.  You also become immune to the Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, and Restrained conditions</li>
+				<li><strong>Regeneration:</strong> When you would take Thunder or Lightning Damage you instead heal that much. </li>
+				<li><strong>Darkvision:</strong> You gain Darkvision 60 ft, or your existing Darkvision increases by 60 ft.</li>
+				<li><strong>Air Form:</strong> Your body, including any gear you are wearing or carrying, becomes as though Air.  You can enter a hostile creature's space and stop there. You can move through a space as narrow as 1 inch wide without squeezing.</li>
+				<li><strong>Whirlwind:</strong> Each creature in your space must make a Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from you in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.  If the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone.</li>
+			</ul>
 		</description>
 		<sheet alt="Damage Resistance">
-			<description>You are now immune to poison damage and have resistance to Bludgeoning, Piercing, and Slashing from Nonmagical Attacks.  You also become immune to the Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, and Restrained conditions</description>
-		</sheet>
-		<sheet alt="Regeneration">
-			<description>When you would take Thunder or Lightning Damage you instead heal that much. </description>
-		</sheet>
-		<sheet alt="Darkvision">
-			<description>You gain Darkvision 60 ft, or your existing Darkvision increases by 60 ft.</description>
-		</sheet>
-		<sheet alt="Air Form">
-			<description>Your body, including any gear you are wearing or carrying, becomes as though Air.  You can enter a hostile creature's space and stop there. You can move through a space as narrow as 1 inch wide without squeezing.</description>
-		</sheet>
-		<sheet alt="Whirlwind">
-			<description>Each creature in your space must make a Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from you in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.  If the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone.</description>
+			<description>• You are now immune to poison damage and have resistance to Bludgeoning, Piercing, and Slashing from Nonmagical Attacks.
+			• You also become immune to the Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, and Restrained conditions
+			• When you would take Thunder or Lightning Damage you instead heal that much
+			• You gain Darkvision 60 ft, or your existing Darkvision increases by 60 ft
+			• Your body, including any gear you are wearing or carrying, becomes as though Air.  
+			  You can enter a hostile creature's space and stop there. You can move through a space as narrow as 1 inch wide without squeezing
+			• Each creature in your space must make a Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from you in a random direction and knocked prone
+			  If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone
+		      If the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone</description>
 		</sheet>
 	</element>
 	<element name="Pact of the Ice Knife" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE">
 		<supports>Pact of the Blade</supports>
 		<description>
-			<h5 class="caption">PACT OF THE ICE KNIFE</h5>
 			<p>At 3rd level, when you take this Weapon of the Glaive, you gain a new option for your Pact Weapon.  You call forth utter cold and form a brace of knives out of ice.  The actual appearance of the brace and knives are up to you.  They can be a bandolier holding a series of ice daggers, a brace upon the arm with throwing stars, or a contraption beneath your sleeves that brings a knife to your hand with a twist of the wrist.  Whatever form the brace and weapons take while your Ice Knife is active you have an unlimited supply of ice knives.  These are weapons with the finesse and thrown properties with a range of 90/180.  They deal 1d10 piercing damage, increasing by 1d10 at 5th, 11th and 17th levels.  Hit or miss the blade then explodes.  The target and each creature within 5 feet of it must succeed on a Dexterity saving throw or take 3d6 cold damage.  The cold damage increases by 1d6 at 5th level, and every 2 levels after that. </p>
-			<h5 class="caption">ARMOR OF AGATHYS</h5>
-			<p>At 3rd a protective magical force surrounds you, manifesting as a spectral frost that covers you and your gear.  You gain 10 temporary hit points, and if a creature hits you with a melee attack while you have these hit points, the creature takes cold 10 cold damage.  You replenish 5 temporary hit points per minute.  Both your temporary hit points and the cold damage increase by 5 for every two levels beyond 3rd level.</p>
-			<h5 class="caption">CONTROL ICE AND SNOW</h5>
-			<p>Starting at 7th level you can, as an action, teleport yourself to an unoccupied space you can see within range.  Immediately after you disappear, a thunderous boom sounds, and each creature within 10 feet of the space you left must make a Constitution saving throw, taking 3d10 thunder damage on a failed save, or half as much on damage on a successful one.  The thunder can be heard from up to 300 feet away.</p>
-			<ul class="unstyled">
-				<li>Create a foot of snow.</li>
-				<li>Cause ice or snow to form into simple shapes and animate at your direction. This change lasts for 1 hour.  These are not generally combat capable.</li>
-				<li>You freeze water in the area. The water unfreezes in 1 hour.  A creature caught in this ice can escape with a successful Strength Save as an Action or if the ice surrounding them takes damage equal to your max temporary hit points from your Armor of Agathys.</li>
-				<li>You touch a Medium size or smaller object made of ice, or a section of ice no more than 5 feet in any dimension and form it into any shape that suits your purpose. So, for example, you could shape a large icicle into a weapon, idol, or coffer, or make a small passage through an ice wall, as long as the wall is less than 5 feet thick. You could also shape an ice door or its frame to seal the door shut. The object you create can have up to two hinges and a latch, but finer mechanical detail isn't possible.</li>
-				<li>You can part snow in the area and create a trench.  The trench extends across the effect’s area, and the separated snow forms a wall to either side.  The trench remains until you choose to end it, or the snow melts through some means.</li>
-			</ul>
-			<h5 class="caption">INVESTITURE OF ICE</h5>
-			<p>The utter cold of your ice flows freely from you starting at 15th level.  As an Action you can cause ice to rime your body and gaining the following benefits:</p>
-			<ul class="unstyled">
-				<li>You are immune to cold damage and have resistance to fire damage.</li>
-				<li>You can move across difficult terrain created by ice or snow without spending extra movement.</li>
-			</ul>
-			<p class="indent">The ground in a 10-foot radius around you is icy and is difficult terrain for creatures other than you.  The radius moves with you.</p>
-			<p class="indent">You can use your action to create a 15-foot cone of freezing wind extending from your outstretched hand in a direction you choose.  Each creature in the cone must make a Constitution saving throw.  A creature takes 4d6 cold damage on a failed save, or half as much damage on a successful one.  A creature that fails its save against this effect has its speed halved until the start of your next turn.</p>
-			<h5 class="caption">UTTERCOLD</h5>
-			<p>At 20th level, you gain the ability to infuse your entire body with the utter cold you have been fashioning.  This can be a visible change, but it does not need to be.</p>
-			<ul class="unstyled">
-				<li><strong>Damage Resistance:</strong> You are now immune to poison damage and have resistance to Bludgeoning, Piercing, and Slashing from Nonmagical Attacks.  You also become immune to the Exhaustion, Paralyzed, Petrified, and Poisoned conditions</li>
-				<li><strong>Regeneration:</strong> When you would take Cold Damage you instead heal that much. Your Armor of Agathys now regains 50 temporary hit points per round.</li>
-				<li><strong>Darkvision:</strong> You gain Darkvision 60 ft, or your existing Darkvision increases by 60 ft.</li>
-				<li><strong>Ice Glide:</strong> You can burrow through ice and snow.  While doing so you don’t disturb the material you move through.  Your burrow speed through such materials is 30 ft.</li>
-				<li><strong>Siege Monster:</strong> You deal double damage to objects and structures.</li>
-			</ul>
+			<div element="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_ARMOR_OF_AGATHYS" />
+			<div element="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_CONTROL_ICE_AND_SNOW" />
+			<div element="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_INVESTITURE_OF_ICE" />
+			<div element="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_MAELSTROM" />
 		</description>
 		<sheet>
 			<description>You have an unlimited supply of ice knives with the finesse and thrown properties and a range of 90/180. They deal {{pact of the ice knife:damage}}d10 piercing damage. Hit or miss the blade then explodes and each creature within 5 feet must succeed on a Dexterity saving throw or take {{pact of the ice knife:exploding}}d6 cold damage.</description>
@@ -628,9 +597,12 @@
 	</element>
 	<element name="Armor of Agathys" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_ARMOR_OF_AGATHYS">
 		<description>
+			<p>At 3rd a protective magical force surrounds you, manifesting as a spectral frost that covers you and your gear.  You gain 10 temporary hit points, and if a creature hits you with a melee attack while you have these hit points, the creature takes cold 10 cold damage.  You replenish 5 temporary hit points per minute.  Both your temporary hit points and the cold damage increase by 5 for every two levels beyond 3rd level.</p>
 		</description>
 		<sheet>
-			<description>You gain {{armor of agathys:count}} temporary hit points. If a creature hits you with a melee attack, the creature takes cold {{armor of agathys:count}} cold damage.  You replenish 5 temporary hit points per minute.</description>
+			<description>You gain {{armor of agathys:count}} temporary hit points
+			If a creature hits you with a melee attack, the creature takes cold {{armor of agathys:count}} cold damage
+			You replenish {{armor of agathys:replenish}} temporary hit points per minute.</description>
 		</sheet>
 		<rules>
 			<stat name="armor of agathys:count" value="10" />
@@ -642,50 +614,69 @@
 			<stat name="armor of agathys:count" value="40" level="15" />
 			<stat name="armor of agathys:count" value="45" level="17" />
 			<stat name="armor of agathys:count" value="50" level="19" />
+			<stat name="armor of agathys:replenish" value="5" />
+			<stat name="armor of agathys:replenish" value="50" level="20" />
 		</rules>
 	</element>
 	<element name="Control Ice and Snow" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_CONTROL_ICE_AND_SNOW">
 		<description>
+			<p>Starting at 7th level you gain resistance to Cold damage and no longer suffer any penalties for extreme conditions, hot or cold.  You also gain the ability to manipulate and control ice and snow within 300 feet of you as an action.  Some things you can use this ability to do include:</p>
+			<ul class="unstyled">
+				<li>Create a foot of snow.</li>
+				<li>Cause ice or snow to form into simple shapes and animate at your direction. This change lasts for 1 hour.  These are not generally combat capable.</li>
+				<li>You freeze water in the area. The water unfreezes in 1 hour.  A creature caught in this ice can escape with a successful Strength Save as an Action or if the ice surrounding them takes damage equal to your max temporary hit points from your Armor of Agathys.</li>
+				<li>You touch a Medium size or smaller object made of ice, or a section of ice no more than 5 feet in any dimension and form it into any shape that suits your purpose. So, for example, you could shape a large icicle into a weapon, idol, or coffer, or make a small passage through an ice wall, as long as the wall is less than 5 feet thick. You could also shape an ice door or its frame to seal the door shut. The object you create can have up to two hinges and a latch, but finer mechanical detail isn't possible.</li>
+				<li>You can part snow in the area and create a trench.  The trench extends across the effect’s area, and the separated snow forms a wall to either side.  The trench remains until you choose to end it, or the snow melts through some means.</li>
+			</ul>
 		</description>
 		<sheet>
-			<description action="Action">gain resistance to Cold damage and no longer suffer any penalties for extreme conditions, hot or cold.  You also gain the ability to manipulate and control ice and snow within 300 feet of you as an action.</description>
+			<description>Resistance to Cold damage and no longer suffer any penalties for extreme conditions, hot or cold.</description>
+			<description action="Action">You can manipulate and control ice and snow within 300 feet of you:
+			• Create a foot of snow
+			• Cause ice or snow to form into simple shapes and animate at your duration for 1 hour.
+			• Freeze water in the area. A creature caught in this ice can escape with a successful Strength Save as an Action.
+			  If the ice surrounding them takes damage, they take damage equal to your max THP for Armor of Agathys.
+			• Form a Medium object of ice into any form that suits your purpose.
+			• Part snow in the are to create a trench.</description>
 		</sheet>
-		<rules>
-			<stat name="thunder step:count" value="3" bonus="stormbow" />
-			<stat name="thunder step:count" value="4" bonus="stormbow" level="9"/>	
-			<stat name="thunder step:count" value="5" bonus="stormbow" level="11"/>	
-			<stat name="thunder step:count" value="6" bonus="stormbow" level="13"/>	
-			<stat name="thunder step:count" value="7" bonus="stormbow" level="15"/>	
-			<stat name="thunder step:count" value="8" bonus="stormbow" level="17"/>	
-			<stat name="thunder step:count" value="9" bonus="stormbow" level="19"/>	
-		</rules>
 	</element>
 	<element name="Investiture of Ice" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_INVESTITURE_OF_ICE">
 		<description>
+			<p>The utter cold of your ice flows freely from you starting at 15th level.  As an Action you can cause ice to rime your body and gaining the following benefits:</p>
+			<ul class="unstyled">
+				<li>You are immune to cold damage and have resistance to fire damage.</li>
+				<li>You can move across difficult terrain created by ice or snow without spending extra movement.</li>
+			</ul>
+			<p class="indent">The ground in a 10-foot radius around you is icy and is difficult terrain for creatures other than you.  The radius moves with you.</p>
+			<p class="indent">You can use your action to create a 15-foot cone of freezing wind extending from your outstretched hand in a direction you choose.  Each creature in the cone must make a Constitution saving throw.  A creature takes 4d6 cold damage on a failed save, or half as much damage on a successful one.  A creature that fails its save against this effect has its speed halved until the start of your next turn.</p>
 		</description>
 		<sheet>
-			<description>You are immune to cold damage and have resistance to fire damage. You can move across difficult terrain created by ice or snow without spending extra movement.</description>
+			<description>You are immune to cold damage and have resistance to fire damage. 
+			You can move across difficult terrain created by ice or snow without spending extra movement.</description>
 			<description>The ground in a 10-foot radius around you is icy and is difficult terrain for creatures other than you.</description>
-			<description action="Action">Create a 15-foot cone of freezing wind extending from your outstretched hand in a direction you choose. Each creature in the cone must make a Constitution saving throw, take 4d6 cold damage on a failed save and have its speed halved until the start of your next turn, or half as much on a successful one.</description>
+			<description action="Action">Create a 15-foot cone of freezing wind extending from your outstretched hand in a direction you choose
+			Each creature in the cone must make a Constitution saving throw, take 4d6 cold damage on a failed save and have its speed halved until the start of your next turn, or half as much on a successful one.</description>
 		</sheet>
 	</element>
 	<element name="Maelstrom" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_MAELSTROM">
 		<description>
+			<p>At 20th level, you gain the ability to infuse your entire body with the utter cold you have been fashioning.  This can be a visible change, but it does not need to be.</p>
+			<ul class="unstyled">
+				<li><strong>Damage Resistance:</strong> You are now immune to poison damage and have resistance to Bludgeoning, Piercing, and Slashing from Nonmagical Attacks.  You also become immune to the Exhaustion, Paralyzed, Petrified, and Poisoned conditions</li>
+				<li><strong>Regeneration:</strong> When you would take Cold Damage you instead heal that much. Your Armor of Agathys now regains 50 temporary hit points per round.</li>
+				<li><strong>Darkvision:</strong> You gain Darkvision 60 ft, or your existing Darkvision increases by 60 ft.</li>
+				<li><strong>Ice Glide:</strong> You can burrow through ice and snow.  While doing so you don’t disturb the material you move through.  Your burrow speed through such materials is 30 ft.</li>
+				<li><strong>Siege Monster:</strong> You deal double damage to objects and structures.</li>
+			</ul>
 		</description>
-		<sheet alt="Damage Resistance">
-			<description>You are now immune to poison damage and have resistance to Bludgeoning, Piercing, and Slashing from Nonmagical Attacks.  You also become immune to the Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, and Restrained conditions</description>
-		</sheet>
-		<sheet alt="Regeneration">
-			<description>When you would take Thunder or Lightning Damage you instead heal that much. </description>
-		</sheet>
-		<sheet alt="Darkvision">
-			<description>You gain Darkvision 60 ft, or your existing Darkvision increases by 60 ft.</description>
-		</sheet>
-		<sheet alt="Air Form">
-			<description>You can enter a hostile creature's space and stop there. You can move through a space as narrow as 1 inch wide without squeezing.</description>
-		</sheet>
-		<sheet alt="Whirlwind">
-			<description>Each creature in your space must make a Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from you in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.  If the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone.</description>
+		<sheet>
+			<description>• You are immune to poison damage and have resistance to Bludgeoning, Piercing, and Slashing from Nonmagical Attacks
+			• You are immune to the Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, and Restrained conditions
+			• When you would take Cold Damage you instead heal that much
+			• You gain Darkvision 60 ft, or your existing Darkvision increases by 60 ft
+			• You can burrow through ice and snow at a speeed of 30ft
+			  While doing so you don’t disturb the material you move through
+			• You deal double damage to objects and structures</description>
 		</sheet>
 	</element>
 	<element name="Ability Score Improvement" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_ABILITY_SCORE_IMPROVEMENT">
