@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>The Ooze</name>
+		<description>You're an Ooze.</description>
+		<update version="0.0.1">
+			<file name="class-ooze.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/classes/class-ooze.xml" />
+		</update>
+	</info>
+	<element name="Ooze" type="Class" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_OOZE">
+		<description>
+			<p>Your body has become that of an Ooze. You gain various abilities based on the type of ooze you choose. You no longer need to sleep or breathe, but you still must eat. That said as an Ooze you can eat a lot of things. At 1st level you become an Ooze choosing your Ooze type which grants you special abilities and features. You gain more abilities from your choice at later levels. You also become Resistant to Acid and Immune to Prone. You become immune to Acid at 10th level. You gain further Oozey Abilities based on your ooze type at 5th, 7th, 9th, 11th, 15th and 17th levels. For most oozes you are not going to be able to wear or wield most gear or magic items. However you can temporarily consume a magic item.  When you do so the magic item seems to melt into your body, subsumed by your ooze and becoming a part of you.  For the duration you gain the effects of the magic item.  If the item requires attunement you must attune to it as part of this process.  The item becomes inaccessible to anyone else until you spend some time regurgitating, or reconstituting the item.</p>
+			<h4>CREATING AN OOZE</h4>
+			<h2>CLASS FEATURES</h2>
+			<p>As an Ooze, you gain the following class features.</p>
+			<h5 class="caption">HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d12 per Ooze level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 12 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d12 (or 7) + your Constitution modifier per Ooze level after 1st</li>
+			</ul>
+			<h5 class="caption">PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> None</li>
+				<li><strong>Weapons:</strong> Unarmed</li>
+				<li><strong>Tools:</strong> None</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Strength, Constitution</li>
+				<li><strong>Skills:</strong> Choose two skills from Athletics, Insight, Intimidation, Perception, Stealth, and Survival</li>
+			</ul>
+			<h5 class="caption">EQUIPMENT</h5>
+			<p>You start with no equipment.</p>
+			<h5 class="caption">THE OOZE</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-15">Ooze Touch</td><td class="left">Features</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>2d4</td><td class="left">Ooze Body, Unarmored Defense, Ooze Touch</td></tr>
+				<tr><td> 2nd</td><td>2d4</td><td class="left">Tenacious Strength, Crushing Psuedopods</td></tr>
+				<tr><td> 3rd</td><td>2d4</td><td class="left">Ooze Type Resistance</td></tr>
+				<tr><td> 4th</td><td>3d4</td><td class="left">Ability Score Improvement, Blindsight (30 ft)</td></tr>
+				<tr><td> 5th</td><td>3d4</td><td class="left">Extra Attack, Oozey Ability</td></tr>
+				<tr><td> 6th</td><td>3d4</td><td class="left">Blindsight (60 ft), Tenacity</td></tr>
+				<tr><td> 7th</td><td>3d4</td><td class="left">Tenacity, Brutish Durability</td></tr>
+				<tr><td> 8th</td><td>3d4</td><td class="left">Ability Score Improvement, Hardiness of the Ooze</td></tr>
+				<tr><td> 9th</td><td>3d4</td><td class="left">Blindsight (90 ft)</td></tr>
+				<tr><td>10th</td><td>4d4</td><td class="left">Resolve</td></tr>
+				<tr><td>11th</td><td>4d4</td><td class="left">Oozey Ability</td></tr>
+				<tr><td>12th</td><td>4d4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>5d4</td><td class="left">Extra Attack (x2), Ooze Type Immunity</td></tr>
+				<tr><td>14th</td><td>5d4</td><td class="left">Blindsight (120 ft), Unstoppable</td></tr>
+				<tr><td>15th</td><td>5d4</td><td class="left">-</td></tr>
+				<tr><td>16th</td><td>5d4</td><td class="left">Immutable, Ability Score Improvement, Hardiness of the Ooze (24)</td></tr>
+				<tr><td>17th</td><td>6d4</td><td class="left">Oozey Ability</td></tr>
+				<tr><td>18th</td><td>6d4</td><td class="left">Blindsight (150 ft)</td></tr>
+				<tr><td>19th</td><td>6d4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>6d4</td><td class="left">Hardiness of the Ooze (26), Perfection of the Ooze</td></tr>
+			</table>
+			<div element="ID_SA_MR_CLASS_FEATURE_OOZE_BODY" />
+			<div element="ID_SA_MR_CLASS_FEATURE_UNARMORED_DEFENSE" />
+			<div element="ID_SA_MR_CLASS_FEATURE_OOZE_TOUCH" />
+			<div element="ID_SA_MR_CLASS_FEATURE_TENACIOUS_STRENGTH" />
+			<div element="ID_SA_MR_CLASS_FEATURE_CRUSHING_PSUEDOPODS" />
+			<div element="ID_SA_MR_CLASS_FEATURE_OOZE_ABILITY_SCORE_IMPROVEMENT" />
+			<div element="ID_SA_MR_CLASS_FEATURE_BLINDSIGHT" />			
+			<div element="ID_SA_MR_CLASS_FEATURE_EXTRA_ATTACK" />
+			<div element="ID_SA_MR_CLASS_FEATURE_TENACITY" />
+			<div element="ID_SA_MR_CLASS_FEATURE_BRUTISH_DURABILITY" />
+			<div element="ID_SA_MR_CLASS_FEATURE_HARDINESS_OF_THE_OOZE" />
+			<div element="ID_SA_MR_CLASS_FEATURE_RESOLVE" />
+			<div element="ID_SA_MR_CLASS_FEATURE_UNSTOPPABLE" />
+			<div element="ID_SA_MR_CLASS_FEATURE_IMMUTABLE" />
+			<div element="ID_SA_MR_CLASS_FEATURE_PERFECTION_OF_THE_OOZE" />
+		</description>
+		<setters>
+			<set name="short">You're an Ooze.</set>
+			<set name="hd">d12</set>
+		</setters>
+		<sheet display="false" />
+			<description>You're an Ooze.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+			<select type="Proficiency" name="Skill Proficiency, Ooze" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" requirements="!ID_SA_MR_MULTICLASS_ELDRICTH_GLAIVE" />			
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_OOZE_BODY" level="1" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_UNARMORED_DEFENSE" level="1" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_OOZE_TOUCH" level="1" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_TENACIOUS_STRENGTH" level="2" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_CRUSHING_PSUEDOPODS" level="2" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_OOZE_ABILITY_SCORE_IMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_BLINDSIGHT" level="4" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_EXTRA_ATTACK" level="5" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_TENACITY" level="6" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_BRUTISH_DURABILITY" level="7" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_HARDINESS_OF_THE_OOZE" level="8" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_RESOLVE" level="10" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_UNSTOPPABLE" level="14" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_IMMUTABLE" level="16" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_PERFECTION_OF_THE_OOZE" level="20" />
+		</rules>
+	</element>
+	<element name="Ooze Body" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_OOZE_BODY">
+		<description>
+			<p>Your body has become that of an Ooze.  You gain various abilities based on the type of ooze you choose.  You no longer need to sleep or breathe, but you still must eat.  That said as an Ooze you can eat a lot of things.  At 1st level you become an Ooze choosing your Ooze type which grants you special abilities and features.  You gain more abilities from your choice at later levels.  You also become Resistant to Acid and Immune to Prone.  You become immune to Acid at 10th level.  You gain further Oozey Abilities based on your ooze type at 5th, 7th, 9th, 11th, 15th and 17th levels.  For most oozes you are not going to be able to wear or wield most gear or magic items.  However you can temporarily consume a magic item.  When you do so the magic item seems to melt into your body, subsumed by your ooze and becoming a part of you.  For the duration you gain the effects of the magic item.  If the item requires attunement you must attune to it as part of this process.  The item becomes inaccessible to anyone else until you spend some time regurgitating, or reconstituting the item.</p>
+		</description>
+		<sheet>
+			<description>You no longer need to sleep or breathe, but you still must eat. You are Resistant to Acid and Immune to Prone. You can consume a magical item and have its effects transferred to you (as if you were weilding it). You may later reguritate or reconstitue the item to un-equip it.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Ooze Type" supports="Ooze Body" />
+		</rules>
+	</element>
+	<element name="Gray Body" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY">
+		<supports>Ooze Body</supports>
+		<description>
+			<p>You take on a gray hue. You gain a climb speed equal to your move speed.</p>
+			<div element="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_FALSE_APPERANCE" />
+			<div element="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_AMORPHOUS" />
+			<div element="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_GRAY_RESISTANCE" />
+			<div element="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_CORRODE_METAL" />
+			<div element="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_SEIGE_OOZE" />
+			<div element="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_DESTRUCTION_AND_RECONSTITUTION" />
+			<div element="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_ANTITHISES_OF_METAL" />
+			<div element="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_GRAY_IMMUNITY" />
+			<div element="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_ARMOR_BREAKER" />
+			<div element="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_RUSTED_ARROGANCE" />
+		</description>
+		<sheet>
+			<description>You take on a gray hue. You gain a climb speed speed equal to your move speed.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:climb" value="innate speed" bonus="gray body" requirements="[innate speed:1]" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_FALSE_APPERANCE" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_AMORPHOUS" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_GRAY_RESISTANCE" level="3"/>
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_CORRODE_METAL" level="5"/>
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_SEIGE_OOZE" level="7"/>
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_DESTRUCTION_AND_RECONSTITUTION" level="9"/>
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_ANTITHISES_OF_METAL" level="11"/>
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_GRAY_IMMUNITY" level="13"/>
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_ARMOR_BREAKER" level="15"/>
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_RUSTED_ARROGANCE" level="17"/>
+		</rules>
+	</element>
+	<element name="False Apperance" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_FALSE_APPERANCE">
+		<description>
+			<p>When not moving you are indistinguishable from a pool of oil or wet rock.</p>
+		</description>
+		<sheet>
+			<description>When not moving you are indistinguishable from a pool of oil or wet rock.</description>
+		</sheet>
+	</element>
+	<element name="Amorphous" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_AMORPHOUS">
+		<description>
+			<p>You can move through a space as narrow as 1 inch wide without squeezing.</p>
+		</description>
+		<sheet>
+			<description>You can move through a space as narrow as 1 inch wide without squeezing.</description>
+		</sheet>
+	</element>
+	<element name="Gray Resistance" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_GRAY_RESISTANCE">
+		<description>
+			<p>Your oozey body’s resistance improves as you become more intune with the type of ooze you have become.  You gain resistance to Cold and Fire in addition to the resistance to Acid you already had.</p>
+		</description>
+		<sheet>
+			<description>You gain resistance to Cold and Fire.</description>
+			<description level="13">You gain immunity to Cold and Fire.</description>
+		</sheet>
+	</element>
+	<element name="Corrode Metal" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_CORRODE_METAL">
+		<description>
+			<p>Your acid body grows stronger.  Any nonmagical weapon made of metal that hits you corrodes.  After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls.  If its penalty drops to -5 the weapon is destroyed.  You have a similar effect on nonmagical metal armor.  After dealing damage to someone wearing nonmagical metal armor that armor takes a cumulative -1 penalty to AC.  Any armors that have their AC reduced by -5 this way is destroyed.  Nonmagical ammunition made of metal that hits the ooze is destroyed after dealing damage.  You can eat through 2-inch-thick, nonmagical metal, in 1 round.</p>
+		</description>
+		<sheet>
+			<description>Any nonmagical weapon made of metal that hits you corrodes and takes a cumulative -1 penalty to damage rolls.  If its penalty drops to -5 the weapon is destroyed.</description>
+			<description level="9">Any nonmagical or magical weapon made of metal that hits you corrodes and takes a cumulative -1 penalty to damage rolls.  If its penalty drops to -5 the weapon is destroyed.</description>
+		</sheet>
+		<sheet>
+			<description>After dealing damage to someone wearing nonmagical metal armor that armor takes a cumulative -1 penalty to AC.  Any armors that have their AC reduced by -5 this way is destroyed.</description>
+			<description level="9">After dealing damage to someone wearing nonmagical or magical metal armor that armor takes a cumulative -1 penalty to AC.  Any armors that have their AC reduced by -5 this way is destroyed.</description>
+		</sheet>
+		<sheet>
+			<description>Nonmagical ammunition made of metal that hits the ooze is destroyed after dealing damage.</description>
+			<description level="9">Nonmagical or magical ammunition made of metal that hits the ooze is destroyed after dealing damage.</description>
+		</sheet>
+		<sheet>
+			<description action="1 round">You can eat through 2-inch-thick, nonmagical metal.</description>
+			<description action="1 round" level="7">You can eat through 6-inch-thick, nonmagical metal.</description>
+			<description action="1 round" level="9">You can eat through 1-foot-thick, nonmagical metal.</description>
+			<description action="1 round" level="11">You can eat through 2-foot-thick, nonmagical metal.</description>
+		</sheet>
+	</element>
+	<element name="Siege Ooze" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_SEIGE_OOZE">
+		<description>
+			<p>You now deal double damage to nonmagical metal objects, and to constructs and creatures primarily formed of metal.  You can now eat through 6-inch-thick, nonmagical metal, in 1 round.</p>
+		</description>
+		<sheet>
+			<description>You now deal double damage to nonmagical metal objects, and to constructs and creatures primarily formed of metal.</description>
+		</sheet>
+	</element>
+	<element name="Destruction and Reconstitution" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_DESTRUCTION_AND_RECONSTITUTION">
+		<description>
+			<p>You can now harm magical metal objects through your Ooze Touch and other class and Gray Body features.  Any magical objects destroyed this way can later be repaired if you remain in contact with their remains for 1 minute and choose to do so.  Your Corrode Metal now also works on metal constructs and creatures primarily formed of metal.  You cannot reduce a creature or construct’s AC below 0 this way, nor are they automatically destroyed after a -5 cumulative penalty.  You can now eat through 1-foot-thick metal in 1 round.</p>
+		</description>
+		<sheet alt="Corrode Metal">
+			<description>After dealing damage to metal constructs and creatures primarily formed of metal, those creatures take a cumulative -1 penalty to AC. You cannot reduce a creature or construct’s AC below 0 this way, nor are they automatically destroyed after a -5 cumulative penalty.</description>
+		</sheet>
+	</element>
+	<element name="Antithises of Metal" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_ANTITHISES_OF_METAL">
+		<description>
+			<p>You now deal max damage whenever you deal damage to metal objects or constructs and creatures primarily formed of metal.  You can now eat through 2-foot-thick metal in 1 round.</p>
+		</description>
+		<sheet>
+			<description>You now deal max damage whenever you deal damage to metal objects or constructs and creatures primarily formed of metal.</description>
+		</sheet>
+	</element>
+	<element name="Gray Immunity" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_GRAY_IMMUNITY">
+		<description>
+			<p>Your oozey body’s resistance improves again as you become even more intune with your type of ooze.  Your resistance to Cold and Fire now become Immunity to Cold and Fire.</p>
+		</description>
+	</element>
+	<element name="Armor Breaker" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_ARMOR_BREAKER">
+		<description>
+			<p>Any creatures suffering from a penalty to AC as a result of your features has their speed reduced by half and you have advantage to hit them.</p>
+		</description>
+		<sheet>
+			<description>Any creatures suffering from a penalty to AC as a result of your features has their speed reduced by half and you have advantage to hit them.</description>
+		</sheet>
+	</element>
+	<element name="Rusted Arrogance" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_RUSTED_ARROGANCE">
+		<description>
+			<p>Any items or creatures that are suffering from a penalty to damage as a result of your features has disadvantage on attack rolls.</p>
+		</description>
+		<sheet>
+			<description>Any items or creatures that are suffering from a penalty to damage as a result of your features has disadvantage on attack rolls.</description>
+		</sheet>
+	</element>
+	<element name="Cube Body" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY">
+		<supports>Ooze Body</supports>
+		<description>
+			<p>You take on the form of a transparent cube that is hard to spot.  You start out as a 5 ft cube and increase in size to a large 10 ft cube at 5th level.  You take up your entire space and can squeeze, without penalty, through a space one size category smaller than you.</p>
+			<div element="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_PROFICIENCY" />
+			<div element="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_CUBE_RESISTANCE" />
+			<div element="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_ENGULF" />
+			<div element="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_UNESCAPABLE" />
+			<div element="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_CUBE_IMMUNITY" />
+			<div element="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_ALL_DEVOURING" />
+		</description>
+		<sheet>
+			<description>You take on the form of a {{cube body:size}}ft transparent cube that is hard to spot. You take up your entire space and can squeeze, without penalty, through a space one size category smaller than you.</description>
+		</sheet>
+		<rules>
+			<stat name="cube body:size" value="5" />
+			<stat name="cube body:size" value="10" level="5" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_PROFICIENCY" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_CUBE_RESISTANCE" level="3"/>
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_ENGULF" level="6"/>
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_UNESCAPABLE" level="11"/>
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_CUBE_IMMUNITY" level="13"/>
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_ALL_DEVOURING" level="17"/>
+		</rules>
+	</element>
+	<element name="Cube Body Proficiency" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_PROFICIENCY">
+		<description>
+			<p>You gain Proficiency in Stealth, gaining proficiency in another skill if you were already proficient in Stealth, and use Constitution in place of Dexterity for Stealth.</p>
+			<p class="indent">Even when in plain sight it takes a successful Wisdom (Perception) check to spot you when you have neither moved nor attacked.</p>
+			<p class="indent">The DC for this check is equal to 10 plus your Stealth modifier. It is as if you have a Passive Stealth score when not moving or attacking.</p>
+			<p class="indent">A creature that tries to enter you space while unaware of you is surprised by you.</p>
+		</description>
+		<sheet>
+			<description>You gain Proficiency in Stealth and use Constitution instead of Dexterity. It takes a successful Wisdom (Perception) DC {{cube body proficiency:stealth}} check to spot you when you have neither moved nor attacked. 
+			You have a passive stealth skill of {{stealth}} and when a creature that tries to enter your space while unaware of you is surprised by you.</description>
+		</sheet>
+		<rules>
+			<stat name="cube body proficiency:stealth" value="10" />
+			<stat name="cube body proficiency:stealth" value="stealth" />
+			<stat name="stealth:misc" value="constitution:modifier" bonus="cube body" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+		</rules>
+	</element>
+	<element name="Cube Resistance" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_CUBE_RESISTANCE">
+		<description>
+			<p>Your oozey body’s resistance improves as you become more intune with the type of ooze you have become. You gain resistance to Cold and Fire in addition to the resistance to Acid you already had.</p>
+		</description>
+		<sheet>
+			<description>You gain resistance to Cold and Fire.</description>
+			<description level="13">You gain immunity to Cold and Fire.</description>
+		</sheet>
+	</element>
+	<element name="Engulf" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_ENGULF">
+		<description>
+			<p>You gain the ability to engulf your enemies.  Other creatures can enter your space, but a creature that does so is subject to your Engulf and has disadvantage on the saving throw.  Creatures inside you can be seen but have total cover.  A creature within 5 feet of you can take an action to pull a creature or object out of you.  Doing so requires a successful DC (8+your proficiency+your Con mod) Strength check, and the creature making the attempt takes your Ooze Touch damage.</p>
+			<p class="indent">As an Action you can attempt an Engulf.  You move up to your speed.  While doing so you can enter a Large or smaller creatures’ spaces.  Whenever you enter a creature’s space the creature must make a DC (8+your proficiency+your Con mod) DC Dexterity saving throw.  On a successful save, the creature can choose to be pushed 5 feet back or to the side of you.  A creature that chooses not to be pushed suffers the consequences of a failed saving throw.</p>
+			<p class="indent">On a failed save, you enter the creature’s space, and the creature takes your Ooze Touch damage and is engulfed.  The engulfed creature can’t breathe, is restrained, and takes double your Ooze Touch damage at the start of each of your turns.  When you move the engulfed creature moves with you.</p>
+			<p class="indent">An engulfed creature can try to escape by taking an action to make a DC (8+your proficiency mod+your Con mod) Strength check.  On a success, the creature escapes and enters a space of its choice within 5 feet of you.</p>
+		</description>
+		<sheet>
+			<description action="Action">Move your speed and enter a large or smaller creature's space to attempt to Engulf them. 
+			They must make a DC ({{engulf:dc}}) Dexterity saving throw. On a successful save, the creature can choose to be pushed 5ft. On a fail, you enter the creature’s space, and the creature takes your Ooze Touch damage and is engulfed. 
+			The engulfed creature can’t breathe, is restrained, and takes double your Ooze Touch damage at the start of each of your turns.  When you move the engulfed creature moves with you.</description>
+			<description action="Action" level="17">Move your speed and enter a large or smaller creature's space to attempt to Engulf them. 
+			They must make a DC ({{engulf:dc}}) Dexterity saving throw. On a successful save, the creature can choose to be pushed 5ft. On a fail, you enter the creature’s space, and the creature takes your Ooze Touch damage and is engulfed. 
+			The engulfed creature can’t breathe, is restrained, and takes maximum damage of double your Ooze Touch at the start of each of your turns.  When you move the engulfed creature moves with you.</description>
+		</sheet>
+		<rules>
+			<stat name="engulf:dc" value="8" />
+			<stat name="engulf:dc" value="constitution:modifier" />
+			<stat name="engulf:dc" value="proficiency" />
+		</rules>
+	</element>
+	<element name="Unescapable" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_UNESCAPABLE">
+		<description>
+			<p>Whenever a creature is damage by your Ooze Touch they have disadvantage on Strength checks until the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>Creature damaged by Ooze Touch has disadvantage on Strength checks until the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Cube Immunity" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_CUBE_IMMUNITY">
+		<description>
+			<p>Your oozey body’s resistance improves again as you become even more intune with your type of ooze.  Your resistance to Cold and Fire now become Immunity to Cold and Fire.</p>
+		</description>
+	</element>
+	<element name="All Devouring" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_RUSTED_ARROGANCE">
+		<description>
+			<p>Creatures you have engulfed take the maximum damage from your doubled Ooze Touch.</p>
+		</description>
+	</element>
+	<element name="Ochre Body" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY">
+		<supports>Ooze Body</supports>
+		<description>
+			<p>An Ooze who chooses the Yellow Body.</p>
+			<div element="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_OCHRE_JELLY" />
+			<div element="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_OCHRE_RESISTANCE" />
+			<div element="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_SPLIT" />
+			<div element="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_MULTIPLICITY" />
+			<div element="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_OCHRE_IMMUNITY" />
+			<div element="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_UNLIMITED_OOZE_WORKS" />
+		</description>
+		<sheet display="false">
+			<description>An Ooze who chooses the Yello Body.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_OCHRE_JELLY" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_OCHRE_RESISTANCE" level="3"/>
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_SPLIT" level="6"/>
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_MULTIPLICITY" level="11"/>
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_OCHRE_IMMUNITY" level="13"/>
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_UNLIMITED_OOZE_WORKS" level="17"/>
+		</rules>
+	</element>
+	<element name="Ochre Jelly" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_OCHRE_JELLY">
+		<description>
+			<p>You take on a yellowish hue. You gain the Amorphous trait, allowing you to move through a space as narrow as 1 inch wide without squeezing. You gain a climb speed equal to your move speed.</p>
+			<div element="ID_WOTC_PHB_COMPANION_TRAIT_GIANT_WOLF_SPIDER_SPIDER_CLIMB" />
+		</description>
+		<sheet>
+			<description>You move through a space as narrow as 1 inch wide without squeezing. You gain a climb speed equal to your move speed.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:climb" value="innate speed" bonus="ochre jelly" requirements="[innate speed:1]" />
+			<grant type="Companion Trait" id="ID_WOTC_PHB_COMPANION_TRAIT_GIANT_WOLF_SPIDER_SPIDER_CLIMB" />
+		</rules>
+	</element>
+	<element name="Ochre Resistance" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_OCHRE_RESISTANCE">
+		<description>
+			<p>Your oozey body’s resistance improves as you become more intune with the type of ooze you have become. You gain resistance to Lightning and Slashing in addition to the resistance to Acid you already had.</p>
+		</description>
+		<sheet>
+			<description>You gain resistance to Lightning and Slashing.</description>
+			<description level="13">You gain immunity to Lightning and Slashing.</description>
+		</sheet>
+	</element>
+	<element name="Split" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_SPLIT">
+		<description>
+			<p>You grow in size, becoming Large and gain the ability to split into new jellies when subject to lightning or slashing damage.</p>
+			<p class="indent">When a jelly that is Medium or larger, including your original large jelly form, is subjected to lightning or slashing damage, it splits into two new jellies if it has at least 10 hit points.</p>
+			<p class="indent">Each new jelly has hit points equal to half the original jelly’s rounded down.  New jellies are one size smaller than the original jelly.</p>
+			<p class="indent">All of your jellies count as separate creatures, and are immune to any mind control that does not affect all of them, they all have their own actions and reactions and all take their turns on your initiative.  
+			<p class="indent">Each jelly has maximum hit points equal to half the max of the size above them.  A Medium jelly has half your max hit points, a Small has a quarter, and so on.  At the end of combat any remaining jellies may come together as an action to pool hit points.</p>
+			<p class="indent">You are not required to do this if you so choose.</p>
+		</description>
+		<sheet>
+			<description>You become a Large Creature.</description>
+		</sheet>
+		<sheet>
+			<description action="Rection">When attacked by Lightning or Slashing damage, you can split into 2 Jellys that are a size lower than the original and have half of your current hit points ({{hp}}). 
+			All of your jellies count as separate creatures, and are immune to any mind control that does not affect all of them, they all have their own actions and reactions and all take their turns on your initiative. 
+			The maximum Hit Points is {{hp}}/2 for Medium Jellys and {{hp}}/4 for Small Jellys with a minimum HP of 10.</description>
+			<description action="Rection" level="11">When attacked by Lightning or Slashing damage and you are a Large, Medium or Small Jelly, you can split into 2 Jellys that are a size lower than the original and have half of your current hit points ({{hp}}). 
+			All of your jellies count as separate creatures, and are immune to any mind control that does not affect all of them, they all have their own actions and reactions and all take their turns on your initiative. 
+			The maximum Hit Points is {{hp}}/2 for Medium Jellys and {{hp}}/4 for Small Jellys and {{hp}}/8 for Tiny Jellys with a minimum HP of 10. </description>
+			<description level="17">When you are a Large, Medium or Small Jelly, you can split into 2 Jellys that are a size lower than the original and have half of your current hit points ({{hp}}). If you are a Tiny Jelly, you can split into another 2 Tiny Jellies with the same HP. 
+			All of your jellies count as separate creatures, and are immune to any mind control that does not affect all of them, they all have their own actions and reactions and all take their turns on your initiative.
+			The maximum Hit Points is {{hp}}/2 for Medium Jellys and {{hp}}/4 for Small Jellys and {{hp}}/8 for Tiny Jellys with a minimum HP of 10. </description>
+		</sheet>
+		<sheet>
+			<description>At the end of combat any remaining jellies may come together as an action to pool hit points.</description>
+		</sheet>
+	</element>
+	<element name="Multiplicity" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_MULTIPLICITY">
+		<description>
+			<p>You gain greater control of your ability to split. You can now use Split when Small or larger.</p>
+			<p class="indent">In addition, when two or more of your jellies are within 5 feet of a target they have advantage on attack rolls and opposed strength checks against that target.</p>
+		</description>
+		<sheet>
+			<description>When two or more of your jellies are within 5 feet of a target they have advantage on attack rolls and opposed strength checks against that target.</description>
+	</element>
+	<element name="Ochre Immunity" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_OCHRE_IMMUNITY">
+		<description>
+			<p>Your oozey body’s resistance improves again as you become even more intune with your type of ooze.</p>
+			<p class="indent">Your resistance to Lightning and Slashing now become Immunity to Lightning and Slashing.</p>
+		</description>
+	</element>
+	<element name="Unlimited Ooze Works" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_UNLIMITED_OOZE_WORKS">
+		<description>
+			<p>You no longer require a reaction to Split, now all of your jellies regardless of size can split, your Tiny jellies split into more Tiny jellies.</p>
+			<p class="indent">Any of your jellies with 10 hit points or more automatically splits when subjected to slashing or lightning damage.</p>
+		</description>
+		<sheet>
+			<description>Any of your jellies with 10 hit points or more automatically splits when subjected to slashing or lightning damage.</description>
+		</sheet>
+	</element>
+	<element name="Unarmored Defense" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_UNARMORED_DEFENSE">
+		<description>
+			<p>Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Constitution modifier + your Proficiency modifier.</p>
+		</description>
+		<sheet>
+			<description>While you are wearing no armor and not wielding a shield, your AC equals {{ac:unarmored defense ooze}}.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:unarmored defense ooze:base" value="10" />
+			<stat name="ac:unarmored defense ooze:constitution" value="constitution:modifier" />
+			<stat name="ac:unarmored defense ooze:proficiency" value="proficiency" />
+			<stat name="ac:unarmored defense ooze" value="ac:unarmored defense monk:base" />
+			<stat name="ac:unarmored defense ooze" value="ac:unarmored defense monk:constitution" />
+			<stat name="ac:unarmored defense ooze" value="ac:unarmored defense monk:proficiency" />
+			<stat name="ac:calculation" value="ac:unarmored defense ooze" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Defense (Ooze)" />
+		</rules>
+	</element>
+	<element name="Ooze Touch" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_OOZE_TOUCH">
+		<description>
+			<p>At 1st level your very touch takes on the aspect of your Ooze.  You gain the following benefits with unarmed attacks:</p>
+			<ul>
+				<li>You can roll a 2d4 in place of the normal damage of your unarmed strike and you use Constitution for the attack and damage of your unarmed strikes. This damage changes as you gain Ooze levels, as shown in the Ooze Touch column of the Ooze table.  This damage is Acid.  Anything that touches you also takes this much damage.  For example, a successful grapple check by either party, a successful natural attack against you, a sustained grapple per round, etc.</li>
+				<li>You can produce a pseudopod at will to either make this attack with, or to manipulate things to one degree or another.  How well you can manipulate things is up to your DM, but likely determined by your type of ooze.</li>
+				<li>You can choose to damper your acid and not harm some things.  This is primarily so that you can choose not to harm friendly creatures or objects that you don’t intend to harm.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you make a basic attack or are touched, you can perform an ooze touch.
+			Your ooze touch does {{ooze touch:dice}}d4 acid damage. You can use Constitution for these attacks.
+			You can produce a pseudopod at will to make this attack with. You can also choose to damper your acid and not harm some things.</description>
+		</sheet>
+		<rules>
+			<stat name="ooze touch:dice" value="2" bonus="ooze touch" />
+			<stat name="ooze touch:dice" value="3" bonus="ooze touch" level="5" />
+			<stat name="ooze touch:dice" value="4" bonus="ooze touch" level="10" />
+			<stat name="ooze touch:dice" value="5" bonus="ooze touch" level="13" />
+			<stat name="ooze touch:dice" value="6" bonus="ooze touch" level="17" />
+		</rules>
+	</element>
+	<element name="Tenacious Strength" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_TENACIOUS_STRENGTH">
+		<description>
+			<p>Starting at 2nd level, you add your Constitution modifier as a bonus to all Strength checks. </p>
+		</description>
+		<sheet>
+			<description>You add your Constitution modifier ({{constitution:modifier}}) as a bonus to all Strength checks.</description>
+		</sheet>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_OOZE_ABILITY_SCORE_IMPROVEMENT">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Ooze 4)" supports="Improvement Option,Ooze,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Ooze 8)" supports="Improvement Option,Ooze,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Ooze 12)" supports="Improvement Option,Ooze,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Ooze 16)" supports="Improvement Option,Ooze,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Ooze 19)" supports="Improvement Option,Ooze,19" level="19" />
+		</rules>
+	</element>
+	<element name="Blindsight" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_BLINDSIGHT">
+		<description>
+			<p>Starting at 4th level you gain Blindsight 30 ft,  this improves by another 30 ft at 6th, 9th, 14th, and 18th levels.</p>
+			<p class="ident">When you gain this feature whatever form of normal sight you may have had recedes.  You are blind beyond the range of your Blindsight, but become immune to the Blinded condition.</p>
+		</description>
+		<sheet>
+			<description>You have Blindsight {{blindsight:value}}ft.
+			You are blind beyond the range of your Blindsight, but become immune to the Blinded condition.</description>
+		</sheet>
+		<rules>
+			<stat name="blindsight:value" value="30" \>
+			<stat name="blindsight:value" value="60" level="6" \>
+			<stat name="blindsight:value" value="90" level="9" \>
+			<stat name="blindsight:value" value="120" level="14" \>
+			<stat name="blindsight:value" value="150" level="18" \>
+		</rules>
+	</element>
+	<element name="Extra Attack" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_EXTRA_ATTACK">
+		<description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+			<p class="ident">This improves at 13th level, allowing you to attack three times instead of once or twice whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice, instead of once whenever you take the Attack action on your turn.</description>
+			<description level="13">You can attack three times, instead of once whenever you take the Attack action on your turn.</description>
+		</sheet>
+	</element>
+	<element name="Tenacity" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_TENACITY">
+		<description>
+			<p>At 6th level, your sheer toughness lets you shrug off a portion of all incoming damage. When you take damage you reduce the damage you take by your Constitution modifier.</p>
+			<p class="indent">This reduction takes place after any Resistance or Immunity.</p>
+		</description>
+		<sheet>
+			<description>Reduce damage taken by {{constitution:modifier}} after any resistance or immunity.</description>
+		</sheet>
+	</element>
+	<element name="Brutish Durability" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_BRUTISH_DURABILITY">
+		<description>
+			<p>Beginning at 7th level, your toughness allows you to shrug off assaults that would devastate others.</p>
+			<p class="indent">Whenever you make a saving throw, roll 1d6 and add the die to your saving throw total. If applying this bonus to a death saving throw increases the total to 20 or higher, you gain the benefits of rolling a 20 on the d20.</p>
+		</description>
+		<sheet>
+			<description>Whenever you make a saving throw, roll 1d6 and add the result. 
+			If the result to a death saving throw increases the total to over 20, you automatically roll a 20.</description>
+		</sheet>
+	</element>
+	<element name="Hardiness of the Ooze" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_HARDINESS_OF_THE_OOZE">
+		<description>
+			<p>At 8th level your Constitution increases by +4, your maximum Constitution also increases to 24.</p>
+			<p class="indent">At 16th level your Constitution increases by +4 again and your maximum Constitution increases to 28.</p>
+			<p class="indent">At 20th level your Constitution increases by a final +4 and your maximum Constitution increasing to 32.</p>
+		</description>
+		<sheet display="false">
+			<description>Your Constitution increases by +4, your maximum Constitution also increases to 24.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="4" alt="Hardiness of the Ooze" />
+			<stat name="constitution:max" value="4" alt="Hardiness of the Ooze" />
+			<stat name="constitution" value="8" alt="Hardiness of the Ooze" level="16" />
+			<stat name="constitution:max" value="8" alt="Hardiness of the Ooze" level="16" />
+			<stat name="constitution" value="12" alt="Hardiness of the Ooze" level="20" />
+			<stat name="constitution:max" value="12" alt="Hardiness of the Ooze" level="20" />
+		</rules>
+	</element>
+	<element name="Resolve" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_RESOLVE">
+		<description>
+			<p>Starting at 10th level, your proficiency bonus on all Constitution checks is doubled, as if you had Expertise in Constitution checks.</p>
+		</description>
+		<sheet>
+			<description>Your proficiency bonus on all Constitution checks is doubled, as if you had Expertise in Constitution checks.</description>
+		</sheet>
+	</element>
+	<element name="Unstoppable" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_UNSTOPPABLE">
+		<description>
+			<p>Beginning at 14th level, your sheer grit grants you proficiency in all saving throws.</p>
+		</description>
+		<sheet>
+			<description>You have proficiency in all saving throws.</description>
+		</sheet>
+	</element>
+	<element name="Immutable" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_IMMUTABLE">
+		<description>
+			<p>Beginning at 16th level, you become immune to the Exhausted, Charmed, Deafened, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned, Restrained, Stunned or Unconscious conditions.<p>
+			<p class="indent">You cannot be polymorphed against your will.</p>
+		</description>
+		<sheet>
+			<description>You are immune to the Exhausted, Charmed, Deafened, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned, Restrained, Stunned or Unconscious conditions.
+			You cannot be polymorphed against your will.</description>
+		</sheet>
+	</element>
+	<element name="Perfection of the Ooze" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_PERFECTION_OF_THE_OOZE">
+		<description>
+			<p>At 20th level you have attained the ultimate essence of the Ooze. You have gained perfection. You cannot be killed unless every bit of your ooze mass is disintegrated or otherwise utterly destroyed.</p>
+			<p class="indent">Otherwise when at 1 hit point or more you regain Your Level plus your Constitution Score in hit points every minute.  When at 0 hit points you are incapacitated.  You are not dead or dying.</p>
+			<p class="indent">Unless otherwise healed you will regain 1 hit point and recover from being incapacitated after 10 minutes.</p>
+		</description>
+		<sheet>
+			<description>You cannot be killed unless every bit of your ooze mass is disintegrated or otherwise utterly destroyed.
+			When at 1 hit point or more you regain {{perfection of the ooze}}hp every minute. When at 0 hit points you are incapacitated but not dead or dying.
+			Unless otherwise healed you will regain 1 hit point and recover from being incapacitated after 10 minutes.</description>
+		</sheet>
+		<rules>
+			<stat name="perfection of the ooze:con" value="constituion" />
+			<stat name="perfection of the ooze:level" value="level" /> 
+			<stat name="perfection of the ooze" value="perfection of the ooze:con" /> 
+			<stat name="perfection of the ooze" value="perfection of the ooze:level" /> 
+			<stat name="perfection of the ooze:calculation" value="perfection of the ooze" bonus="calculation" alt="Perfection of the Ooze" />
+		</rules>
+	</element>
+</elements>
