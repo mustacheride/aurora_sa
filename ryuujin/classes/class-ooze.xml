@@ -101,7 +101,7 @@
 			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_PERFECTION_OF_THE_OOZE" level="20" />
 		</rules>
 	</element>
-	<element name="Ooze Body" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_OOZE_BODY">
+	<element name="Ooze Body" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_OOZE_BODY">
 		<description>
 			<p>Your body has become that of an Ooze.  You gain various abilities based on the type of ooze you choose.  You no longer need to sleep or breathe, but you still must eat.  That said as an Ooze you can eat a lot of things.  At 1st level you become an Ooze choosing your Ooze type which grants you special abilities and features.  You gain more abilities from your choice at later levels.  You also become Resistant to Acid and Immune to Prone.  You become immune to Acid at 10th level.  You gain further Oozey Abilities based on your ooze type at 5th, 7th, 9th, 11th, 15th and 17th levels.  For most oozes you are not going to be able to wear or wield most gear or magic items.  However you can temporarily consume a magic item.  When you do so the magic item seems to melt into your body, subsumed by your ooze and becoming a part of you.  For the duration you gain the effects of the magic item.  If the item requires attunement you must attune to it as part of this process.  The item becomes inaccessible to anyone else until you spend some time regurgitating, or reconstituting the item.</p>
 		</description>
@@ -112,7 +112,7 @@
 			<select type="Class Feature" name="Ooze Type" supports="Ooze Body" />
 		</rules>
 	</element>
-	<element name="Gray Body" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY">
+	<element name="Gray Body" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY">
 		<supports>Ooze Body</supports>
 		<description>
 			<p>You take on a gray hue. You gain a climb speed equal to your move speed.</p>
@@ -237,7 +237,7 @@
 			<description>Any items or creatures that are suffering from a penalty to damage as a result of your features has disadvantage on attack rolls.</description>
 		</sheet>
 	</element>
-	<element name="Cube Body" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY">
+	<element name="Cube Body" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY">
 		<supports>Ooze Body</supports>
 		<description>
 			<p>You take on the form of a transparent cube that is hard to spot.  You start out as a 5 ft cube and increase in size to a large 10 ft cube at 5th level.  You take up your entire space and can squeeze, without penalty, through a space one size category smaller than you.</p>
@@ -328,7 +328,7 @@
 			<p>Creatures you have engulfed take the maximum damage from your doubled Ooze Touch.</p>
 		</description>
 	</element>
-	<element name="Ochre Body" type="Class Feature" source="SA Trad Games: Ryuujin"  id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY">
+	<element name="Ochre Body" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY">
 		<supports>Ooze Body</supports>
 		<description>
 			<p>An Ooze who chooses the Yellow Body.</p>
