@@ -3,7 +3,7 @@
 	<info>
 		<name>Divine Fist</name>
 		<description>Remake of the Divine Fist trying to fix some of my issues with the class</description>
-		<update version="0.0.8">
+		<update version="0.0.9">
 			<file name="class-divine_fist.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/classes/class-divine_fist.xml" />
 		</update>
 	</info>
@@ -312,9 +312,9 @@
 		<description>
 			<p>Divine Fists that practice the Cultivation of Shadow follow a tradition that values stealth and subterfuge. These Divine Fists might be called ninjas or shadowdancers, and they sometimes serve as spies and assassins.</p>
 			<div element="ID_SA_MR_ARCHETYPE_CULTIVATION_OF_SHADOW_SHADOW_ARTS" />
-			<div element="ID_SA_MR_ARCHETYPE_CULTIVATION_OF_SHADOW_CREATURE_OF_THE_DARK" />
-			<div element="ID_SA_MR_ARCHETYPE_CULTIVATION_OF_SHADOW_FLIGHT_OF_THE_BAT" />
-			<div element="ID_SA_MR_ARCHETYPE_CULTIVATION_OF_SHADOW_ALMIGHTY_VAMPIRE" />
+			<div element="ID_SA_MR_ARCHETYPE_CULTIVATION_OF_SHADOW_SHADOW_STEP" />
+			<div element="ID_SA_MR_ARCHETYPE_CULTIVATION_OF_SHADOW_CLOAK_OF_SHADOWS" />
+			<div element="ID_SA_MR_ARCHETYPE_CULTIVATION_OF_SHADOW_OPPORTUNIST" />
 		</description>
 		<sheet display="false">
 			<description>Divine Fists of the Cultivation of Shadow follow a tradition that values stealth and subterfuge.</description>
