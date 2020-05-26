@@ -3,7 +3,7 @@
 	<info>
 		<name>The Eldritch Glaive</name>
 		<description>Hexblade but more focused on their weapon and without all that pesky spellcasting. They choose a weapon like spell to focus on. Such as Vampiric Touch or Flame Blade.</description>
-		<update version="0.0.16">
+		<update version="0.0.17">
 			<file name="class-eldrictch_glaive.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/classes/class-eldritch_glaive.xml" />
 		</update>
 	</info>
@@ -158,13 +158,15 @@
 	</element>
 	<element name="Hex Warrior" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_HEX_WARRIOR">
 		<description>
-			<p>At 1st level you gain the ability to bond with your weapon.  Whenever you finish a long rest, you can touch one weapon that you are proficient with and that lacks the two-handed property. When you attack with that weapon, you can use your Charisma modifier {{charisma:modifier}}, instead of Strength or Dexterity, for the attack and damage rolls. This benefit lasts until you finish a long rest. When you later gain the Pact of the Blade feature, this benefit extends to every pact weapon you conjure with that feature, no matter the weapon’s type.</p>
+			<p>At 1st level you gain the ability to bond with your weapon.  Whenever you finish a long rest, you can touch one weapon that you are proficient with and that lacks the two-handed property. When you attack with that weapon, you can use your Charisma modifier, instead of Strength or Dexterity, for the attack and damage rolls. This benefit lasts until you finish a long rest. When you later gain the Pact of the Blade feature, this benefit extends to every pact weapon you conjure with that feature, no matter the weapon’s type.</p>
 		</description>
 		<sheet>
 			<description>Make a bond with one weapon you are proficient with. Attacks with that weapon do {{hex warrior:damage}} damage.</description>
 		</sheet>
 		<rules>
-			<stat name="hex warrior:attack" value="charisma:modifier" bonus="hex warrior" />
+			<stat name="hex warrior:damage" value="strength:modifier" bonus="hex warrior" />
+			<stat name="hex warrior:damage" value="dexterity:modifier" bonus="hex warrior" />
+			<stat name="hex warrior:damage" value="charisma:modifier" bonus="hex warrior" />
 		</rules>
 	</element>	
 	<element name="Eldritch Glaive Invocations" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_INVOCATIONS">
