@@ -3,7 +3,7 @@
 	<info>
 		<name>Divine Fist</name>
 		<description>Remake of the Divine Fist trying to fix some of my issues with the class</description>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="class-divine_fist.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/classes/class-divine_fist.xml" />
 		</update>
 	</info>
@@ -83,11 +83,11 @@
 			<div element="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_PERFECT_SELF" />
 		</description>
 		<setters>
-			<set name="short">A master of martial a rts, harnessing the power of the body in pursuit of physical and spiritual perfection.</set>
+			<set name="short">A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection.</set>
 			<set name="hd">d10</set>
 		</setters>
 		<sheet display="false">
-			<description>A master of martial a rts, harnessing the power of the body in pursuit of physical and spiritual perfection.</description>
+			<description>A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection.</description>
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
