@@ -3,7 +3,7 @@
 	<info>
 		<name>The Ooze</name>
 		<description>You're an Ooze.</description>
-		<update version="0.0.8">
+		<update version="0.0.9">
 			<file name="class-ooze.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/classes/class-ooze.xml" />
 		</update>
 	</info>
@@ -174,22 +174,22 @@
 			<p>Your acid body grows stronger.  Any nonmagical weapon made of metal that hits you corrodes.  After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls.  If its penalty drops to -5 the weapon is destroyed.  You have a similar effect on nonmagical metal armor.  After dealing damage to someone wearing nonmagical metal armor that armor takes a cumulative -1 penalty to AC.  Any armors that have their AC reduced by -5 this way is destroyed.  Nonmagical ammunition made of metal that hits the ooze is destroyed after dealing damage.  You can eat through 2-inch-thick, nonmagical metal, in 1 round.</p>
 		</description>
 		<sheet>
-			<description>Any nonmagical weapon made of metal that hits you corrodes and takes a cumulative -1 penalty to damage rolls.  If its penalty drops to -5 the weapon is destroyed.</description>
-			<description level="9">Any nonmagical or magical weapon made of metal that hits you corrodes and takes a cumulative -1 penalty to damage rolls.  If its penalty drops to -5 the weapon is destroyed.</description>
-		</sheet>
-		<sheet>
-			<description>After dealing damage to someone wearing nonmagical metal armor that armor takes a cumulative -1 penalty to AC.  Any armors that have their AC reduced by -5 this way is destroyed.</description>
-			<description level="9">After dealing damage to someone wearing nonmagical or magical metal armor that armor takes a cumulative -1 penalty to AC.  Any armors that have their AC reduced by -5 this way is destroyed.</description>
-		</sheet>
-		<sheet>
-			<description>Nonmagical ammunition made of metal that hits the ooze is destroyed after dealing damage.</description>
-			<description level="9">Nonmagical or magical ammunition made of metal that hits the ooze is destroyed after dealing damage.</description>
-		</sheet>
-		<sheet>
-			<description action="1 round">You can eat through 2-inch-thick, nonmagical metal.</description>
-			<description action="1 round" level="7">You can eat through 6-inch-thick, nonmagical metal.</description>
-			<description action="1 round" level="9">You can eat through 1-foot-thick, nonmagical metal.</description>
-			<description action="1 round" level="11">You can eat through 2-foot-thick, nonmagical metal.</description>
+			<description>Any nonmagical weapon made of metal that hits you corrodes and takes a cumulative -1 penalty to damage rolls.  If its penalty drops to -5 the weapon is destroyed.
+			After dealing damage to someone wearing nonmagical metal armor that armor takes a cumulative -1 penalty to AC.  Any armors that have their AC reduced by -5 this way is destroyed.
+			Nonmagical ammunition made of metal that hits the ooze is destroyed after dealing damage.
+			You can eat through 2-inch-thick, nonmagical metal.</description>
+			<description level="7">Any nonmagical weapon made of metal that hits you corrodes and takes a cumulative -1 penalty to damage rolls.  If its penalty drops to -5 the weapon is destroyed.
+			After dealing damage to someone wearing nonmagical metal armor that armor takes a cumulative -1 penalty to AC.  Any armors that have their AC reduced by -5 this way is destroyed.
+			Nonmagical ammunition made of metal that hits the ooze is destroyed after dealing damage.
+			You can eat through 6-inch-thick, nonmagical metal</description>
+			<description level="9">Any nonmagical or magical weapon made of metal that hits you corrodes and takes a cumulative -1 penalty to damage rolls.  If its penalty drops to -5 the weapon is destroyed.
+			After dealing damage to someone wearing nonmagical or magical metal armor that armor takes a cumulative -1 penalty to AC.  Any armors that have their AC reduced by -5 this way is destroyed.
+			Nonmagical or magical ammunition made of metal that hits the ooze is destroyed after dealing damage.
+			You can eat through 1-foot-thick, nonmagical metal</description>
+			<description level="11">Any nonmagical or magical weapon made of metal that hits you corrodes and takes a cumulative -1 penalty to damage rolls.  If its penalty drops to -5 the weapon is destroyed.
+			After dealing damage to someone wearing nonmagical or magical metal armor that armor takes a cumulative -1 penalty to AC.  Any armors that have their AC reduced by -5 this way is destroyed.
+			Nonmagical or magical ammunition made of metal that hits the ooze is destroyed after dealing damage.
+			You can eat through 2-foot-thick, nonmagical metal</description>
 		</sheet>
 	</element>
 	<element name="Siege Ooze" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_SEIGE_OOZE">
@@ -220,6 +220,9 @@
 		<description>
 			<p>Your oozey body’s resistance improves again as you become even more intune with your type of ooze.  Your resistance to Cold and Fire now become Immunity to Cold and Fire.</p>
 		</description>
+		<sheet display="false">
+			<description>Your resistance to Cold and Fire now become Immunity to Cold and Fire</description>
+		</sheet>
 	</element>
 	<element name="Armor Breaker" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_ARMOR_BREAKER">
 		<description>
@@ -322,6 +325,9 @@
 		<description>
 			<p>Your oozey body’s resistance improves again as you become even more intune with your type of ooze.  Your resistance to Cold and Fire now become Immunity to Cold and Fire.</p>
 		</description>
+		<sheet display="false">
+			<description>Your resistance to Cold and Fire now become Immunity to Cold and Fire.</description>
+		</sheet>
 	</element>
 	<element name="All Devouring" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_CUBE_BODY_ALL_DEVOURING">
 		<description>
@@ -340,7 +346,7 @@
 			<div element="ID_SA_MR_ARCHETYPE_FEATURE_OCHRE_BODY_UNLIMITED_OOZE_WORKS" />
 		</description>
 		<sheet display="false">
-			<description>An Ooze who chooses the Yello Body.</description>
+			<description>An Ooze who chooses the Yellow Body.</description>
 		</sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_OCHRE_BODY_OCHRE_JELLY" />
@@ -383,16 +389,16 @@
 			<p class="indent">You are not required to do this if you so choose.</p>
 		</description>
 		<sheet>
-			<description>You become a Large Creature.</description>
-		</sheet>
-		<sheet>
-			<description action="Rection">When attacked by Lightning or Slashing damage, you can split into 2 Jellys that are a size lower than the original and have half of your current hit points ({{hp}}). 
+			<description action="Rection">You become a Large Creature.
+			When attacked by Lightning or Slashing damage, you can split into 2 Jellys that are a size lower than the original and have half of your current hit points ({{hp}}). 
 			All of your jellies count as separate creatures, and are immune to any mind control that does not affect all of them, they all have their own actions and reactions and all take their turns on your initiative. 
 			The maximum Hit Points is {{hp}}/2 for Medium Jellys and {{hp}}/4 for Small Jellys with a minimum HP of 10.</description>
-			<description action="Rection" level="11">When attacked by Lightning or Slashing damage and you are a Large, Medium or Small Jelly, you can split into 2 Jellys that are a size lower than the original and have half of your current hit points ({{hp}}). 
+			<description action="Rection" level="11">You become a Large Creature.
+			When attacked by Lightning or Slashing damage and you are a Large, Medium or Small Jelly, you can split into 2 Jellys that are a size lower than the original and have half of your current hit points ({{hp}}). 
 			All of your jellies count as separate creatures, and are immune to any mind control that does not affect all of them, they all have their own actions and reactions and all take their turns on your initiative. 
 			The maximum Hit Points is {{hp}}/2 for Medium Jellys and {{hp}}/4 for Small Jellys and {{hp}}/8 for Tiny Jellys with a minimum HP of 10. </description>
-			<description level="17">When you are a Large, Medium or Small Jelly, you can split into 2 Jellys that are a size lower than the original and have half of your current hit points ({{hp}}). If you are a Tiny Jelly, you can split into another 2 Tiny Jellies with the same HP. 
+			<description level="17">You become a Large Creature.
+			When you are a Large, Medium or Small Jelly, you can split into 2 Jellys that are a size lower than the original and have half of your current hit points ({{hp}}). If you are a Tiny Jelly, you can split into another 2 Tiny Jellies with the same HP. 
 			All of your jellies count as separate creatures, and are immune to any mind control that does not affect all of them, they all have their own actions and reactions and all take their turns on your initiative.
 			The maximum Hit Points is {{hp}}/2 for Medium Jellys and {{hp}}/4 for Small Jellys and {{hp}}/8 for Tiny Jellys with a minimum HP of 10. </description>
 		</sheet>
@@ -414,6 +420,9 @@
 			<p>Your oozey body’s resistance improves again as you become even more intune with your type of ooze.</p>
 			<p class="indent">Your resistance to Lightning and Slashing now become Immunity to Lightning and Slashing.</p>
 		</description>
+		<sheet display="false">
+			<description>Your resistance to Lightning and Slashing now become Immunity to Lightning and Slashing.</description>
+		</sheet>
 	</element>
 	<element name="Unlimited Ooze Works" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_OCHRE_BODY_UNLIMITED_OOZE_WORKS">
 		<description>
