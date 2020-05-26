@@ -257,6 +257,10 @@
 			<description>You can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check, or using your hands.
 			You also gain Darkvision of 120 feet, this darkvision works even in magical darkness.</description>
 		</sheet>
+		<rules>
+			<stat name="innate speed:climb:misc" value="innate speed" bonus="creature of the dark" requirements="[innate speed:1]" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+		</rules>
 	</element>
 	<element name="Flight of the Bat" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_VAMPIRIC_TOUCH_FLIGHT_OF_THE_BAT">
 		<description>
@@ -264,9 +268,12 @@
 			<p class="indent">You can’t manifest your wings while wearing armor unless the armor is made to accommodate them, and clothing not made to accommodate your wings might be destroyed when you manifest them.</p>
 		</description>
 		<sheet action="Bonus Action">
-			<description>You sprout a pair of bat wings from your back gaining a flying speed of {{speed}} ft. 
+			<description>You sprout a pair of bat wings from your back gaining a flying speed of {{innate speed}} ft. 
 			The wings last until you dismiss them as a bonus action.</description>
 		</sheet>
+		<rules>
+			<stat name="innate speed:fly:misc" value="innate speed" bonus="flight of the bat" requirements="[innate speed:1]" />
+		</rules>
 	</element>
 	<element name="Almighty Vampire" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_VAMPIRIC_TOUCH_ALMIGHTY_VAMPIRE">
 		<description>
