@@ -3,7 +3,7 @@
 	<info>
 		<name>Divine Fist</name>
 		<description>Remake of the Divine Fist trying to fix some of my issues with the class</description>
-		<update version="0.0.11">
+		<update version="0.0.12">
 			<file name="class-divine_fist.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/classes/class-divine_fist.xml" />
 		</update>
 	</info>
@@ -893,7 +893,7 @@
 				<div element="ID_PHB_SPELL_FIREBALL" />
 			</div>
 		</description>
-		<sheet>
+		<sheet action="Bonus">
 			<description>You can spend 4 ki points to cast fireball.</description>
 		</sheet>
 		<rules action="Bonus">
