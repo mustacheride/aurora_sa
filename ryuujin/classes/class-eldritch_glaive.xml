@@ -197,7 +197,7 @@
 			<select type="Archetype" name="Weapons of the Glaive" supports="Pact of the Blade" level="3"/>
 		</rules>
 	</element>
-	<element name="Pact of the Vampiric Touch" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_VAMPIRIC_TOUCH">
+	<element name="Pact of the Vampiric Touch" type="Archetype" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_VAMPIRIC_TOUCH">
 		<supports>Pact of the Blade</supports>
 		<description>
 			<p>When you use your Pact Weapon feature you can call forth necrotic shadows to shroud your hands, possibly taking the form of deadly life-siphoning claws.</p>
