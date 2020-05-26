@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-        <update version="0.1">
+        <update version="0.2">
 			<file name="source.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/source.xml" />
 		</update>
     </info>
@@ -11,8 +11,7 @@
 		</description>
 		<setters>
 			<set name="abbreviation">RYUSA</set>
-			<set name="url">https://docs.google.com/document/d/1nm-bFczgcaATi_jEjyMXt12Bi2jAysy6iwOir6y9tzY/edit#heading=h.f0wfxzkx8ol7</set>
-			<set name="image">https://i.imgur.com/HjNiy8c.jpg</set>
+			<set name="url">https://forums.somethingawful.com/member.php%3Faction%3Dgetinfo%26userid%3D125148</set>
 			<set name="author" abbreviation="RYU" url="https://forums.somethingawful.com/member.php%3Faction%3Dgetinfo%26userid%3D125148">SA Ryuujin</set>
 			<set name="homebrew">true</set>
 		</setters>
