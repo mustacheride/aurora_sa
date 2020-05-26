@@ -3,7 +3,7 @@
 	<info>
 		<name>The Eldritch Glaive</name>
 		<description>Hexblade but more focused on their weapon and without all that pesky spellcasting. They choose a weapon like spell to focus on. Such as Vampiric Touch or Flame Blade.</description>
-		<update version="0.0.15">
+		<update version="0.0.16">
 			<file name="class-eldrictch_glaive.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/classes/class-eldritch_glaive.xml" />
 		</update>
 	</info>
@@ -697,10 +697,13 @@
 	</element>
 
 	<!-- Eldritch Glaive Invocations -->
-	<element name="ARMOR_OF_SHADOWS" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_ARMOR_OF_SHADOWS">
+	<element name="Armor of Shadows" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_ARMOR_OF_SHADOWS">
 		<supports>Eldritch Glaive Invocation</supports>
 		<description>
 			<p>You can cast mage armor on yourself at will, without expending a Hex slot or material components.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_MAGE_ARMOR" />
+			</div>
 		</description>
 		<sheet>
 			<description>You can cast mage armor on yourself at will, without expending a Hex slot or material components.</description>
@@ -715,6 +718,9 @@
 		<requirements>[level:9]</requirements>
 		<description>
 			<p>You can cast levitate on yourself at will, without expending a Hex slot or material components.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_LEVITATE" />
+			</div>
 		</description>
 		<sheet>
 			<description>You can cast levitate on yourself at will, without expending a Hex slot or material components.</description>
@@ -736,6 +742,9 @@
 		<supports>Eldritch Glaive Invocation</supports>
 		<description>
 			<p>You can cast speak with animals at will, without expending a Hex slot.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_SPEAK_WITH_ANIMALS" />
+			</div>
 		</description>
 		<sheet>
 			<description>You can cast speak with animals at will, without expending a Hex slot.</description>
@@ -766,7 +775,7 @@
 			<p class="indent">The aura grants you advantage on Charisma (Intimidation) checks but disadvantage on all other Charisma checks. Any other creature that starts its turn in the aura takes poison damage equal to your Charisma modifier (minimum of 0 damage).</p>
 		</description>
 		<sheet action="Bonus">
-			<description>Create a 5 ft aura of buzzing flies. Gain Advantage on Charisma (Intimidation) checks but disadvantage on all other Charisma checks. Any Creature that starts its turn in the aura takes {{charisma:modifier}} damage.</description>
+			<description>Create a 5ft aura of buzzing flies. Gain Advantage on Charisma (Intimidation) checks but disadvantage on all other Charisma checks. Any Creature that starts its turn in the aura takes {{charisma:modifier}} damage.</description>
 		</sheet>
 	</element>
 	<element name="Devil's Sight" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_INVOCATION_DEVILS_SIGHT">
@@ -782,6 +791,9 @@
 		<supports>Eldritch Glaive Invocation</supports>
 		<description>
 			<p>You can cast detect magic at will, without expending a Hex slot.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_DETECT_MAGIC" />
+			</div>
 		</description>
 		<sheet>
 			<description>You can cast detect magic at will, without expending a Hex slot.</description>
@@ -814,6 +826,9 @@
 		<supports>Eldritch Glaive Invocation</supports>
 		<description>
 			<p>You can cast false life on yourself at will as a 1st-level spell, without expending a Hex slot or material components.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_FALSE_LIFE" />
+			</div>
 		</description>
 		<sheet>
 			<description>You can cast false life on yourself at will as a 1st-level spell, without expending a Hex slot or material components.</description>
@@ -878,7 +893,7 @@
 			<description>When you hit a creature with your pact weapon, the creature takes extra {{lifedrinker:damage}} untyped magic damage.</description>
 		</sheet>
 		<rules>
-			<stat name="lifedrinker:damage" value="1" bonus="base" />
+			<stat name="lifedrinker:damage" value="1" />
 			<stat name="lifedrinker:damage" value="charisma:modifier" />
 		</rules>
 	</element>
@@ -893,7 +908,7 @@
 			<description>When you target a creature with your Eldritch Glaive Focus, you deal {{maddening hex:damage}} psychic damage to the target and each creature of your choice that you can see within 5 feet of it.</description>
 		</sheet>
 		<rules>
-			<stat name="maddening hex:damage" value="1" bonus="base" />
+			<stat name="maddening hex:damage" value="1" />
 			<stat name="maddening hex:damage" value="charisma:modifier" />
 		</rules>
 	</element>
@@ -901,6 +916,9 @@
 		<supports>Eldritch Glaive Invocation</supports>
 		<description>
 			<p>You can cast disguise self at will, without expending a Hex slot.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_DISGUISE_SELF" />
+			</div>
 		</description>
 		<sheet>
 			<description>You can cast disguise self at will, without expending a Hex slot.</description>
@@ -915,6 +933,9 @@
 		<requirements>[level:15]</requirements>
 		<description>
 			<p>You can cast alter self at will, without expending a Hex slot.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_ALTER_SELF" />
+			</div>
 		</description>
 		<sheet>
 			<description>You can cast alter self at will, without expending a Hex slot.</description>
@@ -927,6 +948,9 @@
 		<supports>Eldritch Glaive Invocation</supports>
 		<description>
 			<p>You can cast silent image at will, without expending a Hex slot.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_SILENT_IMAGE" />
+			</div>
 		</description>
 		<sheet>
 			<description>You can cast silent image at will, without expending a Hex slot.</description>
@@ -952,6 +976,9 @@
 		<requirements>[level:9]</requirements>
 		<description>
 			<p>You can cast jump on yourself at will, without expending a Hex slot or material components.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_JUMP" />
+			</div>
 		</description>
 		<sheet>
 			<description>You can cast jump on yourself at will, without expending a Hex slot or material components.</description>
@@ -977,6 +1004,9 @@
 		<requirements>[level:15]</requirements>
 		<description>
 			<p>You can cast invisibility at will, without expending a Hex slot.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_INVISIBILITY" />
+			</div>
 		</description>
 		<sheet>
 			<description>You can cast invisibility at will, without expending a Hex slot.</description>
@@ -1035,6 +1065,9 @@
 		<requirements>[level:7]</requirements>
 		<description>
 			<p>You can cast freedom of movement at will, without expending a Hex slot.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" />
+			</div>
 		</description>
 		<sheet>
 			<description>You can cast freedom of movement at will, without expending a Hex slot.</description>
@@ -1049,6 +1082,9 @@
 		<requirements>[level:15]</requirements>
 		<description>
 			<p>You can cast arcane eye at will, without expending a Hex slot.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_ARCANE_EYE" />
+			</div>
 		</description>
 		<sheet>
 			<description>You can cast arcane eye at will, without expending a Hex slot.</description>
@@ -1063,6 +1099,9 @@
 		<requirements>[level:9]</requirements>
 		<description>
 			<p>You can cast speak with dead at will, without expending a Hex slot.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_SPEAK_WITH_DEAD" />
+			</div>
 		</description>
 		<sheet>
 			<description>You can cast speak with dead at will, without expending a Hex slot.</description>
