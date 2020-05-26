@@ -3,7 +3,7 @@
 	<info>
 		<name>Divine Fist</name>
 		<description>Remake of the Divine Fist trying to fix some of my issues with the class</description>
-		<update version="0.0.7">
+		<update version="0.0.8">
 			<file name="class-divine_fist.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/classes/class-divine_fist.xml" />
 		</update>
 	</info>
@@ -198,7 +198,7 @@
 			<description level="9">Your jumping distance is {{divine fist:unarmored movement:jump}} if you have a reason to jump.</description>
 		</sheet>
 		<rules>
-			<stat name="divine fist:unarmored movement:base" value="inate speed" />
+			<stat name="divine fist:unarmored movement:base" value="innate speed" />
 			<stat name="divine fist:unarmored movement:bonus" value="5" bonus="unarmored movement" />
 			<stat name="divine fist:unarmored movement:bonus" value="10" bonus="unarmored movement" level="2" />
 			<stat name="divine fist:unarmored movement:bonus" value="15" bonus="unarmored movement" level="3" />
@@ -219,11 +219,11 @@
 			<stat name="divine fist:unarmored movement:bonus" value="90" bonus="unarmored movement" level="18" />
 			<stat name="divine fist:unarmored movement:bonus" value="95" bonus="unarmored movement" level="19" />
 			<stat name="divine fist:unarmored movement:bonus" value="100" bonus="unarmored movement" level="20" />
-			<stat name="innate speed:misc" value="divine fist:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:1]" />
-			<stat name="innate speed:swim:misc" value="divine fist:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:swim:1]" />
-			<stat name="innate speed:burrow:misc" value="divine fist:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:burrow:1]" />
-			<stat name="innate speed:climb:misc" value="divine fist:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:climb:1]" level="3" />
-			<stat name="innate speed:fly:misc" value="divine fist:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:fly:1]" level="9" />
+			<stat name="innate speed:misc" value="divine fist:unarmored movement:bonus" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:1]" />
+			<stat name="innate speed:swim:misc" value="divine fist:unarmored movement:bonus" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:swim:1]" />
+			<stat name="innate speed:burrow:misc" value="divine fist:unarmored movement:bonus" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:burrow:1]" />
+			<stat name="innate speed:climb:misc" value="divine fist:unarmored movement:bonus" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:climb:1]" level="3" />
+			<stat name="innate speed:fly:misc" value="divine fist:unarmored movement:bonus" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:fly:1]" level="9" />
 			<stat name="divine fist:unarmored movement" value="divine fist:unarmored movement:base" />
 			<stat name="divine fist:unarmored movement" value="divine fist:unarmored movement:bonus" />
 			<stat name="divine fist:unarmored movement:calculation" value="divine fist:unarmored movement" bonus="calculation" alt="Unarmored Movement (Divine Fist)" />
