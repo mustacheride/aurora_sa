@@ -3,7 +3,7 @@
 	<info>
 		<name>The Ooze</name>
 		<description>You're an Ooze.</description>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="class-ooze.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/classes/class-ooze.xml" />
 		</update>
 	</info>
@@ -109,42 +109,42 @@
 			<description>You no longer need to sleep or breathe, but you still must eat. You are Resistant to Acid and Immune to Prone. You can consume a magical item and have its effects transferred to you (as if you were weilding it). You may later reguritate or reconstitue the item to un-equip it.</description>
 		</sheet>
 		<rules>
-			<select type="Class Feature" name="Ooze Type" supports="Ooze Body" />
+			<select type="Archetype" name="Ooze Type" supports="Ooze Body" />
 		</rules>
 	</element>
-	<element name="Gray Body" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY">
+	<element name="Gray Body" type="Archetype" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_GRAY_BODY">
 		<supports>Ooze Body</supports>
 		<description>
 			<p>You take on a gray hue. You gain a climb speed equal to your move speed.</p>
-			<div element="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_FALSE_APPERANCE" />
-			<div element="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_AMORPHOUS" />
-			<div element="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_GRAY_RESISTANCE" />
-			<div element="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_CORRODE_METAL" />
-			<div element="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_SEIGE_OOZE" />
-			<div element="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_DESTRUCTION_AND_RECONSTITUTION" />
-			<div element="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_ANTITHISES_OF_METAL" />
-			<div element="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_GRAY_IMMUNITY" />
-			<div element="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_ARMOR_BREAKER" />
-			<div element="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_RUSTED_ARROGANCE" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_FALSE_APPERANCE" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_AMORPHOUS" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_GRAY_RESISTANCE" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_CORRODE_METAL" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_SEIGE_OOZE" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_DESTRUCTION_AND_RECONSTITUTION" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_ANTITHISES_OF_METAL" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_GRAY_IMMUNITY" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_ARMOR_BREAKER" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_RUSTED_ARROGANCE" />
 		</description>
 		<sheet>
 			<description>You take on a gray hue. You gain a climb speed speed equal to your move speed.</description>
 		</sheet>
 		<rules>
 			<stat name="innate speed:climb" value="innate speed" bonus="gray body" requirements="[innate speed:1]" />
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_FALSE_APPERANCE" />
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_AMORPHOUS" />
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_GRAY_RESISTANCE" level="3"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_CORRODE_METAL" level="5"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_SEIGE_OOZE" level="7"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_DESTRUCTION_AND_RECONSTITUTION" level="9"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_ANTITHISES_OF_METAL" level="11"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_GRAY_IMMUNITY" level="13"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_ARMOR_BREAKER" level="15"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_RUSTED_ARROGANCE" level="17"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_FALSE_APPERANCE" />
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_AMORPHOUS" />
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_GRAY_RESISTANCE" level="3"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_CORRODE_METAL" level="5"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_SEIGE_OOZE" level="7"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_DESTRUCTION_AND_RECONSTITUTION" level="9"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_ANTITHISES_OF_METAL" level="11"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_GRAY_IMMUNITY" level="13"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_ARMOR_BREAKER" level="15"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_RUSTED_ARROGANCE" level="17"/>
 		</rules>
 	</element>
-	<element name="False Apperance" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_FALSE_APPERANCE">
+	<element name="False Apperance" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_FALSE_APPERANCE">
 		<description>
 			<p>When not moving you are indistinguishable from a pool of oil or wet rock.</p>
 		</description>
@@ -152,7 +152,7 @@
 			<description>When not moving you are indistinguishable from a pool of oil or wet rock.</description>
 		</sheet>
 	</element>
-	<element name="Amorphous" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_AMORPHOUS">
+	<element name="Amorphous" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_AMORPHOUS">
 		<description>
 			<p>You can move through a space as narrow as 1 inch wide without squeezing.</p>
 		</description>
@@ -160,7 +160,7 @@
 			<description>You can move through a space as narrow as 1 inch wide without squeezing.</description>
 		</sheet>
 	</element>
-	<element name="Gray Resistance" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_GRAY_RESISTANCE">
+	<element name="Gray Resistance" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_GRAY_RESISTANCE">
 		<description>
 			<p>Your oozey body’s resistance improves as you become more intune with the type of ooze you have become.  You gain resistance to Cold and Fire in addition to the resistance to Acid you already had.</p>
 		</description>
@@ -169,7 +169,7 @@
 			<description level="13">You gain immunity to Cold and Fire.</description>
 		</sheet>
 	</element>
-	<element name="Corrode Metal" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_CORRODE_METAL">
+	<element name="Corrode Metal" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_CORRODE_METAL">
 		<description>
 			<p>Your acid body grows stronger.  Any nonmagical weapon made of metal that hits you corrodes.  After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls.  If its penalty drops to -5 the weapon is destroyed.  You have a similar effect on nonmagical metal armor.  After dealing damage to someone wearing nonmagical metal armor that armor takes a cumulative -1 penalty to AC.  Any armors that have their AC reduced by -5 this way is destroyed.  Nonmagical ammunition made of metal that hits the ooze is destroyed after dealing damage.  You can eat through 2-inch-thick, nonmagical metal, in 1 round.</p>
 		</description>
@@ -192,7 +192,7 @@
 			<description action="1 round" level="11">You can eat through 2-foot-thick, nonmagical metal.</description>
 		</sheet>
 	</element>
-	<element name="Siege Ooze" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_SEIGE_OOZE">
+	<element name="Siege Ooze" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_SEIGE_OOZE">
 		<description>
 			<p>You now deal double damage to nonmagical metal objects, and to constructs and creatures primarily formed of metal.  You can now eat through 6-inch-thick, nonmagical metal, in 1 round.</p>
 		</description>
@@ -200,7 +200,7 @@
 			<description>You now deal double damage to nonmagical metal objects, and to constructs and creatures primarily formed of metal.</description>
 		</sheet>
 	</element>
-	<element name="Destruction and Reconstitution" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_DESTRUCTION_AND_RECONSTITUTION">
+	<element name="Destruction and Reconstitution" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_DESTRUCTION_AND_RECONSTITUTION">
 		<description>
 			<p>You can now harm magical metal objects through your Ooze Touch and other class and Gray Body features.  Any magical objects destroyed this way can later be repaired if you remain in contact with their remains for 1 minute and choose to do so.  Your Corrode Metal now also works on metal constructs and creatures primarily formed of metal.  You cannot reduce a creature or construct’s AC below 0 this way, nor are they automatically destroyed after a -5 cumulative penalty.  You can now eat through 1-foot-thick metal in 1 round.</p>
 		</description>
@@ -208,7 +208,7 @@
 			<description>After dealing damage to metal constructs and creatures primarily formed of metal, those creatures take a cumulative -1 penalty to AC. You cannot reduce a creature or construct’s AC below 0 this way, nor are they automatically destroyed after a -5 cumulative penalty.</description>
 		</sheet>
 	</element>
-	<element name="Antithises of Metal" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_ANTITHISES_OF_METAL">
+	<element name="Antithises of Metal" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_ANTITHISES_OF_METAL">
 		<description>
 			<p>You now deal max damage whenever you deal damage to metal objects or constructs and creatures primarily formed of metal.  You can now eat through 2-foot-thick metal in 1 round.</p>
 		</description>
@@ -216,12 +216,12 @@
 			<description>You now deal max damage whenever you deal damage to metal objects or constructs and creatures primarily formed of metal.</description>
 		</sheet>
 	</element>
-	<element name="Gray Immunity" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_GRAY_IMMUNITY">
+	<element name="Gray Immunity" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_GRAY_IMMUNITY">
 		<description>
 			<p>Your oozey body’s resistance improves again as you become even more intune with your type of ooze.  Your resistance to Cold and Fire now become Immunity to Cold and Fire.</p>
 		</description>
 	</element>
-	<element name="Armor Breaker" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_ARMOR_BREAKER">
+	<element name="Armor Breaker" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_ARMOR_BREAKER">
 		<description>
 			<p>Any creatures suffering from a penalty to AC as a result of your features has their speed reduced by half and you have advantage to hit them.</p>
 		</description>
@@ -229,7 +229,7 @@
 			<description>Any creatures suffering from a penalty to AC as a result of your features has their speed reduced by half and you have advantage to hit them.</description>
 		</sheet>
 	</element>
-	<element name="Rusted Arrogance" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_GRAY_BODY_RUSTED_ARROGANCE">
+	<element name="Rusted Arrogance" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_GRAY_BODY_RUSTED_ARROGANCE">
 		<description>
 			<p>Any items or creatures that are suffering from a penalty to damage as a result of your features has disadvantage on attack rolls.</p>
 		</description>
@@ -237,16 +237,16 @@
 			<description>Any items or creatures that are suffering from a penalty to damage as a result of your features has disadvantage on attack rolls.</description>
 		</sheet>
 	</element>
-	<element name="Cube Body" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY">
+	<element name="Cube Body" type="Archetype" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_CUBE_BODY">
 		<supports>Ooze Body</supports>
 		<description>
 			<p>You take on the form of a transparent cube that is hard to spot.  You start out as a 5 ft cube and increase in size to a large 10 ft cube at 5th level.  You take up your entire space and can squeeze, without penalty, through a space one size category smaller than you.</p>
-			<div element="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_PROFICIENCY" />
-			<div element="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_CUBE_RESISTANCE" />
-			<div element="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_ENGULF" />
-			<div element="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_UNESCAPABLE" />
-			<div element="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_CUBE_IMMUNITY" />
-			<div element="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_ALL_DEVOURING" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_CUBE_BODY_PROFICIENCY" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_CUBE_BODY_CUBE_RESISTANCE" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_CUBE_BODY_ENGULF" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_CUBE_BODY_UNESCAPABLE" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_CUBE_BODY_CUBE_IMMUNITY" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_CUBE_BODY_ALL_DEVOURING" />
 		</description>
 		<sheet>
 			<description>You take on the form of a {{cube body:size}}ft transparent cube that is hard to spot. You take up your entire space and can squeeze, without penalty, through a space one size category smaller than you.</description>
@@ -254,15 +254,15 @@
 		<rules>
 			<stat name="cube body:size" value="5" />
 			<stat name="cube body:size" value="10" level="5" />
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_PROFICIENCY" />
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_CUBE_RESISTANCE" level="3"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_ENGULF" level="6"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_UNESCAPABLE" level="11"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_CUBE_IMMUNITY" level="13"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_ALL_DEVOURING" level="17"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_CUBE_BODY_PROFICIENCY" />
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_CUBE_BODY_CUBE_RESISTANCE" level="3"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_CUBE_BODY_ENGULF" level="6"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_CUBE_BODY_UNESCAPABLE" level="11"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_CUBE_BODY_CUBE_IMMUNITY" level="13"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_CUBE_BODY_ALL_DEVOURING" level="17"/>
 		</rules>
 	</element>
-	<element name="Cube Body Proficiency" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_PROFICIENCY">
+	<element name="Cube Body Proficiency" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_CUBE_BODY_PROFICIENCY">
 		<description>
 			<p>You gain Proficiency in Stealth, gaining proficiency in another skill if you were already proficient in Stealth, and use Constitution in place of Dexterity for Stealth.</p>
 			<p class="indent">Even when in plain sight it takes a successful Wisdom (Perception) check to spot you when you have neither moved nor attacked.</p>
@@ -280,7 +280,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
 		</rules>
 	</element>
-	<element name="Cube Resistance" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_CUBE_RESISTANCE">
+	<element name="Cube Resistance" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_CUBE_BODY_CUBE_RESISTANCE">
 		<description>
 			<p>Your oozey body’s resistance improves as you become more intune with the type of ooze you have become. You gain resistance to Cold and Fire in addition to the resistance to Acid you already had.</p>
 		</description>
@@ -289,7 +289,7 @@
 			<description level="13">You gain immunity to Cold and Fire.</description>
 		</sheet>
 	</element>
-	<element name="Engulf" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_ENGULF">
+	<element name="Engulf" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_CUBE_BODY_ENGULF">
 		<description>
 			<p>You gain the ability to engulf your enemies.  Other creatures can enter your space, but a creature that does so is subject to your Engulf and has disadvantage on the saving throw.  Creatures inside you can be seen but have total cover.  A creature within 5 feet of you can take an action to pull a creature or object out of you.  Doing so requires a successful DC (8+your proficiency+your Con mod) Strength check, and the creature making the attempt takes your Ooze Touch damage.</p>
 			<p class="indent">As an Action you can attempt an Engulf.  You move up to your speed.  While doing so you can enter a Large or smaller creatures’ spaces.  Whenever you enter a creature’s space the creature must make a DC (8+your proficiency+your Con mod) DC Dexterity saving throw.  On a successful save, the creature can choose to be pushed 5 feet back or to the side of you.  A creature that chooses not to be pushed suffers the consequences of a failed saving throw.</p>
@@ -310,7 +310,7 @@
 			<stat name="engulf:dc" value="proficiency" />
 		</rules>
 	</element>
-	<element name="Unescapable" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_UNESCAPABLE">
+	<element name="Unescapable" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_CUBE_BODY_UNESCAPABLE">
 		<description>
 			<p>Whenever a creature is damage by your Ooze Touch they have disadvantage on Strength checks until the end of your next turn.</p>
 		</description>
@@ -318,40 +318,40 @@
 			<description>Creature damaged by Ooze Touch has disadvantage on Strength checks until the end of your next turn.</description>
 		</sheet>
 	</element>
-	<element name="Cube Immunity" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_CUBE_IMMUNITY">
+	<element name="Cube Immunity" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_CUBE_BODY_CUBE_IMMUNITY">
 		<description>
 			<p>Your oozey body’s resistance improves again as you become even more intune with your type of ooze.  Your resistance to Cold and Fire now become Immunity to Cold and Fire.</p>
 		</description>
 	</element>
-	<element name="All Devouring" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_CUBE_BODY_ALL_DEVOURING">
+	<element name="All Devouring" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_CUBE_BODY_ALL_DEVOURING">
 		<description>
 			<p>Creatures you have engulfed take the maximum damage from your doubled Ooze Touch.</p>
 		</description>
 	</element>
-	<element name="Ochre Body" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY">
+	<element name="Ochre Body" type="Archetype" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_OCHRE_BODY">
 		<supports>Ooze Body</supports>
 		<description>
 			<p>An Ooze who chooses the Yellow Body.</p>
-			<div element="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_OCHRE_JELLY" />
-			<div element="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_OCHRE_RESISTANCE" />
-			<div element="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_SPLIT" />
-			<div element="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_MULTIPLICITY" />
-			<div element="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_OCHRE_IMMUNITY" />
-			<div element="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_UNLIMITED_OOZE_WORKS" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_OCHRE_BODY_OCHRE_JELLY" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_OCHRE_BODY_OCHRE_RESISTANCE" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_OCHRE_BODY_SPLIT" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_OCHRE_BODY_MULTIPLICITY" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_OCHRE_BODY_OCHRE_IMMUNITY" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_OCHRE_BODY_UNLIMITED_OOZE_WORKS" />
 		</description>
 		<sheet display="false">
 			<description>An Ooze who chooses the Yello Body.</description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_OCHRE_JELLY" />
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_OCHRE_RESISTANCE" level="3"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_SPLIT" level="6"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_MULTIPLICITY" level="11"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_OCHRE_IMMUNITY" level="13"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_UNLIMITED_OOZE_WORKS" level="17"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_OCHRE_BODY_OCHRE_JELLY" />
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_OCHRE_BODY_OCHRE_RESISTANCE" level="3"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_OCHRE_BODY_SPLIT" level="6"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_OCHRE_BODY_MULTIPLICITY" level="11"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_OCHRE_BODY_OCHRE_IMMUNITY" level="13"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_OCHRE_BODY_UNLIMITED_OOZE_WORKS" level="17"/>
 		</rules>
 	</element>
-	<element name="Ochre Jelly" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_OCHRE_JELLY">
+	<element name="Ochre Jelly" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_OCHRE_BODY_OCHRE_JELLY">
 		<description>
 			<p>You take on a yellowish hue. You gain the Amorphous trait, allowing you to move through a space as narrow as 1 inch wide without squeezing. You gain a climb speed equal to your move speed.</p>
 			<div element="ID_WOTC_PHB_COMPANION_TRAIT_GIANT_WOLF_SPIDER_SPIDER_CLIMB" />
@@ -364,7 +364,7 @@
 			<grant type="Companion Trait" id="ID_WOTC_PHB_COMPANION_TRAIT_GIANT_WOLF_SPIDER_SPIDER_CLIMB" />
 		</rules>
 	</element>
-	<element name="Ochre Resistance" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_OCHRE_RESISTANCE">
+	<element name="Ochre Resistance" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_OCHRE_BODY_OCHRE_RESISTANCE">
 		<description>
 			<p>Your oozey body’s resistance improves as you become more intune with the type of ooze you have become. You gain resistance to Lightning and Slashing in addition to the resistance to Acid you already had.</p>
 		</description>
@@ -373,7 +373,7 @@
 			<description level="13">You gain immunity to Lightning and Slashing.</description>
 		</sheet>
 	</element>
-	<element name="Split" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_SPLIT">
+	<element name="Split" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_OCHRE_BODY_SPLIT">
 		<description>
 			<p>You grow in size, becoming Large and gain the ability to split into new jellies when subject to lightning or slashing damage.</p>
 			<p class="indent">When a jelly that is Medium or larger, including your original large jelly form, is subjected to lightning or slashing damage, it splits into two new jellies if it has at least 10 hit points.</p>
@@ -400,7 +400,7 @@
 			<description>At the end of combat any remaining jellies may come together as an action to pool hit points.</description>
 		</sheet>
 	</element>
-	<element name="Multiplicity" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_MULTIPLICITY">
+	<element name="Multiplicity" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_OCHRE_BODY_MULTIPLICITY">
 		<description>
 			<p>You gain greater control of your ability to split. You can now use Split when Small or larger.</p>
 			<p class="indent">In addition, when two or more of your jellies are within 5 feet of a target they have advantage on attack rolls and opposed strength checks against that target.</p>
@@ -409,13 +409,13 @@
 			<description>When two or more of your jellies are within 5 feet of a target they have advantage on attack rolls and opposed strength checks against that target.</description>
 		</sheet>
 	</element>
-	<element name="Ochre Immunity" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_OCHRE_IMMUNITY">
+	<element name="Ochre Immunity" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_OCHRE_BODY_OCHRE_IMMUNITY">
 		<description>
 			<p>Your oozey body’s resistance improves again as you become even more intune with your type of ooze.</p>
 			<p class="indent">Your resistance to Lightning and Slashing now become Immunity to Lightning and Slashing.</p>
 		</description>
 	</element>
-	<element name="Unlimited Ooze Works" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_OCHRE_BODY_UNLIMITED_OOZE_WORKS">
+	<element name="Unlimited Ooze Works" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_OCHRE_BODY_UNLIMITED_OOZE_WORKS">
 		<description>
 			<p>You no longer require a reaction to Split, now all of your jellies regardless of size can split, your Tiny jellies split into more Tiny jellies.</p>
 			<p class="indent">Any of your jellies with 10 hit points or more automatically splits when subjected to slashing or lightning damage.</p>
