@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Divine Fist</name>
+		<description>Remake of the Divine Fist trying to fix some of my issues with the class</description>
+		<update version="0.0.1">
+			<file name="class-divine_fist.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/classes/class-divine_fist.xml" />
+		</update>
+	</info>
+	<element name="Divine Fist" type="Class" source="SA Trad Games: Ryuujin" id="ID_SA_MR_DIVINE_FIST">
+		<description>
+			<p>Her fists a blur as they deflect an incoming hail of arrows, a half-elf springs over a barricade and throws herself into the massed ranks of hobgoblins on the other side. She whirls among them, knocking their blows aside and sending them reeling, until at last she stands alone.</p>
+			<p class="indent">Taking a deep breath, a human covered in tattoos settles into a battle stance. As the first charging orcs reach him, he exhales and a blast of fire roars from his mouth, engulfing his foes.</p>
+			<p class="indent">Moving with the silence of the night, a black-clad halfling steps into a shadow beneath an arch and emerges from another inky shadow on a balcony a stone’s throw away. She slides her blade free of its clothwrapped scabbard and peers through the open window at the tyrant prince, so vulnerable in the grip of sleep.</p>
+			<p class="indent">Whatever their discipline, divine fists are united in their ability to magically harness the energy that flows in their bodies. Whether channeled as a striking display of combat prowess or a subtler focus of defensive ability and speed, this energy infuses all that a divine fist does.</p>      
+			<h2>CLASS FEATURES</h2>
+			<p>As a Divine Fist, you gain the following class features.</p>
+			<h5 class="caption">HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d10 per Divine Fist level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 10 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + your Constitution modifier per Divine Fist level after 1st</li>
+			</ul>
+			<h5 class="caption">PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> None</li>
+				<li><strong>Weapons:</strong> Simple weapons, shortswords</li>
+				<li><strong>Tools:</strong> Choose one type of artisan’s tools or one musical instrument</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Strength, Dexterity</li>
+				<li><strong>Skills:</strong> Choose four skills from Acrobatics, Athletics, History, Insight, Medicine, Perception, Persuasion, Religion, and Stealth</li>
+			</ul>
+			<h5 class="caption">EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+			<li>(a) a shortsword or (b) any simple weapon</li>
+			<li>(a) a dungeoneer’s pack or (b) an explorer’s pack</li>
+			<li>10 darts</li></ul>
+			<h5 class="caption">THE DIVINE FIST</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-15">Unarmed Strikes</td><td class="col-5">Ki Points</td><td class="col-15">Unarmored Movement</td><td class="left">Features</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>2</td><td>1</td><td>+5ft</td><td class="left">Unarmored Defense, Unarmed Strike, Unarmored Movement</td></tr>
+				<tr><td> 2nd</td><td>2</td><td>2</td><td>+10ft</td><td class="left">Ki, Ki-Empowered Strikes</td></tr>
+				<tr><td> 3rd</td><td>2</td><td>3</td><td>+15ft</td><td class="left">Cultivation Tradition, Deflect Missiles</td></tr>
+				<tr><td> 4th</td><td>2</td><td>4</td><td>+20ft</td><td class="left">Ability Score Improvement, Slow Fall, Metal Strikes (Silver)</td></tr>
+				<tr><td> 5th</td><td>4</td><td>5</td><td>+25ft</td><td class="left">Stunning Strike</td></tr>
+				<tr><td> 6th</td><td>4</td><td>6</td><td>+30ft</td><td class="left">Cultivation Tradition Feature</td></tr>
+				<tr><td> 7th</td><td>4</td><td>7</td><td>+35ft</td><td class="left">Evasion, Stillness of Mind, Metal Strikes (Adamantine)</td></tr>
+				<tr><td> 8th</td><td>4</td><td>8</td><td>+40ft</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td> 9th</td><td>4</td><td>9</td><td>+45ft</td><td class="left">Unarmored Movement Improvement</td></tr>
+				<tr><td>10th</td><td>4</td><td>10</td><td>+50ft</td><td class="left">Purity of Body</td></tr>
+				<tr><td>11th</td><td>6</td><td>11</td><td>+55ft</td><td class="left">Cultivation Tradition Feature, Diamond Soul</td></tr>
+				<tr><td>12th</td><td>6</td><td>12</td><td>+60ft</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>6</td><td>13</td><td>+65ft</td><td class="left">Tongue of the Sun and Moon</td></tr>
+				<tr><td>14th</td><td>6</td><td>14</td><td>+70ft</td><td class="left">-</td></tr>
+				<tr><td>15th</td><td>6</td><td>15</td><td>+75ft</td><td class="left">Timeless Body</td></tr>
+				<tr><td>16th</td><td>6</td><td>16</td><td>+80ft</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>8</td><td>17</td><td>+85ft</td><td class="left">Cultivation Tradition Feature</td></tr>
+				<tr><td>18th</td><td>8</td><td>18</td><td>+90ft</td><td class="left">Empty Body</td></tr>
+				<tr><td>19th</td><td>8</td><td>19</td><td>+95ft</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>8</td><td>20</td><td>+100ft</td><td class="left">Perfect Self</td></tr>
+			</table>
+			<div element="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_UNARMORED_DEFENSE" />
+			<div element="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_UNARMED_STRIKES" />
+			<div element="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_UNARMORED_MOVEMENT" />
+			<div element="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_KI" />
+			<div element="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_KI_EMPOWERED_STRIKES" />
+			<div element="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_CULTIVATION_TRADITION" />
+			<div element="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_DEFLECT_MISSILES" />
+			<div element="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_ABILITYSCOREIMPROVEMENT_DIVINE_FIST" />
+			<div element="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_SLOW_FALL" />
+			<div element="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_STUNNING_STRIKE" />
+			<div element="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_EVASION" />
+			<div element="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_STILLNESS_OF_MIND" />
+			<div element="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_PURITY_OF_BODY" />
+			<div element="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_DIAMOND_SOUL" />
+			<div element="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_TONGUE_OF_THE_SUN_AND_MOON" />
+			<div element="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_TIMELESS_BODY" />
+			<div element="ID_SA_MR_CLASS_FEATURE_PERFECTION_OF_THE_DIVINE_FIST" />
+		</description>
+		<setters>
+			<set name="short">You're an Divine Fist.</set>
+			<set name="hd">d12</set>
+		</setters>
+		<sheet display="false">
+			<description>You're an Divine Fist.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+			<select type="Proficiency" name="Skill Proficiency, Divine Fist" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" requirements="!ID_SA_MR_MULTICLASS_ELDRICTH_GLAIVE" />			
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_UNARMORED_DEFENSE" level="1" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_UNARMED_STRIKES" level="1" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_UNARMORED_MOVEMENT" level="1" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_KI" level="2" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_KI_EMPOWERED_STRIKES" level="2" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_CULTIVATION_TRADITION" level="3" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_DEFLECT_MISSILES" level="3" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_ABILITYSCOREIMPROVEMENT_DIVINE_FIST" level="4" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_SLOW_FALL" level="4" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_STUNNING_STRIKE" level="5" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_EVASION" level="7" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_STILLNESS_OF_MIND" level="7" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_PURITY_OF_BODY" level="10" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_DIAMOND_SOUL" level="11" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_TONGUE_OF_THE_SUN_AND_MOON" level="13" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_TIMELESS_BODY" level="15" />
+		</rules>
+	</element>
+	<element name="Unarmored Defense" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_UNARMORED_DEFENSE">
+		<description>
+			<p>Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier.</p>
+		</description>
+		<sheet>
+			<description>While you are wearing no armor and not wielding a shield, your AC equals {{ac:unarmored defense divine fist}}.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:unarmored defense divine fist:base" value="10" />
+			<stat name="ac:unarmored defense divine fist:dexterity" value="dexterity:modifier" />
+			<stat name="ac:unarmored defense divine fist:wisdom" value="wisdom:modifier" />
+			<stat name="ac:unarmored defense divine fist" value="ac:unarmored defense divine fist:base" />
+			<stat name="ac:unarmored defense divine fist" value="ac:unarmored defense divine fist:dexterity" />
+			<stat name="ac:unarmored defense divine fist" value="ac:unarmored defense divine fist:wisdom" />
+			<stat name="ac:calculation" value="ac:unarmored defense divine fist" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Defense (Divine Fist)" />
+		</rules>
+	</element>
+	<element name="Unarmed Strikes" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_UNARMED_STRIKES">
+		<description>
+			<p>At 1st level, your practice of unarmed strikes gives you mastery of combat styles that use unarmed strikes and various weapons you are familiar with.</p>
+			<p class="indent">You gain the following benefits while you aren’t wearing armor or wielding a shield, and armed only with unarmed strikes and proficient weapons:</p>
+			<ul>
+				<li>You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and weapons you are proficient in.</li>
+				<li>You can roll a d6 in place of the normal damage of your unarmed strike and in place of the damage of your proficient weapons.</li>
+				<li>When you use the Attack action on your turn you can make more Unarmed Strike attacks than usual.  The number in the Unarmed Strikes column of the Divine Fist table is how many Unarmed Strikes you can make as part of that Attack action.  You can give up two Unarmed Strikes to make an attack with a weapon you are proficient in.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your unarmed strike does 1d{{unarmed strikes:dice}}+{{unarmed strikes:damage}} damage. You can use Strength or Dexterity for these attacks.
+			When you use the Attack action with an unarmed strike or a proficient weapon, you can make one unarmed strike as a bonus action.</description>
+			<description level="4">Your unarmed strike does 1d{{unarmed strikes:dice}}+{{unarmed strikes:damage}} damage and counts as silver for how it effects enemies. You can use Strength or Dexterity for these attacks.
+			When you use the Attack action with an unarmed strike or a proficient weapon, you can make one unarmed strike as a bonus action.</description>
+			<description level="7">Your unarmed strike does 1d{{unarmed strikes:dice}}+{{unarmed strikes:damage}} damage and counts as adamantium for how it effects enemies. You can use Strength or Dexterity for these attacks.
+			When you use the Attack action with an unarmed strike or a proficient weapon, you can make one unarmed strike as a bonus action.</description>
+			<description>Your unarmed strike does 1d{{unarmed strikes:dice}}+{{unarmed strikes:damage}} damage. You can use Strength or Dexterity for these attacks.
+			When you use the Attack action with an unarmed strike or a proficient weapon, you can make one unarmed strike as a bonus action.</description>
+		</sheet>
+		<rules>
+			<stat name="unarmed strikes:attack" value="strength:modifier" bonus="unarmed strikes" />
+			<stat name="unarmed strikes:attack" value="dexterity:modifier" bonus="unarmed strikes" />
+			<stat name="unarmed strikes:damage" value="strength:modifier" bonus="unarmed strikes" />
+			<stat name="unarmed strikes:damage" value="dexterity:modifier" bonus="unarmed strikes" />
+			<stat name="unarmed strikes:damage" value="1" level="6" />
+			<stat name="unarmed strikes:calculation" value="unarmed strikes:damage" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmed Strikes (Divine Fist)" level="6" />
+			<stat name="unarmed strikes:dice" value="6" bonus="unarmed strikes" />
+			<stat name="unarmed strikes:dice" value="8" bonus="unarmed strikes" level="11" />
+			<stat name="unarmed strikes:dice" value="10" bonus="unarmed strikes" level="17" />
+		</rules>
+	</element>
+	<element name="Unarmored Movement" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_UNARMORED_MOVEMENT">
+		<description>
+			<p>Starting at 1st level, your speed increases by 5 feet while you are not wearing armor or wielding a shield. This bonus increases by 5 feet every level after first level as shown in the Divine Fist table.  Your jumping distance is doubled and you can make a number of smaller jumps as part of your movement.</p>
+			<p class="indent">At 3rd level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.  Your jumping distance is instead tripled.</p>
+			<p class="indent">At 5th level, you gain the ability to move along the bodies of creatures larger than you, or swarms that take up more space than your own, during your turn.  You fall if you end your turn on such a creature and it does not provide stable footing.</p>
+			<p class="indent">At 7th level, you gain the ability to move along vertical surfaces and across liquids with ease as if you had Spider Climb and Water Walk.  You do not fall even if you end your turn on such surfaces.  You can now stand upon the bodies of creatures larger than you, or swarms that take up more space than your own, without falling at the end of your turn.  Your jumping distance is now quadrupled.</p>
+			<p class="indent">At 9th level, you gain a fly speed equal to your land speed.  Your jumping distance is now quintupled, if you have a reason to jump.</p>
+		</description>
+		<sheet>
+			<description>Your jumping distance is {{divine fist:unarmored movement:jump}} and you can make a number of smaller jumps as part of your movement.</description>
+			<description level="3">Your jumping distance is {{divine fist:unarmored movement:jump}} and you can make a number of smaller jumps as part of your movement.
+			You can move along vertical surfaces and across liquids without falling.</description>
+			<description level="5">Your jumping distance is {{divine fist:unarmored movement:jump}} and you can make a number of smaller jumps as part of your movement.
+			You can move along vertical surfaces and across liquids without falling.
+			You can move along the bodies of creatures larger than you or swarms that take up more space that your own. You fall if you end your turn on a creature and it does not provide stable footing.</description>
+			<description level="7">Your jumping distance is {{divine fist:unarmored movement:jump}} and you can make a number of smaller jumps as part of your movement.
+			You can move along vertical surfaces and across liquids as if you had Spider Climb and Water Walk. You do not fall if you end your turn on these surfaces.
+			You can move along the bodies of creatures larger than you or swarms that take up more space that your own. You fall if you end your turn on a creature and it does not provide stable footing.</description>
+			<description level="9">Your jumping distance is {{divine fist:unarmored movement:jump}} if you have a reason to jump.</description>
+		</sheet>
+		<rules>
+			<stat name="divine fist:unarmored movement" value="5" bonus="unarmored movement" />
+			<stat name="divine fist:unarmored movement" value="10" bonus="unarmored movement" level="2" />
+			<stat name="divine fist:unarmored movement" value="15" bonus="unarmored movement" level="3" />
+			<stat name="divine fist:unarmored movement" value="20" bonus="unarmored movement" level="4" />
+			<stat name="divine fist:unarmored movement" value="25" bonus="unarmored movement" level="5" />
+			<stat name="divine fist:unarmored movement" value="30" bonus="unarmored movement" level="6" />
+			<stat name="divine fist:unarmored movement" value="35" bonus="unarmored movement" level="7" />
+			<stat name="divine fist:unarmored movement" value="40" bonus="unarmored movement" level="8" />
+			<stat name="divine fist:unarmored movement" value="45" bonus="unarmored movement" level="9" />
+			<stat name="divine fist:unarmored movement" value="50" bonus="unarmored movement" level="10" />
+			<stat name="divine fist:unarmored movement" value="55" bonus="unarmored movement" level="11" />
+			<stat name="divine fist:unarmored movement" value="60" bonus="unarmored movement" level="12" />
+			<stat name="divine fist:unarmored movement" value="65" bonus="unarmored movement" level="13" />
+			<stat name="divine fist:unarmored movement" value="70" bonus="unarmored movement" level="14" />
+			<stat name="divine fist:unarmored movement" value="75" bonus="unarmored movement" level="15" />
+			<stat name="divine fist:unarmored movement" value="80" bonus="unarmored movement" level="16" />
+			<stat name="divine fist:unarmored movement" value="85" bonus="unarmored movement" level="17" />
+			<stat name="divine fist:unarmored movement" value="90" bonus="unarmored movement" level="18" />
+			<stat name="divine fist:unarmored movement" value="95" bonus="unarmored movement" level="19" />
+			<stat name="divine fist:unarmored movement" value="100" bonus="unarmored movement" level="20" />
+			<stat name="innate speed:misc" value="divine fist:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:1]" />
+			<stat name="innate speed:swim:misc" value="divine fist:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:swim:1]" />
+			<stat name="innate speed:burrow:misc" value="divine fist:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:burrow:1]" />
+			<stat name="innate speed:climb:misc" value="divine fist:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:climb:1]" level="3" />
+			<stat name="innate speed:fly:misc" value="divine fist:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:fly:1]" level="9" />
+			<stat name="divine fist:unarmored movement:jump" value="innate speed" />
+			<stat name="divine fist:unarmored movement:jump" value="innate speed" />
+			<stat name="divine fist:unarmored movement:jump" value="innate speed" level="3" />
+			<stat name="divine fist:unarmored movement:jump" value="innate speed" level="7" />
+			<stat name="divine fist:unarmored movement:jump" value="innate speed" level="9" />
+		</rules>
+	</element>
+	<element name="Ki" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_KI">
+		<description>
+			<p>Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your divine fist level determines the number of points you have, as shown in the Ki Points column of the Divine Fist table.</p>
+			<p class="indent">You can spend these points to fuel various ki features. You start knowing three such features: Counter Attack, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class.</p>
+			<p class="indent">When you spend a ki point it is unavailable until you regain the point.  You regain one ki point at the start of each of your turns.</p>
+			<p class="indent">Some of your ki features require your target to make a saving throw to resist the feature’s effects. The saving throw DC is calculated as follows:</p>
+			<center>
+				<p><strong>Ki save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+			</center>
+			<div element="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_KI_COUNTER_ATTACK" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_KI_PATIENT_DEFENSE" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_MONK_KI_STEP_OF_THE_WIND" />
+		</description>
+		<sheet>
+			<description>You have {{ki:points}} Ki Points and your Ki DC is {{ki:dc}}</description>
+		</sheet>
+		<rules>
+			<stat name="ki:points" value="level:divine fist" />
+			<stat name="ki:dc" value="8" />
+			<stat name="ki:dc" value="proficiency" />
+			<stat name="ki:dc" value="wisdom:modifier" />
+			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_KI_COUNTER_ATTACK" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_KI_PATIENT_DEFENSE" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_KI_STEP_OF_THE_WIND" />
+		</rules>
+	</element>
+	<element name="Counter Attack" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_KI_COUNTER_ATTACK">
+		<description>
+			<p>When you are hit by an attack from a creature within your speed you can spend 1 ki point to make a single Unarmed Strike against the creature that hit you, this does not take an action or reaction and you instantly move to them, make the attack and return, ignoring intervening terrain and without provoking opportunity attacks for moving.</p>
+		</description>
+		<sheet usage="Ki">
+			<description>When you are hit by an attack from a creature within your speed you can spend 1 ki point to make a single Unarmed Strike against the creature that hit you.
+			This does not take an action or reaction and you instantly move to them, make the attack and return, ignoring intervening terrain and without provoking opportunity attacks for moving.</description>
+			<description level="20">When you are hit by an attack from a creature within your speed you can make a single Unarmed Strike against the creature that hit you without spending Ki.
+			This does not take an action or reaction and you instantly move to them, make the attack and return, ignoring intervening terrain and without provoking opportunity attacks for moving.</description>
+		</sheet>
+	</element>
+	<element name="Swirling Leaf Intercepts the Sparrow" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_KI_SWIRLING_LEAF_INTERCEPTS_SPARROW">
+		<description>
+			<p>When an enemy moves within range of your speed you can spend 1 ki as a reaction to move up to your speed to intercept their movement. You move up to a square adjacent to them and their movement ends.</p>
+		</description>
+		<sheet action="Reaction" usage="Ki">
+			<description>When an enemy moves within range of your speed you can spend 1 ki as a reaction to move up to your speed to intercept their movement.
+			You move up to a square adjacent to them and their movement ends.</description>
+		</sheet>
+	</element>
+	<element name="Raging Bull Diverted by the Gentle Breeze" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_KI_RAGING_BULL_DIVERTED">
+		<description>
+			<p>When an enemy attempts to bull rush you, shove you, knock you prone, or moves up to you before making an attack against you, you can spend 1 ki as a reaction to make an Acrobatics or Athletics check opposed by their Athletics check.  If your check meets or beats their check you ignore the effects of their attack or attempt to bull rush, shove, or knock you prone, and you move them up to your speed in a direction of your choice other than the one they came from.  Should this forced movement cause them to impact a wall or other hard object they take damage equal to your unarmed strike for every 30 feet of forced movement they had left.</p>
+		</description>
+		<sheet action="Reaction" usage="Ki">
+			<description>When an enemy attempts to bull rush you, shove you, knock you prone, or moves up to you before making an attack against you, spend 1 ki to make an Acrobatics or Athletics check opposed by their Athletics check.
+			If your check meets or beats their check you ignore the effects of their attack or attempt to bull rush, shove, or knock you prone, and you move them up to your speed in a direction of your choice other than the one they came from
+			Should this forced movement cause them to impact a wall or other hard object they take damage equal to your unarmed strike for every 30 feet of forced movement they had left</description>
+		</sheet>
+	</element>
+	<element name="Ki-Empowered Strikes" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_KI_EMPOWERED_STRIKES">
+		<description>
+			<p>Starting at 2nd level, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.  At 6th level any proficient weapon you wield that is not already magical counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+		</description>
+		<sheet>
+			<description>Your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
+			<description level="6">Your unarmed strikes or attacks with any proficient weapon that is not already magical count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
+		</sheet>
+	</element>
+	<element name="Cultivation Tradition" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_CULTIVATION_TRADITION">
+		<description>
+			<p>When you reach 3rd level, you commit yourself to a cultivation tradition, a method of cultivating your ki and training your martial might.  Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level.</p>
+		</description>
+		<rules>
+			<select type="Archetype" name="Cultivation Tradition" supports="Cultivation Tradition" />
+		</rules>
+	</element>
+	<element name="Cultivation of Shadow" type="Archetype" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_CULTIVATION_OF_SHADOW">
+		<supports>Cultivation Tradition</supports>
+		<description>
+			<p>Divine Fists that practice the Cultivation of Shadow follow a tradition that values stealth and subterfuge. These Divine Fists might be called ninjas or shadowdancers, and they sometimes serve as spies and assassins.</p>
+			<div element="ID_SA_MR_ARCHETYPE_CULTIVATION_OF_SHADOW_SHADOW_ARTS" />
+			<div element="ID_SA_MR_ARCHETYPE_CULTIVATION_OF_SHADOW_CREATURE_OF_THE_DARK" />
+			<div element="ID_SA_MR_ARCHETYPE_CULTIVATION_OF_SHADOW_FLIGHT_OF_THE_BAT" />
+			<div element="ID_SA_MR_ARCHETYPE_CULTIVATION_OF_SHADOW_ALMIGHTY_VAMPIRE" />
+		</description>
+		<sheet display="false">
+			<description>Divine Fists of the Cultivation of Shadow follow a tradition that values stealth and subterfuge.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_CULTIVATION_OF_SHADOW_SHADOW_ARTS" level="3"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_CULTIVATION_OF_SHADOW_SHADOW_STEP" level="6"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_CULTIVATION_OF_SHADOW_CLOAK_OF_SHADOWS" level="11"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_CULTIVATION_OF_SHADOW_OPPORTUNIST" level="17"/>
+		</rules>
+	</element>
+	<element name="Shadow Arts" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_CULTIVATION_OF_SHADOW_SHADOW_ARTS">
+		<description>
+			<p>Starting when you choose this tradition at 3rd level, you can use your ki to duplicate the effects of certain spells. As an action, you can spend 2 ki points to cast darkness, darkvision, pass without trace, or silence, without providing material components. Additionally, you gain the minor illusion cantrip if you don’t already know it. You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.</p>
+		</description>
+		<sheet action="Action" usage="Ki">
+			<description>You can spend 2 ki points to cast darkness, darkvision, pass without trace, or silence, without providing material components. Additionally, you gain the minor illusion cantrip if you don’t already know it.
+			You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MINOR_ILLUSION" />
+		</rules>
+	</element>
+	<element name="Shadow Step" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_CULTIVATION_OF_SHADOW_SHADOW_STEP">
+		<description>
+			<p>At 6th level, you gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action you can teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness. You then have advantage on the first melee attack you make before the end of the turn.</p>
+			<p class="indent">At 12th level, when you use Shadow Step as a bonus action to teleport through shadows you can make an additional teleport after every two unarmed strikes you make to a maximum of five teleports per turn.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When you are in dim light or darkness, you can teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness. You then have advantage on the first melee attack you make before the end of the turn.</description>
+			<description level="12">When you are in dim light or darkness, you can teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness. You then have advantage on the first melee attack you make before the end of the turn.
+			You can make an additional teleport after every two unarmed strikes you make to a maximum of five teleports per turn.</description>
+		</sheet>
+	</element>
+	<element name="Cloak of Shadows" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_CULTIVATION_OF_SHADOW_CLOAK_OF_SHADOWS">
+		<description>
+			<p>By 11th level, you have learned to become one with the shadows. When you are in an area of dim light or darkness, you can use your action to become invisible as a Bonus Action. You remain invisible until you make an attack, cast a spell, or are in an area of bright light or choose to become visible again.</p>
+		</description>
+		<sheet action="Bonus">
+			<description>When you are in an area of dim light or darkness, you can become invisible. You remain invisible until you make an attack, cast a spell, or are in an area of bright light.</description>
+		</sheet>
+	</element>
+	<element name="Opportunist" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_CULTIVATION_OF_SHADOW_OPPORTUNIST">
+		<description>
+			<p>At 17th level, you can exploit a creature’s momentary distraction when it is hit by an attack. Whenever a creature within 5 feet of you is hit by an attack made by a creature other than you, you can use your Counter Attack ki power as if you had been the one hit by that attack.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>Whenever a creature within 5 feet of you is hit by an attack made by a creature other than you, you can make use of your Counter Attack ki power as if you had been the one attacked.</description>
+		</sheet>
+	</element>
+	<element name="Cultivation of the Astral Self" type="Archetype" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_CULTIVATION_OF_ASTRAL_SELF">
+		<supports>Cultivation Tradition</supports>
+		<description>
+			<p>Divine Fists of the Cultivation of the Astral Self focus more upon their internal self, harvesting their ki and working to separate or call forth their astral form and bring it to bear.  They see their mystical energy as a representation of their true form, an astral self.</p>
+			<p class="indent">The astral self is a translucent embodiment of the divine fists’ psyche and soul. As a result, the form of an astral self reflects the mind of the monk who manifests it. Your astral self could be a humanoid knight with a helmeted face and large, muscular arms, or it could be a golden metallic form with thin arms like a modron.</p>
+			<p class="indent">When choosing this path, consider the quirks that define your divine fist. Are they obsessed with something? Are you driven by justice or a selfish desire? Any of these motivations could manifest in the form of your astral self.</p>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="left">Features</td></tr>
+				</thead>
+				<tr><td> 3rd</td><td class="left">Asrms of the Astral Self</td></tr>
+				<tr><td> 6th</td><td class="left">Visage of the Astral Self</td></tr>
+				<tr><td>11th</td><td class="left">Awakening of the Astral Self</td></tr>
+				<tr><td>17th</td><td class="left">Complete Astral Self</td></tr>
+			</table>
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_CULTOFASTRALSELF_ARMS" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_CULTOFASTRALSELF_ASTRAL_SELF" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_CULTOFASTRALSELF_AWAKENING" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_CULTOFASTRALSELF_COMPLETE" />
+		</description>
+		<sheet display="false">
+			<description>The ultimate masters of martial arts combat, whether armed or unarmed.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_CULTOFASTRALSELF_ARMS" level="3"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_CULTOFASTRALSELF_ASTRAL_SELF" level="6"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_CULTOFASTRALSELF_AWAKENING" level="11"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_CULTOFASTRALSELF_COMPLETE" level="17"/>
+		</rules>
+	</element>
+	<element name="Visage of the Astral Arms" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_CULTOFASTRALSELF_ARMS">
+		<description>
+			<p>At 3rd level, your mastery of your ki allows you to summon a portion of your astral self. On your turn, you can spend 2 ki points as a bonus action to summon the arms of your astral self for 10 minutes. These spectral arms hover near your shoulders. You determine the arms’ appearance based on the qualities of your character.</p>
+			<p class="indent">While your astral arms are summoned, you gain the following benefits:</p>
+			<ul>
+				<li>You can use your Wisdom modifier in place of your Strength modifier when making Strength checks and Strength saving throws.</li>
+				<li>The arms count as divine fist unarmed strikes and have a reach of 10 feet. The arms deal radiant or necrotic damage (your choice). When you attack with the arms, you can use your Wisdom modifier instead of your Strength or Dexterity modifier for the attack and damage rolls.</li>
+				<li>Immediately after you use the Attack action with your astral arms on your turn, you can make one extra attack with your astral arms as a bonus action. The number of extra attacks increases when you reach certain levels in this class, increasing to two at 11th level and three at 17th level.</li>
+			</ul>
+		</description>
+		<sheet action="Bonus" usage="Ki">
+			<description>You can summon Astral Arms for 10 mins that hover near your shoulders with the following benefits:
+			• You can use WIS instead of STR when making Strength checks and Saving Throws
+			• Arms count as divine fist unarmed strikes that deal radiant or necrotic damage and have a reach of 10. When attacking with them, you can choose WIS instead of STR or DEX for the attack and damage rolls.
+			• Immediately after you use an attack with your Astral Arms you can make {{astral arms:attacks}} additional attack with arms as a bonus attack.</description>
+			<description action="Bonus" usage="Ki" level="11">You can summon Astral Arms for 10 mins that hover near your shoulders with the following benefits:
+			• You can use WIS instead of STR when making Strength checks and Saving Throws
+			• Arms count as divine fist unarmed strikes that deal radiant or necrotic damage and have a reach of 10. When attacking with them, you can choose WIS instead of STR or DEX for the attack and damage rolls.
+			• Immediately after you use an attack with your Astral Arms you can make {{astral arms:attacks}} additional attacks with arms as a bonus attack.</description>
+		</sheet>
+		<rules>
+			<stat name="astral arms:attacks" value="1" />
+			<stat name="astral arms:attacks" value="2" level="11" />
+			<stat name="astral arms:attacks" value="3" level="17" />
+		</rules>
+	</element>
+	<element name="Visage of the Astral Self" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_CULTOFASTRALSELF_ASTRAL_SELF">
+		<description>
+			<p>Starting at 6th level, you can summon the visage of your astral self. On your turn, you can spend 1 ki point as a bonus action, or as part of summoning your astral arms, to summon this visage for 10 minutes. The spectral visage covers your face like a helmet or mask. You determine its appearance based on the qualities of your character.</p>
+			<p class="indent">While your visage is summoned, you gain the following benefits:</p>
+			<ul>
+				<li><strong>Wisdom of the Spirit</strong> You have advantage on Wisdom (Insight) and Charisma (Intimidation) checks.</li>
+				<li><strong>Astral Sight</strong> You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet</li>
+			</ul>
+		</description>
+		<sheet action="Bonus" usage="Ki">
+			<description>You have advantage on Wisdom (Insight) and Charisma (Intimidation) checks
+			You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet</description>
+		</sheet>
+	</element>
+	<element name="Awakening of the Astral Self" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_CULTOFASTRALSELF_AWAKENING">
+		<description>
+			<p>Starting at 11th level, you tap into the greater power of your astral self. While you have both your astral arms and visage summoned, you gain the following benefits:</p>
+			<ul>
+				<li><strong>Deflect Energy</strong> When you take acid, cold, fire, lightning, or force damage, you can use your reaction to deflect it. When you do so, the damage you take is reduced by 1d10 + your Wisdom modifier + your monk level</li>    
+				<li><strong>Empowered Arms</strong> Once on each of your turns when you hit a target with your astral arms, you can deal extra damage to the target equal to your Martial Arts die</li>
+				<li><strong>Word of the Spirit</strong> When you speak through your visage, you can direct your words to a creature of your choice that you can see within 30 feet of you, making it so only that creature can hear you. Alternatively, you can amplify your voice so that all creatures within 600 feet can hear you</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you have both your Astral Arms and Visage summoned you gain the following:
+			• When you take acid, cold, fire, lightning, or force damage you can use a reaction to deflect it. Damage is reduced by 1d10+{{awakening of astral self:damage}}
+			• Once on each of your turns when you hit a taget with your Astral Arms, you can deal extra damage equal to your martial arts dice
+			• When you speak through your Visage you can direct words to a creature of your choice you can see within 30 feet or amplify your voice to all creatures within 600</description>
+		</sheet>
+		<rules>
+			<stat name="awakening of astral self:base" value="10" />
+			<stat name="awakening of astral self:level" value="level" />
+			<stat name="awakening of astral self:wis" value="wisdom:modifier" />
+			<stat name="awakening of astral self:damage" value="awakening of astral self:base" />
+			<stat name="awakening of astral self:damage" value="awakening of astral self:level" />
+			<stat name="awakening of astral self:damage" value="awakening of astral self:wis" />
+			<stat name="awakening of astral self:calculation" value="awakening of astral self:base" bonus="calculation" alt="Awakening of Astral Self (Divine Fist)" />
+		</rules>
+	</element>
+	<element name="Complete Astral Self" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_CULTOFASTRALSELF_COMPLETE">
+		<description>
+			<p>Starting at 17th level, your connection to your astral self is complete, allowing you summon it entirely. On your turn, you can spend 10 ki points as a bonus action to summon the arms, visage, and body of your astral self for 10 minutes. This spectral body covers your physical form like a suit of armor, connecting with the arms and visage. You determine its appearance based on the qualities of your character.</p>
+			<p class="indent">While your astral self is summoned, you gain the following benefits:</p>
+			<ul>
+				<li><strong>Armor of the Spirit</strong> You gain a +2 bonus to AC while you aren’t incapacitated</li>
+				<li><strong>Astral Barrage</strong> Whenever you use the Unarmed Strikes feature to attack more than once, you can instead attack three times using your astral arms for every two on the Unarmed Strikes column</li>
+				<li><strong>Ki Consumption</strong> When a creature within 10 feet of you is reduced to 0 hit points, you can use your reaction to regain ki points equal to your Wisdom modifier (minimum 1)</li>
+			</ul>
+		</description>
+		<sheet action="Bonus" usage="Ki">
+			<description>You can spend 10 Ki to summon your Complete Astral Self for 10 minutes and gain the following benefits:
+			• You gain a +2 bonus to AC while you aren’t incapacitated
+			• When using Unarmed Strikes to attack more than once, you can instead attack 12 times using your astral arms
+			• When a creature within 10 feet of you is reduced to 0 hit points, you can use a reaction to regain {{complete astral self}} Ki points</description>
+		</sheet>
+		<rules>
+			<stat name="complete astral self:base" value="1" bonus="complete astral self" />
+			<stat name="complete astral self:wis" value="wisdom:modifier" bonus="complete astral self" />
+			<stat name="complete astral self" value="complete astral self:base" />
+			<stat name="complete astral self" value="complete astral self:wis" />
+			<stat name="complete astral self:calculation" value="complete astral self" bonus="calculation" alt="Complete Astral Self" />
+		</rules>
+	</element>
+	<element name="Cultivation of the Four Elements" type="Archetype" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_CULTIVATION_OF_THE_FOUR_ELEMENTS">
+		<supports>Cultivation Tradition</supports>
+		<description>
+			<p>You follow a cultivation tradition that teaches you to harness the elements. When you focus your ki, you can align yourself with the forces of creation and bend the four elements to your will, using them as an extension of your body. Some members of this tradition dedicate themselves to a single element, but others weave the elements together.</p>
+			<p class="indent">Many divine fists of this tradition tattoo their bodies with representations of their ki powers, commonly imagined as coiling dragons, but also as phoenixes, fish, plants, mountains, and cresting waves.</p>
+			<div element="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAY_OF_THE_FOUR_ELEMENTS_DISCIPLE_OF_THE_ELEMENTS" />
+		</description>
+		<sheet display="false">
+			<description>You follow a cultivation tradition that teaches you to harness the elements.</description>
+		</sheet>
+		<rules>
+			<!--I'm just going to pass the PHB Archetype Feature in here because I'm lazy. If you have issues, pull this index:  https://raw.githubusercontent.com/aurorabuilder/elements/master/core.index -->
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAY_OF_THE_FOUR_ELEMENTS_DISCIPLE_OF_THE_ELEMENTS" level="3"/>
+		</rules>
+	</element>
+	<element name="Cultivation of the Sword Saint" type="Archetype" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_CULTIVATION_OF_THE_SWORD_SAINT">
+		<supports>Cultivation Tradition</supports>
+		<description>
+			<p>Divine Fists of the Cultivation of the Sword Saint  train relentlessly with their weapons, to the point where the weapon becomes an extension of the body. Founded on a mastery of sword fighting, the tradition has expanded to include many different weapons.</p>
+			<p class="indent">A sword saint sees a weapon in much the same way a calligrapher or painter regards a pen or brush. Whatever the weapon, the sword saint views it as a tool used to express the beauty and precision of the martial arts. That such mastery makes a sword saint a peerless warrior is but a side effect of intense devotion, practice, and study.</p>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="left">Features</td></tr>
+				</thead>
+				<tr><td> 3rd</td><td class="left">Path of the Kensei</td></tr>
+				<tr><td> 6th</td><td class="left">One with the Blade</td></tr>
+				<tr><td>11th</td><td class="left">Sharpen the Blade</td></tr>
+				<tr><td>17th</td><td class="left">Unerring Accuracy</td></tr>
+			</table>
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_CULTOFSWORDSAINT_PATH_OF_KENSEI" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_CULTOFSWORDSAINT_ONE_WITH_THE_BLADE" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_CULTOFSWORDSAINT_SHARPEN_THE_BLADE" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_CULTOFSWORDSAINT_UNERRING_ACCURACY" />
+		</description>
+		<sheet display="false">
+			<description>The ultimate masters of martial arts combat, whether armed or unarmed.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_CULTOFSWORDSAINT_PATH_OF_KENSEI" level="3"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_CULTOFSWORDSAINT_ONE_WITH_THE_BLADE" level="6"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_CULTOFSWORDSAINT_SHARPEN_THE_BLADE" level="11"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_CULTOFSWORDSAINT_UNERRING_ACCURACY" level="17"/>
+		</rules>
+	</element>
+	<element name="The Path of the Kensei" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_CULTOFSWORDSAINT_PATH_OF_KENSEI">
+		<description>
+			<p>When you choose this cultivation at 3rd level, your special martial arts training leads you to master the use of weapons. This path also includes instruction in the deft strokes of calligraphy or painting. You gain the following benefits.</p>
+			<ul>
+				<li><strong>Weapons of the Sword Saint</strong> You gain proficiency in all simple or martial weapons that lack the heavy and special properties, as well as the longbow.  These weapons are sword saint weapons for you.  Many of this cultivation’s features work only with your sword saint weapons.  You can use your Sword Saint Weapons for your Counter Attacks in place of the usual Unarmed Strike</li>
+				<li><strong>Agile Parry</strong> If you are wielding a sword saint weapon, you can use it to defend yourself if it is a melee weapon. You gain a +2 bonus to AC until the start of your next turn, while the weapon is in your hand and you aren’t incapacitated</li>
+				<li><strong>Imbuement of the Sword Saint's Blade</strong> You can use a bonus action on your turn to make your attacks with a sword saint weapon more deadly. When you do so, any target you hit with an attack using a kensei weapon takes an extra 1d4 damage of the weapon’s type. You retain this benefit until the end of the current turn</li>
+				<li><strong>Way of the Brush</strong> You gain proficiency with calligrapher’s supplies and painter’s supplies</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You gain proficiency in all simple or martial weapons that lack the heavy and special properties, as well as the longbow. You can use these weapons for your Counter Attacks
+			While weilding a Sword Saint Weapon, you gain +2 AC until the start of your next turn while you aren't incapacitated</description>
+			<description action="Bonus">Use a bonus action to add 1d4 damage to the weapon's type until the end of your current turn</description>
+		</sheet>
+		<rules>
+			<!-- Weapons of the Sword Saint Profs -->
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATCLUB" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_JAVELIN" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHT_HAMMER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MACE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SICKLE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_YKLWA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_FLAIL" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MORNINGSTAR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WAR_PICK" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WHIP" />
+			<grant type="Proficiency" name="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW"/>
+			<!-- Agile Parry -->
+			<stat name="ac:misc" value="2" bonus="the path of the kensei" />
+			<!-- Way of the Brush -->
+			<grant type="Proficiency" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES"/>
+			<grant type="Proficiency" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_PAINTERS_SUPPLIES"/>
+		</rules>
+	</element>
+	<element name="One with the Blade" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_CULTOFSWORDSAINT_ONE_WITH_THE_BLADE">
+		<description>
+			<p>At 6th level, you extend your ki into your sword saint weapons, granting you the following benefits:</p>
+			<ul>
+				<li><strong>Call forth the Elemental Spirit</strong> You can spend 1 ki to imbue one of your sword saint weapons with an elemental spirit, or a spirit of light or darkness.  For ten minutes you add your Wisdom modifier as a bonus to damage as Acid, Cold, Fire, Lightning, Radiant or Necrotic damage</li>
+				<li><strong>Deft Strike</strong> When you hit a target with a sword saint weapon, you can spend 1 ki point to cause the weapon to deal extra damage to the target equal to your Unarmed Strike die. You can use this feature only once on each of your turns</li>
+			</ul>
+		</description>
+		<sheet action="Bonus" usage="Ki" alt="Call forth the Elemental Spirit">
+			<description>Spend 1 Ki to add {{wisdom:modifier}} Acid, Cold, Fire, Lightning, Radiant or Necrotic damage</description>
+		</sheet>
+		<sheet action="Bonus 1/Turn" usage="Ki" alt="Deft Strike">
+			<description>Spend 1 Ki to cause the weapon to deal extra {{unarmed strikes:dice}} damage to the target</description>
+		</sheet>
+	</element>
+	<element name="Sharpen the Blade" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_CULTOFSWORDSAINT_SHARPEN_THE_BLADE">
+		<description>
+			<p>At 11th level, you gain the ability to augment your weapons further with your ki. As a bonus action, you can expend up to 3 ki points to grant one sword saint weapon you touch a bonus to attack and damage rolls when you attack with it. The bonus equals the number of ki points you spent. This bonus lasts for 1 minute or until you use this feature again. This feature has no effect on a magic weapon that already has a bonus to attack and damage rolls</p>
+		</description>
+		<sheet action="Bonus" usage="Ki">
+			<description>Spend up to 3 Ki points to grant one Sword Saint weapon a bonus to attack and damage rolls equal to the number of Ki points spent.
+			This feature has no effect on a magic weapon that already has a bonus to attack and damage rolls</description>
+		</sheet>
+	</element>
+	<element name="Unerring Accuracy" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_CULTOFSWORDSAINT_UNERRING_ACCURACY">
+		<description>
+			<p>At 17th level, your mastery of weapons grants you extraordinary accuracy. If you miss with an attack roll using a sword saint weapon on your turn, you can reroll it. You can use this feature only once for each of your attacks</p>
+		</description>
+		<sheet action="1/Attack">
+			<description>If you miss with an attack using a sword saint weapon you can reroll it</description>
+		</sheet>
+	</element>
+	<element name="Deflect Missiles" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_DEFLECT_MISSILES">
+		<description>
+			<p>Starting at 3rd level, you can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + your divine fist level. </p>
+			<p class="indent">If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a divine fist weapon for the attack.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>You can deflect or catch the missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d10+{{divine fist:deflect missiles bonus}}.
+			If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a divine fist weapon for the attack.</description>
+		</sheet>
+		<rules>
+			<stat name="divine fist:deflect missiles bonus" value="dexterity:modifier" />
+			<stat name="divine fist:deflect missiles bonus" value="level:divine fist" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_ABILITYSCOREIMPROVEMENT_DIVINE_FIST">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Divine Fist 4)" supports="Improvement Option,Divine Fist,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Divine Fist 8)" supports="Improvement Option,Divine Fist,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Divine Fist 12)" supports="Improvement Option,Divine Fist,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Divine Fist 16)" supports="Improvement Option,Divine Fist,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Divine Fist 19)" supports="Improvement Option,Divine Fist,19" level="19" />
+		</rules>
+	</element>
+	<element name="Slow Fall" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_SLOW_FALL">
+		<description>
+			<p>Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your divine fist level.</p>
+		</description>
+		<sheet usage="Reaction">
+			<description>Reduce any falling damage you take by {{divine fist:slowfall}}.</description>
+		</sheet>
+		<rules>
+			<stat name="divine fist:slowfall" value="level:divine fist" />
+			<stat name="divine fist:slowfall" value="level:divine fist" />
+			<stat name="divine fist:slowfall" value="level:divine fist" />
+			<stat name="divine fist:slowfall" value="level:divine fist" />
+			<stat name="divine fist:slowfall" value="level:divine fist" />
+		</rules>
+	</element>
+	<element name="Stunning Strike" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_STUNNING_STRIKE">
+		<description>
+			<p>Starting at 5th level, you can interfere with the flow of ki in an opponent’s body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</p>
+		</description>
+		<sheet usage="Ki">
+			<description>When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Evasion" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_EVASION">
+		<description>
+			<p>At 7th level, your instinctive agility lets you dodge out of the way of certain area effects, such as a blue dragon’s lightning breath or a fireball spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+			<p class="indent">At 9th level, your training has allowed your body to resist many things that others could not.  When you are subjected to an effect that allows you to make a Constitution or Strength saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+			<p class="indent">At 11th level, your mental training has hardened your mind to many forms of harmful mental attacks.  When you are subjected to an effect that allows you to make a Wisdom, Intelligence or Charisma saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+		</description>
+		<sheet>
+			<description>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
+			<description level="9">When you are subjected to an effect that allows you to make a Dexterity or Constitution saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
+			<description level="11">When you are subjected to an effect that allows you to make a Dexterity, Constitution, Wisdom, Intelligence or Charisma saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
+		</sheet>
+	</element>
+	<element name="Stillness of Mind" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_STILLNESS_OF_MIND">
+		<description>
+			<p>Starting at 7th level, you can use your action to end one effect on yourself that is causing you to be charmed or frightened.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can end one effect on yourself that is causing you to be charmed or frightened.</description>
+		</sheet>
+	</element>
+	<element name="Purity of Body" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_PURITY_OF_BODY">
+		<description>
+			<p>At 10th level, your mastery of the ki flowing through you makes you immune to disease and poison.</p>
+		</description>
+		<sheet>
+			<description>Your mastery of the ki flowing through you makes you immune to disease and poison.</description>
+		</sheet>
+	</element>
+	<element name="Diamond Soul" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_DIAMOND_SOUL">
+		<description>
+			<p>Beginning at 11th level, your mastery of ki grants you proficiency in all saving throws.</p>
+			<p class="indent">Additionally, whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second result.</p>
+		</description>
+		<sheet usage="Ki">
+			<description>Whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second result.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Tongue of the Sun and Moon" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_TONGUE_OF_THE_SUN_AND_MOON">
+		<description>
+			<p>Starting at 13th level, you learn to touch the ki of other minds so that you understand all spoken languages. Moreover, any creature that can understand a language can understand what you say.</p>
+		</description>
+		<sheet>
+			<description>You learn to touch the ki of other minds so that you understand all spoken languages. Moreover, any creature that can understand a language can understand what you say.</description>
+		</sheet>
+	</element>
+	<element name="Timeless Body" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_TIMELESS_BODY">
+		<description>
+			<p>At 15th level, your ki sustains you so that you suffer none of the frailty of old age, and you can’t be aged magically. You can still die of old age, however. In addition, you no longer need food or water.</p>
+		</description>
+		<sheet>
+			<description>Your ki sustains you so that you suffer none of the frailty of old age, and you can’t be aged magically.
+			You no longer need food or water.</description>
+		</sheet>
+	</element>
+	<element name="Empty Body" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_EMPTY_BODY">
+		<description>
+			<p>Beginning at 18th level, you can use your action to spend 4 ki points to become invisible for 1 minute. During that time, you also have resistance to all damage but force damage.</p>
+			<p class="indent">Additionally, you can spend 8 ki points to cast the astral projection spell, without needing material components. When you do so, you can’t take any other creatures with you.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_ASTRAL_PROJECTION" />
+			</div>
+		</description>
+		<sheet action="Bonus" usage="Ki">
+			<description>You can spend 4 ki points to become invisible for 1 minute. During that time, you also have resistance to all damage but force damage.
+			You can spend 8 ki points to cast the astral projection spell, without needing material components. When you do so, you can’t take any other creatures with you.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ASTRAL_PROJECTION" />
+		</rules>
+	</element>
+	<element name="Perfect Self" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_DIVINE_FIST_PERFECT_SELF">
+		<description>
+			<p>At 20th level all of your stats that are below 20 are raised to 20.  You can make one Reaction per turn rather than per round.  And Counter Attack no longer costs Ki.  When you roll above a ten on initiative for at the start of combat you can take two turns every round that battle, the first on the initiative count you rolled, the second on the initiative count ten below what you had rolled.</p>
+		</description>
+		<sheet>
+			<description>You can make one Reaction per turn rather than per round.
+			Counter Attack no longer costs Ki
+			When you roll above a ten on initiative for at the start of combat you can take two turns every round that battle, the first on the initiative count you rolled, the second on the initiative count ten below what you had rolled.</description>
+		</sheet>
+	</element>
+</elements>
