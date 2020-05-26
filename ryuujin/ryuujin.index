@@ -4,7 +4,7 @@
 		<name>SA Trad Games: Ryuujin's Custom Content</name>
 		<description>Custom Content from Ryuujin on Something Awful Traditional Games.</description>
 		<author url="https://forums.somethingawful.com/member.php%3Faction%3Dgetinfo%26userid%3D125148">Ryuujin</author>
-		<update version="0.0.12">
+		<update version="0.0.13">
 			<file name="ryuujin.index" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/ryuujin.index" />
 		</update>
 	</info>
