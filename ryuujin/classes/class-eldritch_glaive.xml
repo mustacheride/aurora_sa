@@ -3,7 +3,7 @@
 	<info>
 		<name>The Eldritch Glaive</name>
 		<description>Hexblade but more focused on their weapon and without all that pesky spellcasting. They choose a weapon like spell to focus on. Such as Vampiric Touch or Flame Blade.</description>
-		<update version="0.0.14">
+		<update version="0.0.15">
 			<file name="class-eldrictch_glaive.xml" url="https://raw.githubusercontent.com/mustacheride/aurora_sa/master/ryuujin/classes/class-eldritch_glaive.xml" />
 		</update>
 	</info>
@@ -194,19 +194,19 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Class Feature" name="Weapons of the Glaive" supports="Pact of the Blade" level="3"/>
+			<select type="Archetype" name="Weapons of the Glaive" supports="Pact of the Blade" level="3"/>
 		</rules>
 	</element>
-	<element name="Pact of the Vampiric Touch" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH">
+	<element name="Pact of the Vampiric Touch" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_VAMPIRIC_TOUCH">
 		<supports>Pact of the Blade</supports>
 		<description>
 			<p>When you use your Pact Weapon feature you can call forth necrotic shadows to shroud your hands, possibly taking the form of deadly life-siphoning claws.</p>
 			<p class="indent">When you use your Pact Weapon this way you instead deal 3d6 necrotic damage.</p>
 			<p class="indent">You heal for half the damage your Touch does. At 7th level, when your Hex Level increases to 4, the damage increases by 1d6. It increases by another 1d6 for each Hex Level beyond 4th.</p>
-			<div element="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_UNARMORED_DEFENSE" />
-			<div element="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_CREATURE_OF_THE_DARK" />
-			<div element="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_FLIGHT_OF_THE_BAT" />
-			<div element="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_ALMIGHTY_VAMPIRE" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_VAMPIRIC_TOUCH_UNARMORED_DEFENSE" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_VAMPIRIC_TOUCH_CREATURE_OF_THE_DARK" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_VAMPIRIC_TOUCH_FLIGHT_OF_THE_BAT" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_VAMPIRIC_TOUCH_ALMIGHTY_VAMPIRE" />
 		</description>
 		<sheet>
 			<description>When you use your Pact Weapon you instead deal {{pact of the vampiric touch:count}}d6 necrotic damage.
@@ -223,13 +223,13 @@
 			<stat name="pact of the vampiric touch:dmg" value="pact of the vampiric touch:str" />
 			<stat name="pact of the vampiric touch:dmg" value="pact of the vampiric touch:cha" />
 			<stat name="pact of the vampiric touch:calculation" value="pact of the vampiric touch:dmg" bonus="calculation" />
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_UNARMORED_DEFENSE" level="3"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_CREATURE_OF_THE_DARK" level="7"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_FLIGHT_OF_THE_BAT" level="15"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_ALMIGHTY_VAMPIRE" level="20"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_VAMPIRIC_TOUCH_UNARMORED_DEFENSE" level="3"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_VAMPIRIC_TOUCH_CREATURE_OF_THE_DARK" level="7"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_VAMPIRIC_TOUCH_FLIGHT_OF_THE_BAT" level="15"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_VAMPIRIC_TOUCH_ALMIGHTY_VAMPIRE" level="20"/>
 		</rules>
 	</element>
-	<element name="Unarmored Defense" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_UNARMORED_DEFENSE">
+	<element name="Unarmored Defense" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_VAMPIRIC_TOUCH_UNARMORED_DEFENSE">
 		<description>
 			<p>Beginning at 3rd level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Strength modifier + your Charisma modifier.  This AC value increases by +1 at 6th, 12th and 18th levels.</p>
 		</description>
@@ -246,7 +246,7 @@
 			<stat name="ac:calculation" value="ac:unarmored defense eldritch glaive" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Defense (Eldritch Glaive)" />
 		</rules>
 	</element>
-	<element name="Creature of the Dark" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_CREATURE_OF_THE_DARK">
+	<element name="Creature of the Dark" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_VAMPIRIC_TOUCH_CREATURE_OF_THE_DARK">
 		<description>
 			<p>Starting at 7th level you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check, or using your hands.This works as Spider Climb.</p>
 			<p class="indent">You also gain Darkvision of 120 feet, this darkvision works even in magical darkness.</p>
@@ -256,7 +256,7 @@
 			You also gain Darkvision of 120 feet, this darkvision works even in magical darkness.</description>
 		</sheet>
 	</element>
-	<element name="Flight of the Bat" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_FLIGHT_OF_THE_BAT">
+	<element name="Flight of the Bat" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_VAMPIRIC_TOUCH_FLIGHT_OF_THE_BAT">
 		<description>
 			<p>Starting at 15th level, you gain the ability to sprout a pair of bat wings from your back, gaining a flying speed equal to your current speed. You can create these wings as a bonus action on your turn. They last until you dismiss them as a bonus action on your turn.</p>
 			<p class="indent">You can’t manifest your wings while wearing armor unless the armor is made to accommodate them, and clothing not made to accommodate your wings might be destroyed when you manifest them.</p>
@@ -266,7 +266,7 @@
 			The wings last until you dismiss them as a bonus action.</description>
 		</sheet>
 	</element>
-	<element name="Almighty Vampire" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_VAMPIRIC_TOUCH_ALMIGHTY_VAMPIRE">
+	<element name="Almighty Vampire" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_VAMPIRIC_TOUCH_ALMIGHTY_VAMPIRE">
 		<description>
 			<p>At 20th level, you gain the ability to infuse your entire body with the power of your Vampiric Touch.  This can be a visible change, but it does not need to be.</p>
 			<ul class="unstyled">
@@ -283,14 +283,14 @@
 			Your Darkvision now allows you to see through Darkness and Magical Darkness as well as you can see through daylight.</description>
 		</sheet>
 	</element>
-	<element name="Pact of the Flame Blade" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE">
+	<element name="Pact of the Flame Blade" type="Archetype" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FLAME_BLADE">
 		<supports>Pact of the Blade</supports>
 		<description>
 			<p>At 3rd level, when you take this Weapon of the Glaive, you gain a new option for your Pact Weapon.  Now when you use your Pact Weapon feature you can call forth primordial flames.  You can form any shape of weapon with fire instead of ether. When you use your Pact Weapon this way you instead deal 3d6 fire damage.  The flaming blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet.  And the Flame Blade has the light and finesse traits.  At 7th level, when your Hex Level increases to 4, the damage increases by 1d6.  It increases by another 1d6 for every two Hex Levels beyond 4th.</p>	
-			<div element="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_FIERY_BLOOD" />
-			<div element="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_AURA_OF_FLAME" />
-			<div element="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_BACKDRAFT" />
-			<div element="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_INFERNO" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_FLAME_BLADE_FIERY_BLOOD" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_FLAME_BLADE_AURA_OF_FLAME" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_FLAME_BLADE_BACKDRAFT" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_FLAME_BLADE_INFERNO" />
 		</description>
 		<sheet>
 			<description>When you use your Pact Weapon you instead deal {{pact of the flame blade:count}}d6 fire damage. The flaming blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet.</description>
@@ -299,13 +299,13 @@
 			<stat name="pact of the flame blade:count" value="3" bonus="flame blade" />
 			<stat name="pact of the flame blade:count" value="4" bonus="flame blade" level="7" />
 			<stat name="pact of the flame blade:count" value="5" bonus="flame blade" level="9" />
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_FIERY_BLOOD" level="3"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_AURA_OF_FLAME" level="7"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_BACKDRAFT" level="15"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_INFERNO" level="20"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_FLAME_BLADE_FIERY_BLOOD" level="3"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_FLAME_BLADE_AURA_OF_FLAME" level="7"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_FLAME_BLADE_BACKDRAFT" level="15"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_FLAME_BLADE_INFERNO" level="20"/>
 		</rules>
 	</element>
-	<element name="Fiery Blood" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_FIERY_BLOOD">
+	<element name="Fiery Blood" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_FLAME_BLADE_FIERY_BLOOD">
 		<description>
 			<p>At third level you become resistant to Fire Damage.  You do not suffer Exhaustion or similar penalties from hot or cold conditions.</p>
 			<p class="indent">Additionally when you take damage from a creature within 60ft of you you can, as a Reaction, cause flames to lash out from you that creature.  The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one.  At higher levels this damage increases by 1d10 for each Hex Level beyond 2nd.</p>
@@ -321,7 +321,7 @@
 			<stat name="fiery blood:count" value="5" bonus="base" level="9" />
 		</rules>
 	</element>
-	<element name="Aura of Flame" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_AURA_OF_FLAME">
+	<element name="Aura of Flame" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_FLAME_BLADE_AURA_OF_FLAME">
 		<description>
 			<p>Starting at 7th level your speed increases by 10 feet, this increases by another ten feet at 12th and 17th levels.</p>
 			<p class="indent">Your body now sheds bright light in a 20-foot radius and dim light in an additional 20 feet.</p>
@@ -344,7 +344,7 @@
 			<stat name="innate speed:misc" value="eldritch glaive:aura of flame" bonus="eldritch glaive" requirements="[innate speed:1]" />
 		</rules>
 	</element>
-	<element name="Backdraft" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_BACKDRAFT">
+	<element name="Backdraft" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_FLAME_BLADE_BACKDRAFT">
 		<description>
 			<p>Starting at 15th level you become immune to Fire damage and resistant to poison damage.  </p>
 			<p class="indent">In addition you have gained a greater control of your Aura of Flame.  Your Aura of Flame now only harms creatures of your choice, instead of all creatures in its area.  Your greater control also seems to make it difficult for the affected creatures to leave your aura.  Any creatures that you choose to have affected by your Aura have their speed halved while in your aura as the winds seem to howl toward your fiery center.</p>
@@ -355,7 +355,7 @@
 			Any chosen creatures have their speed halved while in your aura.</description>
 		</sheet>
 	</element>
-	<element name="Inferno" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_FLAME_BLADE_INFERNO">
+	<element name="Inferno" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_FLAME_BLADE_INFERNO">
 		<description>
 			<p>At 20th level the primordial flame of your Flame Blade fully infuses you.  This can be a visible change, but it does not need to be.</p>
 			<ul class="unstyled">
@@ -373,15 +373,15 @@
 			• When you create a Flame Blade you can now make a pair of Flame Blades. The second weapon can be used to make an attack as a bonus action using the two-weapon fighting rules.</description>
 		</sheet>
 	</element>
-	<element name="Pact of the Shadow Blade" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE">
+	<element name="Pact of the Shadow Blade" type="Archetype" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_SHADOW_BLADE">
 		<supports>Pact of the Blade</supports>
 		<description>
 			<p>At 3rd level, when you take this Weapon of the Glaive, you gain a new option for your Pact Weapon.  Now when you use your Pact Weapon feature you weave together threads of shadow to create a weapon of solidified gloom in your hand.  While using your Pact Weapon this way it deals 2d8 psychic damage on a hit and has the finesse, light and thrown properties (range 20/60).  In addition, when you use the weapon to attack a target in dim light or darkness, you make the attack roll with advantage.  If you drop the weapon or throw it, it dissipates at the end of the turn.  Thereafter, while the spell persists, you can use a bonus action to cause the weapon to reappear in your hand.  If you have the Thirsting Blade invocation and throw the weapon you can have it reappear in your hand in time to make your second attack as part of your attack action without needing to use a bonus action to call it back to your hand.</p>
 			<p class="indent">At 5th level, when your Hex Level increases to 3, the damage increases by 1d8.  It increases by another 1d8 for every two Hex Levels beyond 3rd.</p>
-			<div element="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_SIGHT_OF_THE_SHADOWS" />
-			<div element="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_SHADOW_OF_MOIL" />
-			<div element="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_SILENT_AS_A_SHADOW" />
-			<div element="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_UTTERDARK" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_SHADOW_BLADE_SIGHT_OF_THE_SHADOWS" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_SHADOW_BLADE_SHADOW_OF_MOIL" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_SHADOW_BLADE_SILENT_AS_A_SHADOW" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_SHADOW_BLADE_UTTERDARK" />
 		</description>
 		<sheet>
 			<description>When you use your Pact Weapon you instead deal {{pact of the vampiric touch:dice}}d8 psychic damage.
@@ -391,13 +391,13 @@
 			<stat name="pact of the vampiric touch:dice" value="2" bonus="vampiric touch" />
 			<stat name="pact of the vampiric touch:dice" value="1" bonus="vampiric touch" level="5" />
 			<stat name="pact of the vampiric touch:dice" value="1" bonus="vampiric touch" level="9" />
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_SIGHT_OF_THE_SHADOWS" level="3"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_SHADOW_OF_MOIL" level="7"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_SILENT_AS_A_SHADOW" level="15"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_UTTERDARK" level="20"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_SHADOW_BLADE_SIGHT_OF_THE_SHADOWS" level="3"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_SHADOW_BLADE_SHADOW_OF_MOIL" level="7"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_SHADOW_BLADE_SILENT_AS_A_SHADOW" level="15"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_SHADOW_BLADE_UTTERDARK" level="20"/>
 		</rules>
 	</element>
-	<element name="Sight of the Shadows" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_SIGHT_OF_THE_SHADOWS">
+	<element name="Sight of the Shadows" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_SHADOW_BLADE_SIGHT_OF_THE_SHADOWS">
 		<description>
 			<p>At 3rd level you gain the Armor of Shadows and Devil’s Sight invocations.  If you already had one or more of them you can retrain your previous invocation selections into another invocation.</p>
 			<p class="indent">Additionally when you take damage from a creature within 60ft of you you can, as a Reaction, cause flames to lash out from you that creature.  The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one.  At higher levels this damage increases by 1d10 for each Hex Level beyond 2nd.</p>
@@ -410,7 +410,7 @@
 			<grant type="Spell" id="ID_SA_MR_SPELL_DEVILS_SIGHT"/>
 		</rules>
 	</element>
-	<element name="Shadow of Moil" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_SHADOW_OF_MOIL">
+	<element name="Shadow of Moil" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_SHADOW_BLADE_SHADOW_OF_MOIL">
 		<description>
 			<p>Starting at 7th level you can, as a bonus action, cause flame-like shadows to wreathe your body until you fall unconscious or use another bonus action to end the effect, causing you to become heavily obscured to others. The shadows turn dim light within 10 feet of you into darkness, and bright light in the same area to dim light.</p>
 			<p class="indent">While under this effect, you have resistance to radiant damage. In addition, whenever a creature within 10 feet of you hits you with an attack, the shadows lash out at that creature, dealing it 2d8 necrotic damage.</p>
@@ -425,7 +425,7 @@
 			<stat name="stealth:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
-	<element name="Silent as a Shadow" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_SILENT_AS_A_SHADOW">
+	<element name="Silent as a Shadow" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_SHADOW_BLADE_SILENT_AS_A_SHADOW">
 		<description>
 			<p>Starting at 15th level, you gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action you can teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness. You then have advantage on the first melee attack you make before the end of the turn.</p>
 			<p class="indent">In addition a veil of shadows and silence radiates from you, masking you and your companions from detection.  Each creature of your choice, including yourself, has a +10 bonus to Dexterity (Stealth) checks and can’t be tracked except by magical means.  A creature that receives this bonus leaves behind no tracks or other traces of its passage.</p>
@@ -439,7 +439,7 @@
 			<stat name="dexterity:save:misc" value="10" />
 		</rules>
 	</element>
-	<element name="Utterdark" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_SHADOW_BLADE_UTTERDARK">
+	<element name="Utterdark" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_SHADOW_BLADE_UTTERDARK">
 		<description>
 			<p>At 20th level, you gain the ability to infuse your entire body with the shadows you weave.  This can be a visible change, but it does not need to be.</p>
 			<ul class="unstyled">
@@ -463,15 +463,15 @@
 			<stat name="stealth:passive" value="15" />
 		</rules>
 	</element>
-	<element name="Pact of the Stormbow" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_STORMBOW">
+	<element name="Pact of the Stormbow" type="Archetype" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_STORMBOW">
 		<supports>Pact of the Blade</supports>
 		<description>
 			<p>At 3rd level, when you take this Weapon of the Glaive, you gain a new option for your Pact Weapon.  Now when you use your Pact Weapon feature you can form a special weapon out of pure thunder and lightning, your Stormbow.  This does not have to look like a bow.  Your Stormbow deals 2d8 damage, half the dice are thunder and half are lightning.  Your attacks with this Stormbow have advantage against targets either wearing metal armor or made primarily of metal, and upon hitting a target with your Stormbow your next attack against them before the end of your next turn has advantage.  An enemy hit by your Stormbow is sheathed in booming energy until the start of your next turn and the first time your target willing moves before then it immediately takes 1d8 thunder damage.  This is a ranged weapon with a range of 150/600, the unique nature of the weapon allows you to strike out with it as a melee weapon with the finesse property.</p>
 			<p class="indent">At 5th level the Stormbow deals an additional 1d8 thunder damage to both rolls, as well as an additional 1d8 lightning damage upon a hit.  All of these increase by an additional 1d8 at 11th level, and 17th level to an eventual 4d8 lightning and 4d8 thunder upon a hit and 4d8 thunder upon willingly moving.</p>
-			<div element="ID_SA_MR_CLASS_FEATURE_STORMBOW_STORMSOUL" />
-			<div element="ID_SA_MR_CLASS_FEATURE_STORMBOW_THUNDER_STEP" />
-			<div element="ID_SA_MR_CLASS_FEATURE_STORMBOW_INVESTITURE_OF_AIR" />
-			<div element="ID_SA_MR_CLASS_FEATURE_STORMBOW_MAELSTROM" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_STORMBOW_STORMSOUL" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_STORMBOW_THUNDER_STEP" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_STORMBOW_INVESTITURE_OF_AIR" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_STORMBOW_MAELSTROM" />
 		</description>
 		<sheet>
 			<description>When you use your Pact Weapon you instead deal {{pact of the stormbow:damage}}d8 damage, half of the dice are thunder and half are lightning.  Your attacks with this Stormbow have advantage against targets either wearing metal armor or made primarily of metal, and upon hitting a target with your Stormbow your next attack against them before the end of your next turn has advantage.  When an enemy hit by your Stormbow willing moves before the end of your next turn it immediately takes {{pact of the stormbow:move}}d8 thunder damage.  This is a ranged attack with a range of 150/600</description>
@@ -489,13 +489,13 @@
 			<stat name="pact of the stormbow:attack" value="1" bonus="stormbow" level="5" />
 			<stat name="pact of the stormbow:attack" value="2" bonus="stormbow" level="11" />
 			<stat name="pact of the stormbow:attack" value="3" bonus="stormbow" level="17" />
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_STORMBOW_STORMSOUL" level="3"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_STORMBOW_THUNDER_STEP" level="7"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_STORMBOW_INVESTITURE_OF_AIR" level="15"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_STORMBOW_MAELSTROM" level="20"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_STORMBOW_STORMSOUL" level="3"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_STORMBOW_THUNDER_STEP" level="7"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_STORMBOW_INVESTITURE_OF_AIR" level="15"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_STORMBOW_MAELSTROM" level="20"/>
 		</rules>
 	</element>
-	<element name="Stormsoul" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_STORMBOW_STORMSOUL">
+	<element name="Stormsoul" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_STORMBOW_STORMSOUL">
 		<description>
 			<p>At 3rd level you gain resistance to thunder and lightning damages.  At 7th level you cannot be deafened or blinded.  At 13th level you gain immunity to thunder and lightning damage.</p>
 			<p class="indent">Additionally when you take damage from a creature within 60ft of you you can, as a Reaction, cause flames to lash out from you that creature.  The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one.  At higher levels this damage increases by 1d10 for each Hex Level beyond 2nd.</p>
@@ -506,7 +506,7 @@
 			<description level="13">You gain immunity to thunder and lightning damages. You cannot be deafened or blinded.</description>
 		</sheet>
 	</element>
-	<element name="Thunder Step" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_STORMBOW_THUNDER_STEP">
+	<element name="Thunder Step" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_STORMBOW_THUNDER_STEP">
 		<description>
 			<p>Starting at 7th level you can, as an action, teleport yourself to an unoccupied space you can see within range.  Immediately after you disappear, a thunderous boom sounds, and each creature within 10 feet of the space you left must make a Constitution saving throw, taking 3d10 thunder damage on a failed save, or half as much on damage on a successful one.  The thunder can be heard from up to 300 feet away.</p>
 			<p class="indent">You can bring along objects as long as their weight doesn’t exceed what you can carry.  You can also teleport one willing creature of your size or smaller who is carrying gear up to its carrying capacity.  The creature must be within 5 feet of you when you use this ability, and there must be an unoccupied space within 5 feet of your destination space for the creature to appear in; otherwise the creature is left behind.  The damage this ability does increases by 1d10 for every 2 levels after 7th.  At 15th level you can now use this ability as a Bonus Action instead of an Action.</p>
@@ -527,7 +527,7 @@
 			<stat name="thunder step:count" value="9" bonus="stormbow" level="19"/>	
 		</rules>
 	</element>
-	<element name="Investiture of Air" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_STORMBOW_INVESTITURE_OF_AIR">
+	<element name="Investiture of Air" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_STORMBOW_INVESTITURE_OF_AIR">
 		<description>
 			<p>The power of your Stormbow begins to erupt from you starting at 15th level.  As an Action you can cause swirling winds to engulf you, until you choose to end the effect as a Reaction or until you lose consciousness.  While engulfed in these winds you gain a number of benefits such as:  Ranged weapon attacks made against you have disadvantage on the attack roll.  You gain a flying speed of 60 feet.  If you are still flying when this effect ends you fall, unless you can somehow prevent it.  You can use your action to create a 15-foot cube of swirling wind centered on a point you can see within 60 feet of your.  Each creature in that area must make a Constitution saving throw.  A creature in that area must make a Constitution saving throw.  A creature takes 2d10 bludgeoning damage on a failed save, or half as much damage on a successful one.  If a Large or smaller creature fails the save, that creature is also pushed up to 10 feet away from the center of the cube.</p>
 			<p class="indent">In addition a veil of shadows and silence radiates from you, masking you and your companions from detection.  Each creature of your choice, including yourself, has a +10 bonus to Dexterity (Stealth) checks and can’t be tracked except by magical means.  A creature that receives this bonus leaves behind no tracks or other traces of its passage.</p>
@@ -540,7 +540,7 @@
 			  Each creature in the cube must take a Constitution saving throw and takes 2d10 bludgeoning damage on fail and is pushed 10 feet, takes half on a success.</description>
 		</sheet>
 	</element>
-	<element name="Maelstrom" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_STORMBOW_MAELSTROM">
+	<element name="Maelstrom" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_STORMBOW_MAELSTROM">
 		<description>
 			<p>At 20th level, you gain the ability to infuse your entire body with the shadows you weave.  This can be a visible change, but it does not need to be.</p>
 			<ul class="unstyled">
@@ -563,14 +563,14 @@
 		      If the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone</description>
 		</sheet>
 	</element>
-	<element name="Pact of the Ice Knife" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE">
+	<element name="Pact of the Ice Knife" type="Archetype" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_ICE_KNIFE">
 		<supports>Pact of the Blade</supports>
 		<description>
 			<p>At 3rd level, when you take this Weapon of the Glaive, you gain a new option for your Pact Weapon.  You call forth utter cold and form a brace of knives out of ice.  The actual appearance of the brace and knives are up to you.  They can be a bandolier holding a series of ice daggers, a brace upon the arm with throwing stars, or a contraption beneath your sleeves that brings a knife to your hand with a twist of the wrist.  Whatever form the brace and weapons take while your Ice Knife is active you have an unlimited supply of ice knives.  These are weapons with the finesse and thrown properties with a range of 90/180.  They deal 1d10 piercing damage, increasing by 1d10 at 5th, 11th and 17th levels.  Hit or miss the blade then explodes.  The target and each creature within 5 feet of it must succeed on a Dexterity saving throw or take 3d6 cold damage.  The cold damage increases by 1d6 at 5th level, and every 2 levels after that. </p>
-			<div element="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_ARMOR_OF_AGATHYS" />
-			<div element="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_CONTROL_ICE_AND_SNOW" />
-			<div element="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_INVESTITURE_OF_ICE" />
-			<div element="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_MAELSTROM" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_ICE_KNIFE_ARMOR_OF_AGATHYS" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_ICE_KNIFE_CONTROL_ICE_AND_SNOW" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_ICE_KNIFE_INVESTITURE_OF_ICE" />
+			<div element="ID_SA_MR_ARCHETYPE_FEATURE_ICE_KNIFE_MAELSTROM" />
 		</description>
 		<sheet>
 			<description>You have an unlimited supply of ice knives with the finesse and thrown properties and a range of 90/180. They deal {{pact of the ice knife:damage}}d10 piercing damage. Hit or miss the blade then explodes and each creature within 5 feet must succeed on a Dexterity saving throw or take {{pact of the ice knife:exploding}}d6 cold damage.</description>
@@ -589,13 +589,13 @@
 			<stat name="pact of the ice knife:exploding" value="9" level="15" />
 			<stat name="pact of the ice knife:exploding" value="10" level="17" />
 			<stat name="pact of the ice knife:exploding" value="11" level="19" />
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_ARMOR_OF_AGATHYS" level="3"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_CONTROL_ICE_AND_SNOW" level="7"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_INVESTITURE_OF_ICE" level="15"/>
-			<grant type="Class Feature" id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_MAELSTROM" level="20"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_ICE_KNIFE_ARMOR_OF_AGATHYS" level="3"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_ICE_KNIFE_CONTROL_ICE_AND_SNOW" level="7"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_ICE_KNIFE_INVESTITURE_OF_ICE" level="15"/>
+			<grant type="Archetype Feature" id="ID_SA_MR_ARCHETYPE_FEATURE_ICE_KNIFE_MAELSTROM" level="20"/>
 		</rules>
 	</element>
-	<element name="Armor of Agathys" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_ARMOR_OF_AGATHYS">
+	<element name="Armor of Agathys" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_ICE_KNIFE_ARMOR_OF_AGATHYS">
 		<description>
 			<p>At 3rd a protective magical force surrounds you, manifesting as a spectral frost that covers you and your gear.  You gain 10 temporary hit points, and if a creature hits you with a melee attack while you have these hit points, the creature takes cold 10 cold damage.  You replenish 5 temporary hit points per minute.  Both your temporary hit points and the cold damage increase by 5 for every two levels beyond 3rd level.</p>
 		</description>
@@ -618,7 +618,7 @@
 			<stat name="armor of agathys:replenish" value="50" level="20" />
 		</rules>
 	</element>
-	<element name="Control Ice and Snow" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_CONTROL_ICE_AND_SNOW">
+	<element name="Control Ice and Snow" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_ICE_KNIFE_CONTROL_ICE_AND_SNOW">
 		<description>
 			<p>Starting at 7th level you gain resistance to Cold damage and no longer suffer any penalties for extreme conditions, hot or cold.  You also gain the ability to manipulate and control ice and snow within 300 feet of you as an action.  Some things you can use this ability to do include:</p>
 			<ul class="unstyled">
@@ -640,7 +640,7 @@
 			• Part snow in the are to create a trench.</description>
 		</sheet>
 	</element>
-	<element name="Investiture of Ice" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_INVESTITURE_OF_ICE">
+	<element name="Investiture of Ice" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_ICE_KNIFE_INVESTITURE_OF_ICE">
 		<description>
 			<p>The utter cold of your ice flows freely from you starting at 15th level.  As an Action you can cause ice to rime your body and gaining the following benefits:</p>
 			<ul class="unstyled">
@@ -658,7 +658,7 @@
 			Each creature in the cone must make a Constitution saving throw, take 4d6 cold damage on a failed save and have its speed halved until the start of your next turn, or half as much on a successful one.</description>
 		</sheet>
 	</element>
-	<element name="Maelstrom" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_ICE_KNIFE_MAELSTROM">
+	<element name="Maelstrom" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_ARCHETYPE_FEATURE_ICE_KNIFE_MAELSTROM">
 		<description>
 			<p>At 20th level, you gain the ability to infuse your entire body with the utter cold you have been fashioning.  This can be a visible change, but it does not need to be.</p>
 			<ul class="unstyled">
@@ -679,7 +679,7 @@
 			• You deal double damage to objects and structures</description>
 		</sheet>
 	</element>
-	<element name="Ability Score Improvement" type="Class Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_ABILITY_SCORE_IMPROVEMENT">
+	<element name="Ability Score Improvement" type="Archetype Feature" source="SA Trad Games: Ryuujin" id="ID_SA_MR_CLASS_FEATURE_ELDRITCH_GLAIVE_ABILITY_SCORE_IMPROVEMENT">
 		<compendium display="false" />
 		<description>
 			<p>When you reach 4th, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
